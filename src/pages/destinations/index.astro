@@ -1,0 +1,355 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import { getCollection } from 'astro:content';
+
+const allDests = await getCollection('destinations');
+
+// Group by region and sort alphabetically
+const regionKeys = ['central-texas', 'hill-country', 'gulf-coast', 'north-texas', 'west-texas', 'south-texas', 'east-texas', 'piney-woods', 'panhandle'] as const;
+const regions: Record<string, typeof allDests> = {};
+regionKeys.forEach(k => { regions[k] = []; });
+allDests.forEach(d => {
+  if (regions[d.data.region]) regions[d.data.region].push(d);
+});
+Object.values(regions).forEach(arr => arr.sort((a, b) => a.data.title.localeCompare(b.data.title)));
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Destinations', url: '/destinations/' },
+];
+
+const regionMeta: Record<string, { label: string; desc: string; gradient: string }> = {
+  'central-texas': {
+    label: 'Central Texas',
+    desc: 'The heart of the Lone Star State — Austin\'s live music, San Antonio\'s River Walk, and small-town charm along I-35.',
+    gradient: 'linear-gradient(135deg, #78350F, #B45309, #F59E0B)',
+  },
+  'hill-country': {
+    label: 'Hill Country',
+    desc: 'Rolling hills, wildflowers, wineries, and swimming holes — the soul of Texas.',
+    gradient: 'linear-gradient(135deg, #065F46, #059669, #34D399)',
+  },
+  'gulf-coast': {
+    label: 'Gulf Coast',
+    desc: 'Beaches, seafood, and coastal charm from Galveston to South Padre Island.',
+    gradient: 'linear-gradient(135deg, #0E4D5C, #0D7377, #14B8A6)',
+  },
+  'north-texas': {
+    label: 'North Texas',
+    desc: 'Big D energy, Fort Worth\'s Stockyards, and charming small towns north of the Metroplex.',
+    gradient: 'linear-gradient(135deg, #1E3A5F, #2563EB, #60A5FA)',
+  },
+  'west-texas': {
+    label: 'West Texas',
+    desc: 'Big Bend, Marfa, and the vast desert frontier — where Texas feels truly wild.',
+    gradient: 'linear-gradient(135deg, #92400E, #D97706, #FBBF24)',
+  },
+  'south-texas': {
+    label: 'South Texas',
+    desc: 'Border culture, King Ranch country, and the warmth of the Rio Grande Valley.',
+    gradient: 'linear-gradient(135deg, #9D174D, #E8654A, #FB923C)',
+  },
+  'east-texas': {
+    label: 'East Texas',
+    desc: 'Bayou country, haunted towns, and cypress-draped lakes.',
+    gradient: 'linear-gradient(135deg, #4C1D95, #3730A3, #5B21B6)',
+  },
+  'piney-woods': {
+    label: 'Piney Woods',
+    desc: 'Tall pines, rose gardens, and the oldest towns in Texas.',
+    gradient: 'linear-gradient(135deg, #14532D, #166534, #22C55E)',
+  },
+  'panhandle': {
+    label: 'Panhandle',
+    desc: 'Palo Duro Canyon, Route 66, and the wide-open plains of the Texas Panhandle.',
+    gradient: 'linear-gradient(135deg, #7C2D12, #C2410C, #FB923C)',
+  },
+};
+---
+<BaseLayout
+  title="Destinations — Texas Travel Guides"
+  description="In-depth travel guides to destinations across Texas. Explore the Hill Country, Gulf Coast, West Texas, and more with honest recommendations and real prices."
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="dh-hero">
+    <div class="dh-hero-gradient" />
+    <div class="dh-hero-content">
+      <h1 class="dh-hero-title">Texas Destinations</h1>
+      <p class="dh-hero-subtitle">In-depth guides with real prices, honest opinions, and the insider knowledge that comes from calling Texas home.</p>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Destination Cards by Region -->
+  {regionKeys.map(regionKey => {
+    const dests = regions[regionKey];
+    const meta = regionMeta[regionKey];
+    if (!dests || dests.length === 0) return null;
+    return (
+      <section>
+        <div class="dh-region-header">
+          <div class="dh-region-gradient" style={`background: ${meta.gradient};`} />
+          <div class="dh-region-content">
+            <h2 class="dh-region-title">{meta.label}</h2>
+            <p class="dh-region-desc">{meta.desc}</p>
+          </div>
+        </div>
+
+        <div class="dh-cards reveal">
+          <div class="container-content">
+            <div class="dh-grid">
+              {dests.map(dest => {
+                const { title, tagline, region, budgetPerDay } = dest.data;
+                const slug = dest.slug || dest.id;
+                return (
+                  <a href={`/destinations/${slug}/`} class="dh-card">
+                    <div class="dh-card-bg" style={`background: ${meta.gradient};`} />
+                    <div class="dh-card-body">
+                      <span class="dh-card-region">{region.replace(/-/g, ' ')}</span>
+                      <h3 class="dh-card-title">{title}</h3>
+                      {tagline && <p class="dh-card-tagline">{tagline}</p>}
+                      {budgetPerDay && (
+                        <p class="dh-card-budget">From ${budgetPerDay.backpacker}/day</p>
+                      )}
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  })}
+
+  <!-- Plan CTA -->
+  <section class="dh-cta reveal">
+    <div class="container-content">
+      <div class="dh-cta-card">
+        <h2>Plan Your Texas Trip</h2>
+        <p>Our AI Trip Planner covers 59 destinations across Texas — let us help you build the perfect itinerary.</p>
+        <a href="/plan/" class="dh-cta-btn">Plan Your Trip &#10141;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Capture -->
+  <section class="dh-email reveal">
+    <div class="container-content">
+      <EmailCapture leadMagnet="Get Notified When New Guides Drop" />
+    </div>
+  </section>
+</BaseLayout>
+
+<!-- Scroll Reveal -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) e.target.classList.add('visible');
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
+
+<style>
+  .dh-hero {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #78350F, #B45309, #D97706);
+  }
+
+  .dh-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
+  }
+
+  .dh-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: var(--content-lg);
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .dh-hero-title {
+    font-size: clamp(2.4rem, 6vw, 3.5rem);
+    font-weight: var(--weight-extrabold);
+    color: white;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: var(--space-3);
+  }
+
+  .dh-hero-subtitle {
+    font-size: var(--text-body);
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 50ch;
+    line-height: var(--leading-body);
+  }
+
+  .dh-region-header {
+    position: relative;
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    background-color: #1a2332;
+  }
+
+  .dh-region-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .dh-region-content {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .dh-region-title {
+    font-size: var(--text-h2);
+    font-weight: var(--weight-bold);
+    color: white;
+    margin-bottom: var(--space-3);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .dh-region-desc {
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+    opacity: 0.9;
+    max-width: 50ch;
+    margin-inline: auto;
+    color: white;
+  }
+
+  .dh-cards { padding-block: var(--space-10); }
+
+  .dh-grid {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 640px) { .dh-grid { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1024px) { .dh-grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+  .dh-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 220px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dh-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    color: white;
+  }
+
+  .dh-card-bg { position: absolute; inset: 0; }
+
+  .dh-card-body {
+    position: relative;
+    z-index: 1;
+    padding: var(--space-5);
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  }
+
+  .dh-card-region {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.6;
+    font-weight: var(--weight-semibold);
+  }
+
+  .dh-card-title {
+    font-size: var(--text-h3);
+    font-weight: var(--weight-bold);
+    color: white;
+    margin-bottom: var(--space-1);
+  }
+
+  .dh-card-tagline { font-size: var(--text-caption); opacity: 0.8; }
+  .dh-card-budget { font-size: 12px; opacity: 0.55; margin-top: var(--space-1); }
+
+  .dh-cta { padding-block: var(--space-8); }
+
+  .dh-cta-card {
+    text-align: center;
+    padding: var(--space-12) var(--space-8);
+    background: var(--color-deep-night);
+    border-radius: 24px;
+    color: white;
+  }
+
+  .dh-cta-card h2 { color: white; margin-bottom: var(--space-3); }
+
+  .dh-cta-card p {
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 50ch;
+    margin: 0 auto var(--space-6);
+    line-height: var(--leading-body);
+  }
+
+  .dh-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: var(--space-3) var(--space-8);
+    border-radius: 100px;
+    background: var(--color-warm-coral);
+    color: white;
+    font-weight: var(--weight-semibold);
+    font-size: var(--text-button);
+    text-decoration: none;
+    min-height: 48px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dh-cta-btn:hover {
+    background: #D4553B;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(232, 101, 74, 0.25);
+    color: white;
+  }
+
+  .dh-email { padding-block: var(--space-12); }
+</style>

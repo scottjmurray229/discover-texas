@@ -1,0 +1,256 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import EmailCapture from '../components/EmailCapture.astro';
+
+// Fetch all destinations
+const allDestinations = await getCollection('destinations');
+
+// Region definitions for Texas
+const regions = [
+  { id: 'central-texas', name: 'Central Texas', desc: 'Austin, Waco, and the beating heart of the state', icon: '🎸' },
+  { id: 'hill-country', name: 'Hill Country', desc: 'Rolling hills, wineries, and small-town charm', icon: '🍇' },
+  { id: 'gulf-coast', name: 'Gulf Coast', desc: 'Beaches, bay fishing, and coastal sunsets', icon: '🌊' },
+  { id: 'north-texas', name: 'North Texas', desc: 'Dallas, Fort Worth, and big-city culture', icon: '🏙️' },
+  { id: 'west-texas', name: 'West Texas', desc: 'Big Bend, desert skies, and wide open spaces', icon: '🏜️' },
+  { id: 'east-texas', name: 'East Texas', desc: 'Pine forests, lakes, and Southern hospitality', icon: '🌲' },
+  { id: 'south-texas', name: 'South Texas', desc: 'Border culture, ranches, and Tex-Mex roots', icon: '🌮' },
+  { id: 'panhandle', name: 'Panhandle', desc: 'Palo Duro Canyon, plains, and cowboy country', icon: '🤠' },
+  { id: 'piney-woods', name: 'Piney Woods', desc: 'Deep forest trails and quiet lake towns', icon: '🌿' },
+];
+
+// Group destinations by region
+const destinationsByRegion: Record<string, typeof allDestinations> = {};
+for (const region of regions) {
+  destinationsByRegion[region.id] = allDestinations.filter(d => d.data.region === region.id);
+}
+
+// Count total destinations
+const totalDestinations = allDestinations.length;
+const totalRegions = regions.length;
+---
+
+<BaseLayout
+  title="Discover Texas — Your Guide to the Lone Star State"
+  description="BBQ, wide open spaces, and Lone Star charm. Your honest travel guide to every corner of Texas — from Hill Country wineries to Gulf Coast beaches."
+  pageType="homepage"
+>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <header class="relative min-h-[85vh] flex items-center justify-center overflow-hidden" style="background: linear-gradient(160deg, #1A2332 0%, #0D7377 50%, #1A2332 100%);">
+    <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cpath d=&quot;M30 5 L35 20 L50 20 L38 30 L42 45 L30 35 L18 45 L22 30 L10 20 L25 20 Z&quot; fill=&quot;white&quot; fill-opacity=&quot;0.3&quot;/%3E%3C/svg%3E'); background-size: 120px 120px;"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6" style="font-family: var(--font-serif); line-height: 1.1;">
+        Discover Texas
+      </h1>
+      <p class="text-xl md:text-2xl text-white/90 mb-4" style="font-family: var(--font-serif);">
+        Your Guide to the Lone Star State
+      </p>
+      <p class="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-10" style="font-family: var(--font-sans);">
+        BBQ, wide open spaces, and Lone Star charm. Honest travel guides with real prices, local tips, and the spots most visitors miss.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="#regions" class="inline-flex items-center gap-2 px-8 py-4 rounded-full text-white font-semibold text-lg transition-all duration-300 hover:scale-105" style="background-color: #E8654A;">
+          Explore Regions
+        </a>
+        <a href="#destinations" class="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-lg border-2 border-white/40 text-white transition-all duration-300 hover:bg-white/10">
+          Browse All Destinations
+        </a>
+      </div>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 text-sm animate-bounce">
+      Scroll &#8595;
+    </div>
+  </header>
+
+  <!-- ============================================================
+       TRUST BAR
+       ============================================================ -->
+  <section class="py-6 border-b" style="background-color: #F5F0E8; border-color: #E8E0D0;">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 text-center">
+        <div>
+          <span class="block text-2xl font-extrabold" style="color: #0D7377;">{totalDestinations}</span>
+          <span class="text-sm" style="color: #4A5568;">Destinations</span>
+        </div>
+        <div>
+          <span class="block text-2xl font-extrabold" style="color: #0D7377;">{totalRegions}</span>
+          <span class="text-sm" style="color: #4A5568;">Regions</span>
+        </div>
+        <div>
+          <span class="block text-2xl font-extrabold" style="color: #0D7377;">268K+</span>
+          <span class="text-sm" style="color: #4A5568;">Square Miles</span>
+        </div>
+        <div>
+          <span class="block text-2xl font-extrabold" style="color: #0D7377;">Scott</span>
+          <span class="text-sm" style="color: #4A5568;">Your Guide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       REGION GRID
+       ============================================================ -->
+  <section id="regions" class="py-16 md:py-24" style="background-color: #F5F0E8;">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: var(--font-serif); color: #1A2332;">
+          Explore Texas by Region
+        </h2>
+        <p class="text-lg max-w-2xl mx-auto" style="color: #4A5568;">
+          From the desert mesas of West Texas to the pine forests of the east, every region has its own personality. Pick a region to start exploring.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {regions.map((region) => {
+          const count = destinationsByRegion[region.id]?.length || 0;
+          return (
+            <a
+              href={`#region-${region.id}`}
+              class="group block rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1"
+              style="background-color: #FFFFFF; box-shadow: 0 2px 8px rgba(0,0,0,0.08);"
+            >
+              <div class="text-3xl mb-3">{region.icon}</div>
+              <h3 class="text-xl font-bold mb-1 group-hover:underline" style="color: #1A2332; font-family: var(--font-sans);">
+                {region.name}
+              </h3>
+              <p class="text-sm mb-3" style="color: #4A5568;">{region.desc}</p>
+              <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full" style="background-color: #E8F4F5; color: #0D7377;">
+                {count} {count === 1 ? 'destination' : 'destinations'}
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DESTINATION CARDS BY REGION
+       ============================================================ -->
+  <section id="destinations" class="py-16 md:py-24" style="background-color: #FFFFFF;">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: var(--font-serif); color: #1A2332;">
+          All Destinations
+        </h2>
+        <p class="text-lg max-w-2xl mx-auto" style="color: #4A5568;">
+          Every guide includes honest recommendations, real prices, and practical tips from someone who has actually been there.
+        </p>
+      </div>
+
+      {regions.map((region) => {
+        const dests = destinationsByRegion[region.id];
+        if (!dests || dests.length === 0) return null;
+
+        return (
+          <div id={`region-${region.id}`} class="mb-16 last:mb-0 scroll-mt-24">
+            <div class="flex items-center gap-3 mb-6 pb-3" style="border-bottom: 2px solid #E8F4F5;">
+              <span class="text-2xl">{region.icon}</span>
+              <h3 class="text-2xl font-bold" style="font-family: var(--font-serif); color: #1A2332;">
+                {region.name}
+              </h3>
+              <span class="text-sm font-medium ml-auto" style="color: #0D7377;">
+                {dests.length} {dests.length === 1 ? 'guide' : 'guides'}
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {dests.map((dest) => {
+                const slug = dest.slug || dest.id;
+                return (
+                  <a
+                    href={`/destinations/${slug}/`}
+                    class="group block rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1"
+                    style="background-color: #F5F0E8; box-shadow: 0 2px 8px rgba(0,0,0,0.08);"
+                  >
+                    <div class="h-36 flex items-center justify-center" style={`background: linear-gradient(135deg, #0D7377, #1A2332);`}>
+                      <span class="text-white text-xl font-bold" style="font-family: var(--font-serif);">
+                        {dest.data.title}
+                      </span>
+                    </div>
+                    <div class="p-5">
+                      {dest.data.tagline && (
+                        <p class="text-sm italic mb-2" style="color: #0D7377;">
+                          {dest.data.tagline}
+                        </p>
+                      )}
+                      <p class="text-sm line-clamp-2 mb-3" style="color: #4A5568;">
+                        {dest.data.description || `Travel guide for ${dest.data.title}, Texas.`}
+                      </p>
+                      <div class="flex items-center justify-between">
+                        {dest.data.budgetPerDay?.midRange > 0 && (
+                          <span class="text-xs font-medium px-2 py-1 rounded-full" style="background-color: #E8F4F5; color: #0D7377;">
+                            ~${dest.data.budgetPerDay.midRange}/day
+                          </span>
+                        )}
+                        <span class="text-sm font-semibold group-hover:underline" style="color: #E8654A;">
+                          Read Guide &rarr;
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT / WHY TRUST THIS GUIDE
+       ============================================================ -->
+  <section class="py-16 md:py-24" style="background: linear-gradient(160deg, #1A2332 0%, #0D7377 100%);">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6" style="font-family: var(--font-serif);">
+        Why Trust This Guide?
+      </h2>
+      <p class="text-lg text-white/80 mb-8 leading-relaxed">
+        I am Scott, and I have been exploring Texas for years. Every destination on this site is somewhere I have actually visited. You will find real prices, honest opinions, and practical tips -- not recycled content from a press release. If a place is overhyped, I will tell you. If a hidden gem deserves more attention, you will hear about it here first.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="p-4">
+          <div class="text-3xl mb-2">📍</div>
+          <h3 class="text-white font-bold mb-1">Been There</h3>
+          <p class="text-white/60 text-sm">Every guide is based on real visits, not desk research.</p>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl mb-2">💰</div>
+          <h3 class="text-white font-bold mb-1">Real Prices</h3>
+          <p class="text-white/60 text-sm">Actual costs from recent trips so you can budget accurately.</p>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl mb-2">🗺️</div>
+          <h3 class="text-white font-bold mb-1">Local Picks</h3>
+          <p class="text-white/60 text-sm">The spots locals love, not just the tourist traps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EMAIL CAPTURE
+       ============================================================ -->
+  <section class="py-16 md:py-24" style="background-color: #F5F0E8;">
+    <div class="max-w-3xl mx-auto px-6">
+      <EmailCapture
+        leadMagnet="Get the Free Texas Travel Starter Guide"
+        description="Everything you need to plan your Texas road trip -- packed into one guide."
+        bullets={[
+          'Region-by-region highlights and best times to visit',
+          'Budget breakdowns for every travel style',
+          'BBQ trail map with our top picks across the state',
+          'Practical tips: driving distances, weather, and what to pack',
+        ]}
+        guideTag="homepage-texas"
+      />
+    </div>
+  </section>
+
+</BaseLayout>

@@ -1,0 +1,74 @@
+{
+  "name": "Hill Country Family Trip",
+  "subtitle": "Austin, Fredericksburg & San Antonio",
+  "dates": "Mar 15–19, 2026",
+  "days": [
+    {
+      "day": 1,
+      "title": "Arrive in Austin",
+      "activities": [
+        {"id": "a1", "time": "10:00", "title": "Arrive at Austin-Bergstrom Airport", "description": "Pick up rental car", "type": "transport", "lat": 30.1975, "lng": -97.6664, "status": "confirmed"},
+        {"id": "a2", "time": "12:00", "title": "Lunch at Franklin Barbecue", "description": "World-famous BBQ", "type": "food", "lat": 30.2701, "lng": -97.7313, "status": "confirmed"},
+        {"id": "a3", "time": "14:00", "title": "Texas State Capitol Tour", "description": "Free guided tours available", "type": "sightseeing", "lat": 30.2747, "lng": -97.7404, "status": "confirmed"},
+        {"id": "a4", "time": "17:00", "title": "Walk South Congress Avenue", "description": "Shopping and street food", "type": "sightseeing", "lat": 30.2502, "lng": -97.7498, "status": "confirmed"}
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Austin to Fredericksburg",
+      "activities": [
+        {"id": "b1", "time": "09:00", "title": "Kayak Lady Bird Lake", "description": "Rent kayaks downtown", "type": "activity", "lat": 30.2621, "lng": -97.7514, "status": "confirmed"},
+        {"id": "b2", "time": "12:00", "title": "Drive to Fredericksburg", "description": "80-minute scenic drive", "type": "transport", "lat": 30.2752, "lng": -98.8720, "status": "confirmed"},
+        {"id": "b3", "time": "14:00", "title": "Wine tasting on 290 Wine Trail", "description": "Visit 2-3 wineries", "type": "activity", "lat": 30.2650, "lng": -98.7500, "status": "confirmed"},
+        {"id": "b4", "time": "18:00", "title": "Dinner on Main Street", "description": "German-Texas fusion cuisine", "type": "food", "lat": 30.2752, "lng": -98.8720, "status": "confirmed"}
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Enchanted Rock & Hill Country",
+      "activities": [
+        {"id": "c1", "time": "08:00", "title": "Hike Enchanted Rock", "description": "Summit the pink granite dome", "type": "activity", "lat": 30.5057, "lng": -98.8198, "status": "confirmed"},
+        {"id": "c2", "time": "12:00", "title": "Lunch in Luckenbach", "description": "Burgers at the general store", "type": "food", "lat": 30.1788, "lng": -98.7290, "status": "confirmed"},
+        {"id": "c3", "time": "14:00", "title": "Drive to New Braunfels", "description": "Through the Hill Country", "type": "transport", "lat": 29.7030, "lng": -98.1245, "status": "confirmed"},
+        {"id": "c4", "time": "16:00", "title": "Explore Gruene Historic District", "description": "Shop and visit Gruene Hall", "type": "sightseeing", "lat": 29.7378, "lng": -98.1054, "status": "confirmed"}
+      ]
+    },
+    {
+      "day": 4,
+      "title": "River Day",
+      "activities": [
+        {"id": "d1", "time": "09:00", "title": "Float the Comal River", "description": "Rent tubes for the family", "type": "activity", "lat": 29.7100, "lng": -98.1150, "status": "confirmed"},
+        {"id": "d2", "time": "13:00", "title": "Lunch at Gristmill Restaurant", "description": "Overlooking the Guadalupe River", "type": "food", "lat": 29.7375, "lng": -98.1050, "status": "confirmed"},
+        {"id": "d3", "time": "15:00", "title": "Natural Bridge Caverns", "description": "Underground cave tour", "type": "activity", "lat": 29.6925, "lng": -98.3425, "status": "confirmed"},
+        {"id": "d4", "time": "18:00", "title": "Drive to San Antonio", "description": "45-minute drive south", "type": "transport", "lat": 29.4241, "lng": -98.4936, "status": "confirmed"}
+      ]
+    },
+    {
+      "day": 5,
+      "title": "San Antonio & Departure",
+      "activities": [
+        {"id": "e1", "time": "09:00", "title": "Visit the Alamo", "description": "Texas history landmark", "type": "sightseeing", "lat": 29.4260, "lng": -98.4861, "status": "confirmed"},
+        {"id": "e2", "time": "11:00", "title": "Walk the River Walk", "description": "Boat tour and shopping", "type": "sightseeing", "lat": 29.4230, "lng": -98.4890, "status": "confirmed"},
+        {"id": "e3", "time": "13:00", "title": "Lunch at Mi Tierra", "description": "Iconic Tex-Mex restaurant", "type": "food", "lat": 29.4245, "lng": -98.4944, "status": "confirmed"},
+        {"id": "e4", "time": "15:00", "title": "Depart from San Antonio", "description": "Drop off rental car at SAT airport", "type": "transport", "lat": 29.5337, "lng": -98.4698, "status": "confirmed"}
+      ]
+    }
+  ],
+  "weather": [
+    {"day": 1, "high": 78, "low": 55, "condition": "sunny", "icon": "sun"},
+    {"day": 2, "high": 75, "low": 52, "condition": "partly cloudy", "icon": "cloud-sun"},
+    {"day": 3, "high": 80, "low": 58, "condition": "sunny", "icon": "sun"},
+    {"day": 4, "high": 82, "low": 60, "condition": "sunny", "icon": "sun"},
+    {"day": 5, "high": 77, "low": 54, "condition": "partly cloudy", "icon": "cloud-sun"}
+  ],
+  "contacts": [
+    {"id": "c1", "name": "Austin CVB", "phone": "+1-512-478-0098", "type": "tourism"},
+    {"id": "c2", "name": "Fredericksburg CVB", "phone": "+1-830-997-6523", "type": "tourism"}
+  ],
+  "group": [
+    {"id": "g1", "name": "Scott", "role": "organizer", "avatar": ""},
+    {"id": "g2", "name": "Family", "role": "traveler", "avatar": ""}
+  ],
+  "notifications": [],
+  "changeLog": []
+}
