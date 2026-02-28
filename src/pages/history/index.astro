@@ -1,0 +1,282 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Texas History', url: '/history/' },
+];
+
+const pageTitle = 'Texas History — From the Alamo to the Space Age and Beyond';
+const pageDescription = 'Explore the sweeping history of Texas — Native peoples, Spanish missions, the Republic of Texas, the Alamo, cattle drives, oil booms, NASA, and the events that shaped the Lone Star State.';
+
+interface TopicSection {
+  id: string;
+  icon: string;
+  title: string;
+  gradient: string;
+  items: { label: string; text: string }[];
+}
+
+const topics: TopicSection[] = [
+  {
+    id: 'native-spanish',
+    icon: '🏛️',
+    title: 'Native Peoples & Spanish Missions',
+    gradient: 'linear-gradient(135deg, #5D4037 0%, #8D6E63 100%)',
+    items: [
+      { label: 'Texas\'s First Peoples', text: 'Humans have lived in Texas for at least 16,000 years. The Comanche dominated the southern Great Plains as master horsemen and fearsome warriors. The Caddo built sophisticated agricultural communities in East Texas. The Karankawa lived along the Gulf Coast. The Apache ranged across West Texas. The Tonkawa inhabited Central Texas. The Wichita farmed and traded in North Texas. Spanish colonization, disease, and eventually Anglo settlement devastated these nations. The Comanche resistance was the last and fiercest — they weren\'t fully subdued until the 1870s.' },
+      { label: 'Spanish Missions — The Alamo\'s Origins', text: 'Spain established a chain of Catholic missions across Texas in the 17th-18th centuries to convert Native peoples and assert territorial claims. San Antonio\'s five missions — including the Alamo (Mission San Antonio de Valero, founded 1718) — form a UNESCO World Heritage Site. Mission San José is the "Queen of the Missions" with its ornate stone facade and restored granary. The missions were self-sustaining communities with churches, workshops, farms, and irrigation systems. Walking the Mission Trail in San Antonio covers 300 years of history in an afternoon.' },
+      { label: 'The Camino Real', text: 'El Camino Real de los Tejas was the royal road connecting Spanish Texas to Mexico City — a 2,500-mile route that served as the primary highway for missionaries, soldiers, and settlers for over 200 years. Sections of the road are preserved as a National Historic Trail. The Camino Real passed through Nacogdoches (the oldest town in Texas, founded 1779), San Antonio, and Laredo. The road shaped Texas\'s settlement patterns and remains visible in modern highways that follow its route.' },
+      { label: 'French Intrusion — La Salle\'s Colony', text: 'In 1685, French explorer René-Robert Cavelier, Sieur de La Salle, accidentally established a colony at Matagorda Bay while searching for the mouth of the Mississippi River. Fort Saint Louis lasted only four years before disease, hostile Karankawa, and internal mutiny destroyed it. But La Salle\'s intrusion panicked Spain into accelerating Texas settlement. The archaeological site of Fort Saint Louis was discovered in 1996 and yielded a treasure trove of French artifacts, including one of La Salle\'s ships, La Belle, now preserved at the Bullock Texas State History Museum in Austin.' },
+    ],
+  },
+  {
+    id: 'republic',
+    icon: '⭐',
+    title: 'The Republic of Texas & the Alamo',
+    gradient: 'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
+    items: [
+      { label: 'The Texas Revolution (1835-1836)', text: 'American settlers in Mexican Texas (the "Texians") grew increasingly hostile to Mexican centralist rule under President Santa Anna. The revolution began on October 2, 1835, at the Battle of Gonzales, where Texians refused to surrender a cannon, flying a flag that read "Come and Take It." The revolution produced the two defining moments of Texas mythology: the fall of the Alamo and the decisive victory at San Jacinto. Texas declared independence on March 2, 1836 — and won it 46 days later.' },
+      { label: 'The Alamo — March 1836', text: 'The Battle of the Alamo is the foundational myth of Texas identity. For 13 days in February-March 1836, approximately 200 defenders — including William B. Travis, Jim Bowie, and Davy Crockett — held the Alamo mission against General Santa Anna\'s army of thousands. On March 6, the Mexican forces overran the walls. All defenders were killed. "Remember the Alamo!" became the rallying cry that fueled the Texian victory at San Jacinto six weeks later. The Alamo stands in downtown San Antonio — smaller than you expect, but the weight of history is palpable.' },
+      { label: 'The Battle of San Jacinto', text: 'On April 21, 1836, Sam Houston\'s Texian army surprised Santa Anna\'s forces at San Jacinto, near present-day Houston. The battle lasted just 18 minutes. The Texians killed over 600 Mexican soldiers and captured Santa Anna himself the next day. The Treaties of Velasco secured Texas independence. The San Jacinto Monument (567 feet tall, taller than the Washington Monument) marks the battlefield. The Battleship Texas, a WWI-era dreadnought, is moored nearby. Together they form the San Jacinto Battleground State Historic Site.' },
+      { label: 'The Republic of Texas (1836-1845)', text: 'For nine years, Texas was an independent nation — the Republic of Texas — with its own president (Sam Houston, then Mirabeau Lamar), currency, and foreign embassies. The republic\'s borders extended far beyond today\'s Texas, claiming parts of New Mexico, Oklahoma, Kansas, Colorado, and Wyoming. Houston served as the capital, then Austin was chosen in 1839. The republic struggled financially and faced ongoing conflict with Mexico and Native nations. Annexation by the United States in 1845 ended the republic but began the Mexican-American War.' },
+    ],
+  },
+  {
+    id: 'civil-war-cattle',
+    icon: '🤠',
+    title: 'Civil War, Cattle Drives & the Wild West',
+    gradient: 'linear-gradient(135deg, #E65100 0%, #FF9800 100%)',
+    items: [
+      { label: 'Texas & the Civil War', text: 'Texas seceded from the Union on February 1, 1861, and joined the Confederacy. Governor Sam Houston — who opposed secession — was removed from office for refusing to swear loyalty to the Confederacy. Texas supplied soldiers and cotton to the Confederate cause but saw relatively little combat on its soil. The last battle of the Civil War was fought at Palmito Ranch near Brownsville on May 13, 1865 — more than a month after Lee\'s surrender. Juneteenth (June 19, 1865) marks the day enslaved people in Galveston were finally told of their freedom.' },
+      { label: 'Juneteenth — Born in Texas', text: 'On June 19, 1865, Union General Gordon Granger arrived in Galveston and announced General Order No. 3, informing the enslaved people of Texas that they were free — two and a half years after the Emancipation Proclamation. The date became known as Juneteenth and was celebrated by Black Texans with prayer, feasting, and community gatherings. It became a Texas state holiday in 1980 and a federal holiday in 2021. Galveston\'s Juneteenth celebrations remain the most historically significant — the Ashton Villa, where the order was read, still stands.' },
+      { label: 'The Great Cattle Drives', text: 'After the Civil War, Texas was overrun with 5 million longhorn cattle and no markets. Cowboys drove herds north on the Chisholm Trail and Western Trail to railheads in Kansas — Abilene, Dodge City, and Wichita. The cattle drives (1866-1886) created the cowboy mythology that defines Texas to this day. Fort Worth became "Cowtown" — the last major stop before the open range. The Fort Worth Stockyards still host a daily cattle drive (Longhorns down East Exchange Avenue) and preserve the saloon-and-stockyard culture of the trail era.' },
+      { label: 'The Comanche Wars', text: 'The Comanche were the dominant military power on the Southern Plains for over 150 years — their empire (the "Comancheria") stretched from Kansas to northern Mexico. They were master horsemen who resisted Spanish, Mexican, Texan, and American encroachment with devastating effectiveness. Quanah Parker, the last Comanche chief, led the final resistance before surrendering in 1875. The Red River War (1874-75) ended Comanche freedom on the plains. S.C. Gwynne\'s book "Empire of the Summer Moon" tells their story. The Comanche Nation today is headquartered in Lawton, Oklahoma.' },
+    ],
+  },
+  {
+    id: 'oil-boom',
+    icon: '🛢️',
+    title: 'Oil Boom & the Making of Modern Texas',
+    gradient: 'linear-gradient(135deg, #1B5E20 0%, #388E3C 100%)',
+    items: [
+      { label: 'Spindletop — January 10, 1901', text: 'On January 10, 1901, the Lucas Gusher at Spindletop Hill near Beaumont erupted — shooting oil 150 feet into the air for nine days before it could be capped. Spindletop produced more oil in one day than the rest of the world\'s wells combined. The gusher launched the Texas oil industry and transformed the state from a rural agricultural economy into an energy powerhouse. Companies born from Spindletop include Texaco, Gulf Oil, and Humble Oil (now ExxonMobil). The Spindletop-Gladys City Boomtown Museum recreates the chaos of the original boomtown.' },
+      { label: 'The Oil Cities — Houston, Dallas, Midland', text: 'Oil money built modern Texas. Houston became the energy capital of the world — home to more oil company headquarters than any other city. Dallas grew as the financial and banking center for oil wealth. Midland-Odessa in the Permian Basin became the heart of West Texas oil country (and produced two US presidents — both George Bushes grew up in Midland). The Permian Basin remains the most productive oil field in the Western Hemisphere. The Petroleum Museum in Midland tells the story of the industry that made Texas rich.' },
+      { label: 'The Texas Oil Culture', text: 'Oil didn\'t just make Texas wealthy — it created a culture. The larger-than-life wildcatter (independent oil prospector) became a Texas archetype. Oil money built universities (Rice, SMU), museums (Menil Collection, Kimbell Art Museum), and entire skylines. The "Texas rich" stereotype — big hats, big boots, big Cadillacs — traces directly to oil wealth. The 1980s TV show "Dallas" (filmed at Southfork Ranch, now a tourist attraction in Parker) dramatized the culture. Even as Texas diversifies its economy, oil remains central to the state\'s identity and politics.' },
+      { label: 'The Permian Basin Today', text: 'The Permian Basin in West Texas and southeastern New Mexico is experiencing its third major boom — driven by horizontal drilling and hydraulic fracturing (fracking) technology. The basin produces over 5 million barrels of oil per day, making it one of the most productive oil regions in the world. Midland and Odessa are boomtowns again — housing shortages, six-figure roughneck salaries, and trucks everywhere. Whether you view it as economic miracle or environmental concern, the Permian Basin is reshaping Texas and American energy in real time.' },
+    ],
+  },
+  {
+    id: 'space-jfk',
+    icon: '🚀',
+    title: 'NASA, JFK & the Space Age',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #4DB6AC 100%)',
+    items: [
+      { label: 'NASA & the Johnson Space Center', text: 'Houston has been Mission Control since 1961 — the voice on the other end of "Houston, we have a problem." The Johnson Space Center (JSC) in Clear Lake manages all crewed US spaceflight — Mercury, Gemini, Apollo, Space Shuttle, and the International Space Station were all controlled from Houston. Space Center Houston, the official visitor center, has the Saturn V rocket, Apollo mission artifacts, and behind-the-scenes tours of Mission Control and astronaut training facilities. "Houston" was the first word spoken from the moon.' },
+      { label: 'The Apollo Program & the Moon Landing', text: 'On July 20, 1969, Apollo 11 astronauts Neil Armstrong and Buzz Aldrin landed on the moon while Michael Collins orbited above — all under Houston\'s direction. The Apollo program (1961-1972) was NASA\'s crowning achievement, landing 12 astronauts on the lunar surface. The original Mission Control room (now a National Historic Landmark) has been restored to its 1969 appearance. The feeling of standing in the room where humanity\'s greatest exploration achievement was managed is extraordinary — this is where the 20th century reached its highest point.' },
+      { label: 'JFK in Dallas — November 22, 1963', text: 'President John F. Kennedy was assassinated in Dallas on November 22, 1963, while riding in a motorcade through Dealey Plaza. The event traumatized the nation and cast a long shadow over Dallas that took decades to lift. The Sixth Floor Museum at Dealey Plaza (in the former Texas School Book Depository building, from which Lee Harvey Oswald fired) presents the life and death of JFK with remarkable even-handedness. The grassy knoll, the X on the road marking the fatal shot, and the museum are Dallas\'s most visited historical site.' },
+      { label: 'SpaceX & the Texas Space Coast', text: 'Texas\'s space story continues. SpaceX operates its Starbase facility at Boca Chica Beach near Brownsville — where the massive Starship rocket is being developed and tested. SpaceX chose Texas for its proximity to the equator (better launch trajectory), vast empty land, and business-friendly climate. Blue Origin (Jeff Bezos\'s company) also has facilities in Texas. The Johnson Space Center remains the nerve center of NASA\'s crewed spaceflight program. Texas is where America\'s space past and future converge.' },
+    ],
+  },
+  {
+    id: 'heritage-sites',
+    icon: '🏛️',
+    title: 'Historical Sites You Can Visit Today',
+    gradient: 'linear-gradient(135deg, #6A1B9A 0%, #AB47BC 100%)',
+    items: [
+      { label: 'The Alamo — San Antonio', text: 'The Alamo is the most visited site in Texas — a modest stone church in downtown San Antonio that bears no resemblance to the sprawling fortress of Hollywood movies. The Long Barrack Museum displays artifacts from the 1836 battle. The new Alamo Visitor Center and Museum (opened 2024) dramatically expanded the interpretation of the site. Admission is free. The Alamo is most powerful in the early morning before crowds arrive — standing in the chapel where Travis, Bowie, and Crockett died is a moment of genuine historical weight.' },
+      { label: 'San Jacinto Battleground', text: 'The San Jacinto Monument (567 feet tall) marks the site of the 18-minute battle that won Texas independence. The monument\'s observation deck offers panoramic views of the battlefield and Houston Ship Channel. The museum inside displays artifacts from the revolution, including Santa Anna\'s personal effects. The Battleship Texas, a WWI-era dreadnought that also participated in D-Day, is moored in the adjacent ship channel. The battleground is 20 miles east of downtown Houston.' },
+      { label: 'The Bullock Texas State History Museum — Austin', text: 'The Bullock Museum is the definitive Texas history museum — three floors covering Native peoples, Spanish colonization, the revolution, cattle drives, oil booms, and the space program. The highlight is La Belle, one of La Salle\'s 17th-century French ships, excavated from Matagorda Bay and displayed with its original hull and artifacts. The museum is on Congress Avenue, a block from the State Capitol. The IMAX theater shows Texas-related films. Budget 3-4 hours for the full experience.' },
+      { label: 'Fort Worth Stockyards', text: 'The Fort Worth Stockyards is the best-preserved cattle industry district in the country — brick streets, wooden corrals, saloons, and daily Longhorn cattle drives down East Exchange Avenue. The Stockyards were the economic engine of "Cowtown" when Fort Worth was the last major stop on the Chisholm Trail. Today they\'re a living history district with rodeos (Cowtown Coliseum, Friday-Saturday nights), honky-tonks (Billy Bob\'s Texas, the "world\'s largest honky-tonk"), and Western shops. The Texas Cowboy Hall of Fame is here.' },
+      { label: 'Big Bend & the Borderlands', text: 'Big Bend National Park preserves a vast swath of the Chihuahuan Desert and the Rio Grande canyon country where Texas meets Mexico. The region\'s history stretches from prehistoric rock art in Seminole Canyon to 19th-century border crossings at Boquillas. The ghost town of Terlingua was a mercury mining center. The Barton Warnock Visitor Center covers the natural and human history of the Big Bend. The remoteness of West Texas — hours from any major city — has preserved both the landscape and its stories in a way that more accessible places cannot.' },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  breadcrumbs={breadcrumbs}
+>
+  <header class="hist-hero">
+    <div class="hist-hero-gradient"></div>
+    <div class="hist-hero-noise"></div>
+    <div class="hist-hero-content">
+      <h1 class="hist-hero-title">Texas History & Heritage</h1>
+      <p class="hist-hero-subtitle">From Comanche warriors on the plains to the Alamo's last stand, from Spindletop's gusher to the Apollo moon landing — the epic story of the Lone Star State.</p>
+      <div class="hist-hero-meta">
+        <div class="hist-hero-meta-item"><span class="hist-hero-meta-label">Eras</span><span class="hist-hero-meta-value">6</span></div>
+        <div class="hist-hero-meta-item"><span class="hist-hero-meta-label">Timeline</span><span class="hist-hero-meta-value">16,000+ Years</span></div>
+        <div class="hist-hero-meta-item"><span class="hist-hero-meta-label">UNESCO Sites</span><span class="hist-hero-meta-value">1</span></div>
+      </div>
+    </div>
+    <div class="hist-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <div class="container-content"><Breadcrumb items={breadcrumbs} /></div>
+
+  <section class="hist-personal reveal">
+    <div class="container-content">
+      <blockquote class="hist-personal-quote">
+        <p>I thought I knew Texas history from movies — the Alamo, cowboys, oil wells. Then I stood in the Sixth Floor Museum in Dallas looking down at the X on the road, walked the Spanish missions in San Antonio, and held a piece of the Saturn V rocket at Space Center Houston. Texas history isn't one story — it's dozens, layered on top of each other across a state the size of France. Every region has its own chapter. This guide covers the events and places that shaped the most mythologized state in America.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="hist-quicknav reveal">
+    <div class="container-content">
+      <div class="hist-quicknav-grid">
+        {topics.map((t) => (
+          <a href={`#${t.id}`} class="hist-quicknav-chip">
+            <span class="hist-quicknav-icon">{t.icon}</span>
+            <span class="hist-quicknav-label">{t.title.split(' ').slice(0, 2).join(' ')}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {topics.map((topic) => (
+    <section class="hist-topic reveal" id={topic.id}>
+      <div class="container-content">
+        <div class="hist-topic-header" style={`background: ${topic.gradient};`}>
+          <div class="hist-topic-header-inner">
+            <span class="hist-topic-icon">{topic.icon}</span>
+            <h2 class="hist-topic-title">{topic.title}</h2>
+            <span class="hist-topic-count">{topic.items.length} topics</span>
+          </div>
+        </div>
+        <div class="hist-tip-grid">
+          {topic.items.map((item) => (
+            <div class="hist-tip-card">
+              <h3 class="hist-tip-label">{item.label}</h3>
+              <p class="hist-tip-text" set:html={item.text} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="hist-cta-section reveal">
+    <div class="container-content">
+      <div class="hist-cta-card">
+        <h2 class="hist-cta-heading">Plan a Texas Heritage Trip</h2>
+        <p class="hist-cta-text">Tell our AI planner you're interested in history and it will build a Texas itinerary around the Alamo, battlefields, museums, and the stories that made the Lone Star State.</p>
+        <a href="/plan/" class="hist-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={[
+    { question: "What happened at the Alamo?", answer: "In February-March 1836, approximately 200 Texian defenders held the Alamo mission in San Antonio against Mexican General Santa Anna's army for 13 days. On March 6, the Mexican forces overran the walls, killing all defenders including William B. Travis, Jim Bowie, and Davy Crockett. 'Remember the Alamo!' became the rallying cry that fueled the Texian victory at San Jacinto six weeks later, winning Texas independence." },
+    { question: "Was Texas its own country?", answer: "Yes — Texas was an independent republic from 1836 to 1845. The Republic of Texas had its own president (Sam Houston), currency, and foreign embassies. The republic struggled financially and faced ongoing conflict with Mexico. Texas was annexed by the United States in 1845, triggering the Mexican-American War." },
+    { question: "What is Juneteenth?", answer: "Juneteenth (June 19) marks the day in 1865 when Union General Gordon Granger arrived in Galveston, Texas, and announced that enslaved people were free — two and a half years after the Emancipation Proclamation. It became a Texas state holiday in 1980 and a federal holiday in 2021. Galveston's celebrations are the most historically significant." },
+    { question: "What was Spindletop?", answer: "On January 10, 1901, the Lucas Gusher at Spindletop Hill near Beaumont erupted, producing more oil in one day than all other world wells combined. Spindletop launched the Texas oil industry, transforming the state from rural agricultural to energy powerhouse. Companies born from Spindletop include Texaco, Gulf Oil, and what became ExxonMobil." },
+    { question: "Why is NASA in Houston?", answer: "The Johnson Space Center was established in Houston in 1961 to manage America's crewed spaceflight programs. Houston has been Mission Control for every crewed NASA mission since Mercury, including the Apollo moon landings. The first word spoken from the moon was 'Houston.' Space Center Houston is the official visitor center with Saturn V rockets and Mission Control tours." },
+    { question: "What are the most important historical sites in Texas?", answer: "The Alamo (San Antonio), San Jacinto Battleground (Houston), the Sixth Floor Museum at Dealey Plaza (Dallas), San Antonio Missions (UNESCO World Heritage Site), Fort Worth Stockyards, Space Center Houston, the Bullock Texas State History Museum (Austin), Big Bend National Park, and Galveston's historic district. Texas has more historical markers than any other state." },
+  ]} />
+
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Texas Heritage Trail Guide"
+      description="A printable PDF guide to Texas's most significant historical sites — from the Alamo to NASA, with logistics, hours, and insider tips."
+      bullets={[
+        'San Antonio Missions walking guide with all 5 UNESCO sites',
+        'Texas Revolution trail from Gonzales to San Jacinto',
+        'Space Center Houston visitor guide with behind-the-scenes tips',
+        'Timeline of key Texas events with what to see at each location',
+      ]}
+      guideTag="pillar-history"
+    />
+  </div>
+
+  <section class="hist-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="hist-crosslinks-heading">Explore More</h3>
+      <div class="hist-crosslinks-grid">
+        <a href="/cuisine/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#127860;</span>
+          <span class="hist-crosslink-label">Texas Cuisine</span>
+          <span class="hist-crosslink-desc">BBQ, Tex-Mex, and the food of the Lone Star State</span>
+        </a>
+        <a href="/practical/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#127890;</span>
+          <span class="hist-crosslink-label">Travel Tips</span>
+          <span class="hist-crosslink-desc">Driving distances, budget, and what to know</span>
+        </a>
+        <a href="/destinations/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#127956;</span>
+          <span class="hist-crosslink-label">All Destinations</span>
+          <span class="hist-crosslink-desc">59 destinations across 9 regions</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver((entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else { document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible')); }
+</script>
+
+<style>
+  .hist-hero { position: relative; min-height: 55vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; background: linear-gradient(135deg, #5D4037 0%, #1565C0 50%, #0D7377 100%); }
+  .hist-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%); }
+  .hist-hero-noise { position: absolute; inset: 0; z-index: 2; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E"); pointer-events: none; }
+  .hist-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .hist-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .hist-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .hist-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .hist-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .hist-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.5); }
+  .hist-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .hist-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255, 255, 255, 0.35); text-align: center; animation: histBounce 2s ease-in-out infinite; }
+  @keyframes histBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+  .hist-personal { padding-block: var(--space-8); }
+  .hist-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid var(--color-warm-coral); background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .hist-personal-quote p { font-size: var(--text-body); color: var(--color-heading); line-height: var(--leading-body); font-style: italic; margin-bottom: var(--space-3); }
+  .hist-personal-quote cite { font-size: var(--text-caption); color: var(--color-warm-coral); font-weight: var(--weight-semibold); font-style: normal; }
+  .hist-quicknav { padding: 0 0 var(--space-6); }
+  .hist-quicknav-grid { display: flex; justify-content: center; gap: var(--space-2); flex-wrap: wrap; }
+  .hist-quicknav-chip { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 40px; font-size: 0.8rem; font-weight: var(--weight-medium); color: var(--color-slate); text-decoration: none; transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+  .hist-quicknav-chip:hover { background: var(--color-sky); color: var(--color-ocean-teal); transform: translateY(-2px); }
+  .hist-quicknav-icon { font-size: 1rem; }
+  .hist-quicknav-label { white-space: nowrap; }
+  .hist-topic { padding: var(--space-4) 0 var(--space-6); scroll-margin-top: 80px; }
+  .hist-topic-header { position: relative; border-radius: 20px; padding: var(--space-5) var(--space-6); margin-bottom: var(--space-5); overflow: hidden; }
+  .hist-topic-header-inner { position: relative; z-index: 1; display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+  .hist-topic-icon { font-size: 1.6rem; }
+  .hist-topic-title { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: var(--weight-bold); color: #fff; margin: 0; line-height: 1.2; flex: 1; min-width: 200px; }
+  .hist-topic-count { font-size: 0.7rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.1); padding: 4px 12px; border-radius: 20px; }
+  .hist-tip-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+  @media (max-width: 768px) { .hist-tip-grid { grid-template-columns: 1fr; } }
+  .hist-tip-card { background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 14px; padding: var(--space-5); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hist-tip-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+  .hist-tip-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0 0 var(--space-2); line-height: 1.3; }
+  .hist-tip-text { font-size: 0.85rem; color: var(--color-slate); line-height: 1.65; margin: 0; }
+  .hist-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .hist-cta-card { background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .hist-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .hist-cta-text { font-size: 1rem; color: rgba(255, 255, 255, 0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .hist-cta-button { display: inline-block; background: var(--color-warm-coral); color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .hist-cta-button:hover { background: #d4553b; transform: translateY(-2px); }
+  .hist-crosslinks { padding: 0 0 var(--space-10); }
+  .hist-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .hist-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  @media (max-width: 640px) { .hist-crosslinks-grid { grid-template-columns: 1fr; } }
+  .hist-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hist-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+  .hist-crosslink-icon { font-size: 1.8rem; }
+  .hist-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
+  .hist-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
+  @media (max-width: 640px) { .hist-hero { min-height: 50vh; padding: 0 var(--space-4) 40px; } .hist-hero-meta { gap: var(--space-4); } .hist-scroll-hint { display: none; } .hist-topic-header { padding: var(--space-4) var(--space-4); } }
+</style>

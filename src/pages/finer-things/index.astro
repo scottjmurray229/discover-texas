@@ -1,0 +1,396 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'The Finer Things', url: '/finer-things/' },
+];
+
+const pageTitle = 'The Finer Things — Texas Luxury Hotels, Fine Dining & Premium Experiences 2026';
+const pageDescription = 'Austin boutique hotels, San Antonio River Walk fine dining, Dallas arts district, Hill Country wine, luxury ranch stays, Marfa desert retreats, and elevated Texas moments.';
+
+interface TopicSection {
+  id: string;
+  icon: string;
+  title: string;
+  gradient: string;
+  items: { label: string; text: string; link?: string }[];
+}
+
+const topics: TopicSection[] = [
+  {
+    id: 'luxury-hotels',
+    icon: '🏨',
+    title: 'Luxury Hotels & Boutique Stays',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #D4A574 100%)',
+    items: [
+      { label: 'Hotel Saint Cecilia, Austin', link: '/destinations/austin/', text: 'The most stylish hotel in Texas, period. A rock-and-roll-meets-literary hideaway on South Congress, built around a 1888 Victorian estate with bungalows, poolside suites, and studios. Rooms from $500/night. No restaurant, no spa, no conference rooms — just impeccable design, a vinyl library, a stunning pool, and the kind of intentional simplicity that costs a fortune to achieve. The turntable in every room comes with a curated vinyl collection. Liz Lambert created something here that feels like staying at a very cool friend\'s impossibly beautiful house.' },
+      { label: 'Hotel Driskill, Austin', link: '/destinations/austin/', text: 'Austin\'s grand dame since 1886 — a Romanesque-revival landmark on Sixth Street with cattle baron history and Texas-sized character. Rooms from $350/night. The <strong>Driskill Bar</strong> is where Austin\'s political class has been making deals for over a century — dark wood, leather chairs, good whiskey. The lobby alone is worth a walk-through — marble floors, stained glass, and oil paintings of cattle drives. It\'s been Austin\'s power hotel since before the tech boom, and it still commands respect.' },
+      { label: 'The Hotel Emma, San Antonio', link: '/destinations/san-antonio/', text: 'A 19th-century brewhouse transformed into one of the most spectacular hotels in the American South, at the Pearl District on the River Walk. Rooms from $400/night. The industrial architecture — original brew kettles, exposed steel, massive windows — blends with luxury finishes in a way that feels completely original. <strong>Supper</strong> (the hotel restaurant) serves elevated Southern cuisine ($45–75pp). The Pearl District around it is San Antonio\'s best food and shopping neighborhood. This hotel single-handedly elevated San Antonio\'s luxury hospitality scene.' },
+      { label: 'Commodore Perry Estate, Austin', link: '/destinations/austin/', text: 'Auberge Resorts\' Texas property — a 1928 Italian Renaissance estate on 10 acres along the Colorado River in Austin. Rooms from $600/night. The <strong>Lutie\'s Garden Restaurant</strong> serves New American cuisine in a garden setting ($55–85pp) that rivals any restaurant in the city. The grounds are beautiful — manicured gardens, a pool pavilion, and a croquet lawn. It\'s a five-minute drive from downtown but feels like a European country estate. The attention to detail here is extraordinary — from the custom Malin+Goetz amenities to the hand-selected art collection.' },
+      { label: 'Marfa Desert Retreats', link: '/destinations/marfa/', text: 'Marfa doesn\'t do luxury in the conventional sense — there are no Ritz-Carltons in the high desert. But the luxury here is in the experience. <strong>El Cosmico</strong> ($150–350/night) offers renovated vintage trailers, Sioux-style tepees, and safari tents on a 21-acre compound — it\'s glamping meets art installation. <strong>The Hotel Saint George</strong> ($250–400/night) is the more traditional option — minimalist design, a rooftop pool, and a restaurant with locally sourced cuisine. The real luxury in Marfa is the sky — the Milky Way is visible on clear nights, and the silence is absolute.' },
+      { label: 'Fort Worth Stockyards', link: '/destinations/fort-worth/', text: 'The <strong>Hotel Drover</strong> ($350–600/night) brought luxury to the Stockyards district — a modern Western hotel with a 97 West restaurant serving ranch-to-table cuisine, a pool, and design that honors cowboy heritage without being kitschy. <strong>The Bowie House</strong> ($300–500/night) is the boutique alternative — 12 suites, each individually designed with Texas art and custom furniture. Both are walking distance to the twice-daily cattle drive, the world\'s largest honky-tonk (Billy Bob\'s), and the best boot shopping in Texas.' },
+    ],
+  },
+  {
+    id: 'fine-dining',
+    icon: '🍽',
+    title: 'Fine Dining',
+    gradient: 'linear-gradient(135deg, #78350F 0%, #D4A574 100%)',
+    items: [
+      { label: 'Uchi, Austin & Dallas', link: '/destinations/austin/', text: 'James Beard Award-winning Japanese farmhouse cuisine by chef Tyson Cole. The Austin original on South Lamar is where it started — omakase ($135 per person) and creative small plates that blend Japanese technique with Texas ingredients. The maguro sashimi with goat cheese and the hama chili is iconic. Dallas location is equally excellent. Reservations are essential — book 2–3 weeks ahead for weekends. The bar seating (no reservation needed) is the insider move — same menu, same kitchen, shorter wait.' },
+      { label: 'Nobu Dallas', link: '/destinations/dallas/', text: 'Nobu Matsuhisa\'s Dallas outpost at the Crescent complex — Japanese-Peruvian fusion in a space that\'s as much about the scene as the food. The black cod miso ($42) is the signature dish at every Nobu, and Dallas delivers it perfectly. Omakase ($200–300 per person), a la carte entrees $35–65. The crowd is Dallas society — dressed up, well-heeled, and there to be seen. The lounge area serves the full menu in a more relaxed setting. Reservations essential for the dining room, walk-ins possible at the bar.' },
+      { label: 'River Walk Premium Dining', link: '/destinations/san-antonio/', text: 'The River Walk has tourist traps and it has genuine fine dining — know the difference. <strong>Biga on the Banks</strong> ($55–85pp) has been the standard-bearer for decades — refined American cuisine with a river-level terrace. <strong>Mixtli</strong> (a few blocks off the river) is a 12-course tasting menu ($185pp) exploring pre-Columbian Mexican cuisine — one of the most unique dining experiences in the state. <strong>Supper at Hotel Emma</strong> in the Pearl District ($45–75pp) serves elevated Southern cuisine in the most beautiful hotel dining room in San Antonio.' },
+      { label: 'Dallas Arts District Dining', link: '/destinations/dallas/', text: 'Dallas\'s Arts District anchors the city\'s fine dining scene. <strong>Flora Street Cafe</strong> ($65–95pp) by Stephan Pyles serves modern Southwestern cuisine. <strong>Bullion</strong> ($60–90pp) does French brasserie in an Art Deco space. <strong>Knife</strong> by John Tesar ($55–95pp) is the premier steakhouse — dry-aged, heritage breeds, and a butcher\'s approach to beef. The Dallas Museum of Art, Nasher Sculpture Center, and AT&T Performing Arts Center are all within walking distance — combine dinner with a show for the ultimate Dallas evening.' },
+      { label: 'Houston Museum District Dining', link: '/destinations/houston/', text: 'Houston is the most underrated food city in America, and the Museum District area has some of the best options. <strong>March</strong> ($65–95pp) serves refined Mediterranean cuisine by chef Felipe Riccio in a sleek Montrose space. <strong>Underbelly Hospitality</strong> (Chris Shepherd\'s restaurant group) explores Houston\'s immigrant food traditions with dishes like Korean braised goat ($38) and Vietnamese-Cajun crawfish. <strong>Pappas Bros. Steakhouse</strong> ($70–120pp) is Houston\'s best steakhouse. The Houston food scene\'s diversity — Vietnamese, Mexican, Indian, Nigerian — at the high end is unmatched in the state.' },
+    ],
+  },
+  {
+    id: 'hill-country-wine',
+    icon: '🍷',
+    title: 'Hill Country Wine & Spirits',
+    gradient: 'linear-gradient(135deg, #4C1D95 0%, #E8654A 100%)',
+    items: [
+      { label: 'Texas Hill Country Wine Trail', text: 'The Texas Hill Country AVA is the second most-visited wine region in America (after Napa), with 50+ wineries between Austin and Fredericksburg. The region excels at Tempranillo, Mourvedre, and Viognier — grapes that love hot days and limestone soil. Tasting fees run $15–30 per person. The drive from Austin to Fredericksburg on US-290 (the "Wine Road") passes through Johnson City and Stonewall with wineries every few miles. Spring (March–May) is the most beautiful season — wildflowers everywhere, including the famous bluebonnet fields. October harvest season is the most festive.' },
+      { label: 'Duchman Family Winery', text: 'The benchmark for serious Texas winemaking, in Driftwood (30 minutes south of Austin). Italian varieties — Vermentino, Aglianico, Montepulciano, Dolcetto — grown in Texas soil. Tasting $15–25. The estate is beautiful — rolling hills, a proper tasting room, and <strong>Trattoria Lisina</strong> next door serves Italian cuisine that pairs perfectly with the wines. The Aglianico is the star — it genuinely competes with Italian versions at a fraction of the price. This is where I send people who say Texas can\'t make real wine.' },
+      { label: 'William Chris Vineyards', text: 'In Hye (between Johnson City and Fredericksburg), William Chris represents the new wave of Texas winemaking — serious, terroir-driven, and unapologetically Texan. Their Mourvèdre and Enchanté (a Rhone-style blend) are excellent. Tasting $20–30. The property is a beautifully restored 1905 farmhouse with a modern tasting room. The Reserve Tasting ($35) in the library is the premium experience — barrel samples and unreleased wines. The winemaker dinners (check their calendar) are among the best events in Texas wine country.' },
+      { label: 'Garrison Brothers Distillery', text: 'Texas\'s first legal bourbon distillery, in Hye on the Wine Road. The <strong>Barrel Proof</strong> and <strong>Balmorhea</strong> bourbon expressions are nationally recognized. Tours ($25–40) include the rick houses, production facility, and a tasting of 4–5 expressions. The property is a working cattle ranch with longhorns grazing near the barrel houses — it doesn\'t get more Texas than this. The Small Batch ($40–60 per bottle) is the everyday sipper; the <strong>Cowboy Bourbon</strong> ($200+) is the collector\'s pick and sells out quickly. Saturdays are the most popular tour day — book ahead.' },
+      { label: 'Premium Wine Experiences', text: 'Beyond the standard tasting room visit, several wineries offer elevated experiences. <strong>Pedernales Cellars</strong> has a reserve tasting in their cave ($35). <strong>Becker Vineyards</strong> in Stonewall offers a lavender field and wine pairing experience during lavender season (June, $40). <strong>Fall Creek Vineyards</strong> runs sunset boat cruises on Lake Buchanan with wine pairings ($75–100 per person). Hire a driver or use a wine tour service ($150–250 per person for full-day tours) — the roads between wineries are beautiful but winding, and you\'ll want to enjoy the tastings properly.' },
+    ],
+  },
+  {
+    id: 'ranch-experiences',
+    icon: '🤠',
+    title: 'Luxury Ranch Stays',
+    gradient: 'linear-gradient(135deg, #065F46 0%, #14B8A6 100%)',
+    items: [
+      { label: 'Wildcatter Ranch, Graham', text: 'A 1,500-acre working ranch in North Texas (90 minutes from Fort Worth) that delivers the quintessential luxury Texas ranch experience. Cabins and suites from $250/night. Horseback riding, trap shooting, archery, hiking, and stargazing — all included or available for small fees. The ranch-to-table restaurant serves steak, game, and smoked meats with produce from the property garden. The pool overlooks a private canyon. This is the place that makes city visitors understand why Texans love the land — it\'s expansive, quiet, and feels genuinely remote.' },
+      { label: 'Cibolo Creek Ranch, Marfa', link: '/destinations/marfa/', text: 'A 30,000-acre ranch in the Chinati Mountains near Marfa — one of the most exclusive retreats in Texas. Three restored historic forts serve as accommodations ($350–800/night). Activities include horseback riding, hiking, stargazing with a resident astronomer, and exploring the ranch\'s own airstrip. The dining room serves multi-course meals with ranch-raised beef. The isolation is the point — no cell service, no WiFi in rooms, just West Texas sky and silence. Supreme Court Justice Antonin Scalia was a regular guest. Reservations book months ahead.' },
+      { label: 'Travaasa Austin', link: '/destinations/austin/', text: 'A luxury experiential resort on 210 acres in the Balcones Canyonlands, 30 minutes from downtown Austin. Rooms from $350/night, all-inclusive packages from $500. Activities range from cooking classes and yoga to mechanical bull riding and archery. The pool complex overlooks the Hill Country. <strong>The Restaurant</strong> serves farm-to-table Texas cuisine ($55–80pp). The all-inclusive option (meals, activities, gratuity included) is the best value and lets you experience everything without thinking about the bill. It\'s a dude ranch for people who want luxury, not dirt.' },
+      { label: 'Championship Golf', text: 'Texas golf is world-class and significantly cheaper than resort courses in Arizona or California. <strong>Barton Creek Resort</strong> in Austin has four courses designed by Fazio, Crenshaw, and Palmer ($150–250 green fees). <strong>La Cantera Resort</strong> in San Antonio has the Palmer Course ($175–275) with Hill Country views. <strong>The Clubs at Houston Oaks</strong> ($200–350) is the premier private-feel public course near Houston. <strong>Dallas National</strong> hosts PGA events. The best value: winter green fees (November–February) drop 30–50% at most courses.' },
+      { label: 'Rooftop Bars with Skyline Views', text: 'Every Texas city has a rooftop scene, and the views are worth dressing up for. <strong>Austin:</strong> Geraldine\'s at Hotel Van Zandt ($16–22 cocktails) overlooks Rainey Street. <strong>Dallas:</strong> Waterproof at the Statler Hotel ($18–24) has a rooftop pool and downtown views. <strong>Houston:</strong> Zaza Hotel\'s rooftop ($16–20) overlooks the Museum District. <strong>San Antonio:</strong> Paramour on the River Walk ($14–18) has the best panoramic view of the city. <strong>Fort Worth:</strong> Reata Downtown ($14–18) has a rooftop terrace overlooking Sundance Square. Texas rooftops are best October through April — summer heat makes outdoor drinking brutal after 6pm.' },
+    ],
+  },
+  {
+    id: 'arts-culture',
+    icon: '🎭',
+    title: 'Arts, Culture & Spa',
+    gradient: 'linear-gradient(135deg, #9D174D 0%, #FB923C 100%)',
+    items: [
+      { label: 'Dallas Arts District', link: '/destinations/dallas/', text: 'The largest contiguous arts district in the nation — 68 acres of museums, theaters, and galleries. The <strong>Dallas Museum of Art</strong> (free admission) has a collection that rivals many East Coast museums. The <strong>Nasher Sculpture Center</strong> ($10) designed by Renzo Piano is a masterpiece of architecture. The <strong>Crow Museum of Asian Art</strong> (free) is a hidden gem. <strong>AT&T Performing Arts Center</strong> hosts opera, ballet, and Broadway touring productions in buildings designed by Foster + Partners and Rem Koolhaas. Combine a museum afternoon with dinner at one of the nearby restaurants for a full Dallas cultural evening.' },
+      { label: 'Houston Museum District', link: '/destinations/houston/', text: 'Nineteen museums within a 1.5-mile radius — the densest museum district in the country. The <strong>Museum of Fine Arts, Houston</strong> ($19) has a world-class collection and a stunning Isamu Noguchi sculpture garden. The <strong>Menil Collection</strong> (free) is one of the most important private art collections in America, housed in a Renzo Piano building. <strong>Rothko Chapel</strong> (free) is a meditative space with original Mark Rothko canvases. The <strong>Houston Museum of Natural Science</strong> ($25) has one of the best gem and mineral collections in the world. Most museums are free on Thursdays.' },
+      { label: 'Austin Live Music & Culture', link: '/destinations/austin/', text: 'Austin\'s "Live Music Capital of the World" claim extends beyond Sixth Street. For upscale experiences: <strong>ACL Live at the Moody Theater</strong> hosts national acts in an intimate 2,750-seat venue. <strong>Antone\'s</strong> is the legendary blues club — Stevie Ray Vaughan played here. <strong>The Continental Club</strong> on South Congress is Austin institution for Americana and rockabilly. For the premium experience, book a VIP table at <strong>Parker Jazz Club</strong> ($50 cover, craft cocktails $18–24) in the Warehouse District — intimate, sophisticated, and the best jazz in Texas.' },
+      { label: 'Lake Austin Spa Resort', link: '/destinations/austin/', text: 'Consistently ranked among the top destination spas in the US. Set on Lake Austin with Hill Country views, the resort is all-inclusive ($600–1,000/night per person, including meals, activities, and one spa treatment). The treatment menu is extensive — from traditional massages ($195–350) to outdoor lakeside treatments. Activities include paddleboarding, kayaking, cooking classes, and yoga. The food is spa cuisine but genuinely delicious — the kitchen takes it seriously. Minimum 2-night stay. This is where stressed-out Texans go to reset.' },
+      { label: 'Lotte Hotel Houston Spa', link: '/destinations/houston/', text: 'The newest luxury spa in Houston, inside the Lotte Hotel in the Galleria district. Korean-inspired treatments ($200–450) incorporate traditional techniques — the hot stone beds and mugwort steam rooms are standout features. The facility is impeccably designed — clean lines, natural materials, and a serenity that feels genuinely removed from Houston\'s energy. The Lotte is also one of the best luxury hotels in Houston ($400–700/night), with a signature restaurant serving Korean-French fusion. For a weekend luxury experience in Houston, this is the new standard.' },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="ft-hero">
+    <div class="ft-hero-gradient"></div>
+    <div class="ft-hero-noise"></div>
+    <div class="ft-hero-content">
+      <h1 class="ft-hero-title">The Finer Things</h1>
+      <p class="ft-hero-subtitle">Austin's rock-and-roll boutique hotels, James Beard Award-winning restaurants across four cities, Hill Country wineries and bourbon distilleries, luxury ranch stays under vast West Texas skies, world-class art museums, and rooftop cocktails overlooking every skyline in the state.</p>
+      <div class="ft-hero-meta">
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Topics</span>
+          <span class="ft-hero-meta-value">5</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Cities</span>
+          <span class="ft-hero-meta-value">6+</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Wineries</span>
+          <span class="ft-hero-meta-value">50+</span>
+        </div>
+      </div>
+    </div>
+    <div class="ft-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="ft-personal ft-reveal">
+    <div class="container-content">
+      <blockquote class="ft-personal-quote">
+        <p>Texas luxury catches people off guard. They expect cowboy boots and BBQ joints — and those exist, and they're great — but this state also has one of the best Japanese restaurants in America, a 30,000-acre ranch retreat in the Chinati Mountains, a bourbon distillery that rivals Kentucky's best, and an arts district in Dallas that would impress any New Yorker. The thing about Texas luxury is it never takes itself too seriously. You can have a $135 omakase at Uchi in Austin and be at a honky-tonk two hours later. That's not a contradiction — that's Texas doing what Texas does: everything, bigger and better than you expected.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Quick Facts Strip -->
+  <section class="ft-quickfacts ft-reveal">
+    <div class="container-content">
+      <div class="ft-quickfacts-bar">
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Cocktail (Upscale)</span>
+          <span class="ft-quickfact-value">$14–24</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Fine Dining</span>
+          <span class="ft-quickfact-value">$45–185pp</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Luxury Hotel</span>
+          <span class="ft-quickfact-value">$350+/night</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Wine Tasting</span>
+          <span class="ft-quickfact-value">$15–35</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Tipping</span>
+          <span class="ft-quickfact-value">20%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <section class="ft-quicknav ft-reveal">
+    <div class="container-content">
+      <div class="ft-quicknav-grid">
+        {topics.map((t) => (
+          <a href={`#${t.id}`} class="ft-quicknav-chip">
+            <span class="ft-quicknav-icon">{t.icon}</span>
+            <span class="ft-quicknav-label">{t.title.split(' ').slice(0, 2).join(' ')}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Topic Sections -->
+  {topics.map((topic) => (
+    <section class="ft-topic ft-reveal" id={topic.id}>
+      <div class="container-content">
+        <div class="ft-topic-header" style={`background: ${topic.gradient};`}>
+          <div class="ft-topic-header-inner">
+            <span class="ft-topic-icon">{topic.icon}</span>
+            <h2 class="ft-topic-title">{topic.title}</h2>
+            <span class="ft-topic-count">{topic.items.length} tips</span>
+          </div>
+        </div>
+
+        <div class="ft-tip-grid">
+          {topic.items.map((item) => (
+            <div class="ft-tip-card">
+              <h3 class="ft-tip-label">{item.label}</h3>
+              <p class="ft-tip-text" set:html={item.text} />
+              {item.link && (
+                <a href={item.link} class="ft-tip-link">Explore {item.label.split(',')[0]} &rarr;</a>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Scott's Pro Tips -->
+  <section class="ft-protips ft-reveal">
+    <div class="container-content">
+      <div class="ft-protips-card">
+        <h2 class="ft-protips-heading">Scott's Pro Tips</h2>
+        <div class="scott-tips">
+          <ul>
+            <li><strong>Best Time for Luxury Travel:</strong> October through May is the sweet spot across Texas. Summers are brutally hot (100F+) and rooftop bars become unbearable after 5pm. Spring (March–May) brings the Hill Country wildflowers and perfect weather. Fall (October–November) has the best wine harvest events. Winter in West Texas is cold but clear — perfect for stargazing at Marfa.</li>
+            <li><strong>Restaurant Reservations:</strong> Uchi (Austin and Dallas) needs 2–3 weeks ahead for weekend dinner. Mixtli in San Antonio books a month out. Most other fine dining spots can be booked a week ahead. Tuesday through Thursday is always easier. Texas restaurants are generally less competitive for reservations than NYC or LA — you can usually get in somewhere great with a week's notice.</li>
+            <li><strong>Hill Country Wine Strategy:</strong> The Wine Road (US-290 between Austin and Fredericksburg) gets crowded on weekends — go Thursday or Friday for a more relaxed experience. Hire a driver or use a wine tour service ($150–250pp for full day). Hit 3–4 wineries max — your palate and your judgment both fade after that. Start at Duchman or William Chris for serious wines, then work toward the more casual spots.</li>
+            <li><strong>Driving Distances:</strong> Texas is enormous — Austin to Dallas is 3 hours, Austin to Houston is 2.5 hours, Austin to San Antonio is 1.5 hours, and Austin to Marfa is 6+ hours. Don't underestimate travel time when planning multi-city luxury trips. Fly between cities if time is limited — Southwest has frequent service between Texas cities for $80–150 each way.</li>
+            <li><strong>Hotel Saint Cecilia vs. Driskill:</strong> Both are iconic Austin stays but for different reasons. Saint Cecilia is cool, design-forward, intimate, and makes you feel like a rock star. The Driskill is grand, historic, and makes you feel like Texas royalty. For a couple's weekend, Saint Cecilia. For a group celebration or business trip, the Driskill. Both are essential Austin experiences.</li>
+            <li><strong>Dress Code Reality:</strong> Texas is casual even at upscale restaurants — nice jeans, boots, and a collared shirt will get you into 95% of fine dining spots. The exception is Dallas, which tends to dress up more than Austin, Houston, or San Antonio. Boots are never out of place in Texas — they're a luxury accessory here, not workwear.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="ft-cta-section ft-reveal">
+    <div class="container-content">
+      <div class="ft-cta-card">
+        <h2 class="ft-cta-heading">Plan Your Luxury Texas Trip</h2>
+        <p class="ft-cta-text">Tell our AI planner your dates and interests — it'll build a custom itinerary with the best restaurants, hotels, and premium experiences across the state.</p>
+        <a href="/plan/" class="ft-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Capture -->
+  <div class="container-content ft-reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Texas Luxury Travel Guide"
+      description="Luxury hotels, fine dining, Hill Country wine, and premium experiences — packed into one PDF."
+      bullets={[
+        'Top luxury hotels in Austin, Dallas, San Antonio, and Houston',
+        'Fine dining guide with reservation strategies by city',
+        'Hill Country wine and bourbon trail with tasting notes',
+        'Luxury ranch stays and premium experience roundup',
+      ]}
+      guideTag="pillar-finer-things"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="ft-crosslinks ft-reveal">
+    <div class="container-content">
+      <h3 class="ft-crosslinks-heading">Explore More</h3>
+      <div class="ft-crosslinks-grid">
+        <a href="/practical/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#128218;</span>
+          <span class="ft-crosslink-label">Travel Tips</span>
+          <span class="ft-crosslink-desc">Getting around Texas, budget tips, and essential planning</span>
+        </a>
+        <a href="/destinations/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#127961;</span>
+          <span class="ft-crosslink-label">All Destinations</span>
+          <span class="ft-crosslink-desc">59 destinations across 9 regions of Texas</span>
+        </a>
+        <a href="/plan/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#128506;</span>
+          <span class="ft-crosslink-label">AI Trip Planner</span>
+          <span class="ft-crosslink-desc">Build a custom Texas itinerary in minutes</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer (uses ft-reveal/ft-visible to avoid Tailwind .visible conflict) -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const ftRevealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('ft-visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.ft-reveal').forEach((el) => ftRevealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.ft-reveal').forEach((el) => el.classList.add('ft-visible'));
+  }
+</script>
+
+<style>
+  .ft-hero { position: relative; min-height: 55vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; }
+  .ft-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(135deg, #1A2332 0%, #78350F 40%, #D4A574 100%); }
+  .ft-hero-noise { position: absolute; inset: 0; z-index: 2; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E"); pointer-events: none; }
+  .ft-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .ft-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .ft-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .ft-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .ft-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .ft-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.5); }
+  .ft-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .ft-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255, 255, 255, 0.35); text-align: center; animation: ftBounce 2s ease-in-out infinite; }
+  @keyframes ftBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+  .ft-personal { padding-block: var(--space-8); }
+  .ft-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid #D4A574; background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .ft-personal-quote p { font-size: var(--text-body); color: var(--color-heading); line-height: var(--leading-body); font-style: italic; margin-bottom: var(--space-3); }
+  .ft-personal-quote cite { font-size: var(--text-caption); color: #78350F; font-weight: var(--weight-semibold); font-style: normal; }
+
+  .ft-quickfacts { padding: 0 0 var(--space-4); }
+  .ft-quickfacts-bar { display: flex; align-items: center; justify-content: center; gap: var(--space-5); background: var(--color-sky); border-radius: 16px; padding: var(--space-4) var(--space-6); flex-wrap: wrap; }
+  .ft-quickfact { display: flex; flex-direction: column; align-items: center; gap: 2px; text-align: center; }
+  .ft-quickfact-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-slate); }
+  .ft-quickfact-value { font-size: 1.05rem; font-weight: var(--weight-extrabold); color: var(--color-deep-night); }
+  .ft-quickfact-divider { width: 1px; height: 28px; background: rgba(0, 0, 0, 0.1); }
+
+  .ft-quicknav { padding: 0 0 var(--space-6); }
+  .ft-quicknav-grid { display: flex; justify-content: center; gap: var(--space-2); flex-wrap: wrap; }
+  .ft-quicknav-chip { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 40px; font-size: 0.8rem; font-weight: var(--weight-medium); color: #4A5568; text-decoration: none; transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+  .ft-quicknav-chip:hover { background: #FDF8F0; color: #78350F; transform: translateY(-2px); }
+  .ft-quicknav-icon { font-size: 1rem; }
+  .ft-quicknav-label { white-space: nowrap; }
+
+  .ft-topic { padding: var(--space-4) 0 var(--space-6); scroll-margin-top: 80px; }
+  .ft-topic-header { position: relative; border-radius: 20px; padding: var(--space-5) var(--space-6); margin-bottom: var(--space-5); overflow: hidden; }
+  .ft-topic-header-inner { position: relative; z-index: 1; display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+  .ft-topic-icon { font-size: 1.6rem; }
+  .ft-topic-title { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: var(--weight-bold); color: #fff; margin: 0; line-height: 1.2; flex: 1; min-width: 200px; }
+  .ft-topic-count { font-size: 0.7rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.1); padding: 4px 12px; border-radius: 20px; }
+
+  .ft-tip-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+  @media (max-width: 768px) { .ft-tip-grid { grid-template-columns: 1fr; } }
+  .ft-tip-card { background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 14px; padding: var(--space-5); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .ft-tip-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+  .ft-tip-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0 0 var(--space-2); line-height: 1.3; }
+  .ft-tip-text { font-size: 0.85rem; color: var(--color-slate); line-height: 1.65; margin: 0; }
+  .ft-tip-text :global(a) { color: #78350F; font-weight: var(--weight-semibold); text-decoration: underline; text-decoration-color: rgba(120, 53, 15, 0.3); text-underline-offset: 2px; transition: text-decoration-color 0.2s ease; }
+  .ft-tip-text :global(a:hover) { text-decoration-color: #78350F; }
+  .ft-tip-link { display: inline-block; margin-top: var(--space-3); font-size: 0.8rem; font-weight: var(--weight-semibold); color: #78350F; text-decoration: none; transition: color 0.2s ease; }
+  .ft-tip-link:hover { color: #D4A574; }
+
+  .ft-protips { padding: var(--space-4) 0 var(--space-6); }
+  .ft-protips-card { background: linear-gradient(135deg, #1A2332 0%, #2D3748 100%); border-radius: 20px; padding: var(--space-6) var(--space-6); }
+  .ft-protips-heading { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: var(--weight-bold); color: #D4A574; margin: 0 0 var(--space-4); }
+  .ft-protips-card .scott-tips { background: transparent; border-left: none; border-radius: 0; padding: 0; margin: 0; }
+  .ft-protips-card .scott-tips ul { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-3); }
+  .ft-protips-card .scott-tips li { font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); line-height: 1.65; padding-left: var(--space-4); position: relative; }
+  .ft-protips-card .scott-tips li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: #D4A574; }
+  .ft-protips-card .scott-tips :global(strong) { color: #D4A574; font-weight: var(--weight-semibold); }
+  .ft-protips-card .scott-tips :global(a) { color: #FB923C; font-weight: var(--weight-semibold); text-decoration: underline; text-decoration-color: rgba(251, 146, 60, 0.4); text-underline-offset: 2px; transition: text-decoration-color 0.2s ease; }
+  .ft-protips-card .scott-tips :global(a:hover) { text-decoration-color: #FB923C; }
+
+  .ft-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .ft-cta-card { background: linear-gradient(135deg, #78350F 0%, #D4A574 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .ft-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .ft-cta-text { font-size: 1rem; color: rgba(255, 255, 255, 0.85); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .ft-cta-button { display: inline-block; background: var(--color-deep-night); color: #D4A574; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .ft-cta-button:hover { background: #0D1117; transform: translateY(-2px); }
+
+  .ft-crosslinks { padding: 0 0 var(--space-10); }
+  .ft-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .ft-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  @media (max-width: 640px) { .ft-crosslinks-grid { grid-template-columns: 1fr; } }
+  .ft-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .ft-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+  .ft-crosslink-icon { font-size: 1.8rem; }
+  .ft-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: #1A2332; }
+  .ft-crosslink-desc { font-size: 0.78rem; color: #4A5568; line-height: 1.4; }
+
+  .ft-reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+  .ft-reveal.ft-visible { opacity: 1; transform: translateY(0); }
+  @keyframes ftRevealFallback { to { opacity: 1; transform: none; } }
+  .ft-reveal { animation: ftRevealFallback 0s 3s forwards; }
+
+  @media (max-width: 640px) {
+    .ft-hero { min-height: 50vh; padding: 0 var(--space-4) 40px; }
+    .ft-hero-meta { gap: var(--space-4); }
+    .ft-scroll-hint { display: none; }
+    .ft-topic-header { padding: var(--space-4) var(--space-4); }
+    .ft-quickfacts-bar { gap: var(--space-3); padding: var(--space-3) var(--space-4); }
+    .ft-quickfact-divider { display: none; }
+    .ft-quickfact { min-width: 80px; }
+    .ft-personal-quote { padding: var(--space-4) var(--space-5); }
+    .ft-protips-card { padding: var(--space-5) var(--space-4); }
+  }
+</style>

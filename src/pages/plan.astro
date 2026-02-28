@@ -203,10 +203,10 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
         <label class="form-label" for="tripStyle">Travel style</label>
         <select class="form-select" id="tripStyle">
           <option value="">Select style...</option>
-          <option>Backpacker (&#8369;1,000-2,000/day · ~$18-$35 USD)</option>
-          <option>Budget-comfortable (&#8369;2,000-4,000/day · ~$35-$71 USD)</option>
-          <option>Mid-range (&#8369;4,000-8,000/day · ~$71-$142 USD)</option>
-          <option>Luxury (&#8369;8,000+/day · ~$142+ USD)</option>
+          <option>Budget ($30-60/day)</option>
+          <option>Budget-comfortable ($60-120/day)</option>
+          <option>Mid-range ($120-250/day)</option>
+          <option>Luxury ($250+/day)</option>
         </select>
       </div>
       <div class="form-group">
@@ -224,8 +224,8 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     <div class="form-group" style="margin-top: 20px;">
       <label class="form-label" for="budgetSlider">Daily budget</label>
       <div class="budget-display">
-        <input type="range" class="budget-range" id="budgetSlider" min="500" max="15000" step="250" value="3000" />
-        <div class="budget-value" id="budgetDisplay">&#8369;3,000 <span class="budget-usd">(~$53 USD)</span></div>
+        <input type="range" class="budget-range" id="budgetSlider" min="30" max="500" step="10" value="150" />
+        <div class="budget-value" id="budgetDisplay">$150 <span class="budget-usd">/day</span></div>
       </div>
     </div>
   </div>
@@ -235,7 +235,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
        ============================================================ -->
   <div class="planner-extras reveal">
     <label class="planner-extras-label" for="tripDescription">Anything else the AI should know? <span class="planner-extras-optional">(optional)</span></label>
-    <textarea class="planner-textarea planner-textarea--short" id="tripDescription" maxlength="500" placeholder="E.g. &quot;We love snorkeling and want to avoid tourist crowds&quot; or &quot;Flying in from the US in March&quot;"></textarea>
+    <textarea class="planner-textarea planner-textarea--short" id="tripDescription" maxlength="500" placeholder="E.g. &quot;We love BBQ and want to hit the best smokehouses&quot; or &quot;Road-tripping from Dallas in October&quot;"></textarea>
     <div class="planner-extras-hint">Dietary needs, mobility concerns, must-see spots — anything helps</div>
   </div>
 

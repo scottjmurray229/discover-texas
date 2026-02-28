@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://discoverphilippines.info/sitemap-index.xml
+Sitemap: https://discovertexas.info/sitemap-index.xml

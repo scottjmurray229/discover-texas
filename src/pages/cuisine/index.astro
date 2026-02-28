@@ -1,0 +1,284 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Texas Cuisine Guide', url: '/cuisine/' },
+];
+
+const pageTitle = 'Texas Cuisine Guide — BBQ, Tex-Mex, and the Food That Defines the Lone Star State';
+const pageDescription = 'The definitive guide to Texas food — brisket, breakfast tacos, Tex-Mex, chicken fried steak, Gulf Coast seafood, kolaches, craft beer, and the state\'s emerging wine country.';
+
+interface TopicSection {
+  id: string;
+  icon: string;
+  title: string;
+  gradient: string;
+  items: { label: string; text: string }[];
+}
+
+const topics: TopicSection[] = [
+  {
+    id: 'bbq',
+    icon: '🔥',
+    title: 'Texas BBQ — The Holy Grail',
+    gradient: 'linear-gradient(135deg, #B71C1C 0%, #D32F2F 100%)',
+    items: [
+      { label: 'Brisket — The King of Texas BBQ', text: 'Texas brisket is the most revered cut in American barbecue — a massive beef brisket rubbed with nothing but salt and black pepper (the "Dalmatian rub"), smoked low and slow over post oak wood for 12-18 hours until the bark is black, the fat is rendered, and the meat jiggles like Jell-O. The Central Texas tradition insists on simplicity: beef, salt, pepper, smoke, time. No sauce. Sliced thick, served on butcher paper. Franklin Barbecue in Austin is the most famous (3-hour lines are normal), but Texas has hundreds of world-class pitmasters.' },
+      { label: 'Ribs — Beef & Pork', text: 'Texas does both beef and pork ribs, but beef ribs are the Texas signature. A single beef rib from a place like Goldee\'s or Truth BBQ can weigh over a pound — a prehistoric-looking bone with a thick cap of smoky, pepper-crusted meat. Pork spare ribs (St. Louis cut) are also excellent throughout the state. The best ribs have a dark, lacquered bark and meat that pulls cleanly from the bone without falling apart. East Texas leans toward saucy, falling-off-the-bone pork ribs; Central Texas favors big, bold beef.' },
+      { label: 'Sausage — The Czech-Texan Tradition', text: 'Texas BBQ sausage traces to Czech and German immigrants who settled Central Texas in the mid-1800s. The classic is a beef-and-pork link with coarse grind, seasoned with salt, pepper, and garlic, smoked until the casing snaps when you bite. Kreuz Market in Lockhart (Texas\'s official BBQ capital) has been making sausage since 1900. Elgin is the "Sausage Capital of Texas" — Southside Market and Meyer\'s both make hot guts (spicy beef sausage). At any Texas BBQ joint, always add a link of sausage to your order.' },
+      { label: 'The BBQ Trail — Where to Eat', text: 'The Texas BBQ Trail starts in Austin (Franklin Barbecue, la Barbecue, Micklethwait) and extends to Lockhart (Kreuz Market, Smitty\'s, Black\'s — all operating since the 1900s), Taylor (Louie Mueller), Lexington (Snow\'s BBQ — Saturday mornings only), and Llano (Cooper\'s). Houston has truth BBQ and Killen\'s. Dallas-Fort Worth has Pecan Lodge and Cattleack Barbeque. San Antonio has 2M Smokehouse. The common thread: post oak smoke, salt-and-pepper rub, and pitmasters who start fires at 2 AM.' },
+      { label: 'BBQ Etiquette', text: 'Texas BBQ has rules. Order by the pound, not by the plate. Don\'t ask for sauce before you taste the meat — at the best joints, sauce is an insult to the pitmaster. Eat with your hands; use butcher paper as your plate. Bread, pickles, onions, and jalapeños are sides, not garnishes. Lines are part of the experience — bring a chair, a cooler of beer, and patience. Saturday is the best day; many places sell out by 1 PM. If the menu says "sold out," it means the pitmaster did their job right. Tipping is standard and appreciated.' },
+    ],
+  },
+  {
+    id: 'tex-mex',
+    icon: '🌮',
+    title: 'Tex-Mex & Mexican-American Cuisine',
+    gradient: 'linear-gradient(135deg, #E65100 0%, #FF9800 100%)',
+    items: [
+      { label: 'Breakfast Tacos — Austin\'s Obsession', text: 'The breakfast taco is Austin\'s unofficial civic religion — flour or corn tortillas filled with scrambled eggs, bacon, potato, cheese, beans, chorizo, or migas (eggs with fried tortilla strips). Every Austin neighborhood has a taco trailer. Veracruz All Natural and Valentina\'s are among the best. The breakfast taco debate (Austin vs. San Antonio, flour vs. corn) is Texas\'s most heated culinary argument. San Antonio claims to have invented the breakfast taco; Austin claims to have perfected it. The truth: both are right, and you should eat them everywhere.' },
+      { label: 'Tex-Mex — A Cuisine Unto Itself', text: 'Tex-Mex is not Mexican food and it doesn\'t pretend to be — it\'s a distinct cuisine born on the Texas-Mexico border from the blending of Mexican cooking traditions with Texas ingredients. Queso (melted cheese dip with chiles), cheese enchiladas smothered in chili gravy, fajitas sizzling on a cast-iron plate, nachos (invented in Piedras Negras in 1943), and puffy tacos are all Tex-Mex originals. The yellow cheese, cumin-heavy seasoning, and flour tortillas distinguish it from interior Mexican cuisine. It\'s comfort food on a massive scale.' },
+      { label: 'Queso — The Dip That Defines Texas', text: 'Queso (chile con queso) is molten cheese and chile dip, served with tortilla chips at the beginning of every Tex-Mex meal. The versions range from Velveeta-and-Rotel (the no-shame classic) to upscale renditions with smoked brisket, guacamole, or pickled jalapeños on top. Torchy\'s Tacos serves their queso "Democrat" (guacamole, pico, diablo sauce on top) or "Republican" (just queso). Kerbey Lane in Austin makes a solid version. Queso is the great equalizer — everyone from college students to governors orders it first.' },
+      { label: 'Tacos al Pastor & Interior Mexican', text: 'Texas\'s proximity to Mexico means you can find every regional Mexican cuisine along the border and in major cities. Houston and Dallas have exceptional tacos al pastor (spit-roasted pork with pineapple), birria (braised beef stewed in chiles), and mole from Oaxacan restaurants. Austin\'s Suerte serves alta cocina Mexican. San Antonio\'s Mixtli does a multi-course Mexican tasting menu. The Mexican food scene in Texas goes far beyond Tex-Mex — explore it, especially in Houston, which rivals Los Angeles for diversity of Mexican regional cooking.' },
+      { label: 'Chicken Fried Steak', text: 'Chicken fried steak is Texas\'s answer to Austrian schnitzel — a tenderized beef cutlet breaded, deep-fried, and smothered in peppery cream gravy. The name is confusing: it\'s beef, prepared the way you\'d fry chicken. The plate comes with mashed potatoes (also covered in gravy) and a dinner roll. It weighs approximately three pounds and contains approximately ten thousand calories. It\'s magnificent. Every diner and meat-and-three in Texas serves one. The AllGood Cafe in Dallas and Threadgill\'s (RIP) in Austin are legendary for theirs.' },
+    ],
+  },
+  {
+    id: 'gulf-coast',
+    icon: '🦐',
+    title: 'Gulf Coast Seafood',
+    gradient: 'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
+    items: [
+      { label: 'Shrimp — Gulf Coast Gold', text: 'The Texas Gulf Coast produces some of the finest wild-caught shrimp in the world. Gulf shrimp are sweet, firm, and nothing like the frozen farmed stuff at your supermarket. Shrimp are served every way imaginable: boiled with Cajun seasoning, fried in a poboy, grilled on a stick, in shrimp and grits, or piled into tacos. Port Aransas, Rockport, Galveston, and South Padre Island are the best places to eat shrimp straight off the boat. September-November is peak season when brown shrimp are at their largest and sweetest.' },
+      { label: 'Oysters & Kolache Culture', text: 'Texas Gulf oysters are briny, plump, and best eaten raw on the half shell with a squeeze of lemon and a dash of hot sauce. Galveston has the densest concentration of oyster bars — Gaido\'s (open since 1911) and Katie\'s Seafood House are institutions. Oyster season runs September through April (the "R months" rule). On the coast, you\'ll also find kolaches — Czech pastries stuffed with fruit, sausage, or cream cheese. Kolaches migrated inland from Czech settlements around West and Temple. Hruska\'s in Ellinger and Czech Stop in West are legendary.' },
+      { label: 'Crawfish Season', text: 'Crawfish boil culture spills across the Texas-Louisiana border into East Texas and Houston. From February through June, restaurants and backyard boils feature crawfish boiled with corn, potatoes, sausage, garlic, and enough cayenne to clear your sinuses. Houston is crawfish central — Crawfish & Noodles (Viet-Cajun style with garlic butter) and LA Crawfish are packed every weekend. The Viet-Cajun crawfish style — born in Houston\'s Vietnamese community — is a genuine culinary innovation: garlic butter, lemongrass, and explosive heat on boiled crawfish.' },
+      { label: 'Fresh Catch Along the Coast', text: 'The Texas Gulf Coast offers redfish, red snapper, flounder, and speckled trout — caught fresh and served at waterfront restaurants from South Padre Island to Galveston. Blackened redfish is the coastal signature. Fish tacos with fresh-caught mahi-mahi are standard at Port Aransas beach bars. Surfside Beach and Matagorda have unpretentious waterfront shacks serving the day\'s catch. For the freshest experience, charter a fishing trip and have a restaurant cook your catch — several Gulf Coast spots will grill, blacken, or fry whatever you bring in.' },
+    ],
+  },
+  {
+    id: 'regional',
+    icon: '🗺️',
+    title: 'Regional Texas Flavors',
+    gradient: 'linear-gradient(135deg, #1B5E20 0%, #388E3C 100%)',
+    items: [
+      { label: 'Hill Country — Wine, Peaches & German Heritage', text: 'The Texas Hill Country is wine country — over 100 wineries between Fredericksburg and Johnson City, producing Tempranillo, Viognier, and Mourvèdre in a landscape that looks surprisingly like Tuscany. Fredericksburg also has excellent German-influenced food: schnitzels, bratwurst, and strudel at establishments dating to 1846 settlers. Peach season (May-August) brings roadside stands selling Fredericksburg peaches, peach ice cream, peach cobbler, and peach wine. The 290 Wine Trail is the best-known driving route.' },
+      { label: 'San Antonio — Puffy Tacos & Riverwalk Dining', text: 'San Antonio invented the puffy taco — a corn tortilla deep-fried until it puffs into a golden pillow, then filled with picadillo (seasoned ground beef), lettuce, tomato, and cheese. Ray\'s Drive Inn and Henry\'s Puffy Tacos are the originators. Beyond puffy tacos, San Antonio\'s food scene includes excellent barbacoa (beef cheek, slow-cooked and served in tacos on Sunday mornings), pan dulce from Mexican bakeries, and the Pearl District food hall. The Riverwalk restaurants are generally touristy — eat one block away for better food at lower prices.' },
+      { label: 'Houston — The Most Diverse Food City in America', text: 'Houston may be the most diverse food city in America — home to enormous Vietnamese, Chinese, Indian, Nigerian, Ethiopian, Salvadoran, and Korean communities. Bellaire Boulevard\'s Chinatown stretches for miles. Hillcroft Avenue has Little India. Viet-Cajun crawfish, Nigerian suya, Salvadoran pupusas, and Indo-Pakistani biryanis sit alongside world-class steakhouses, BBQ joints, and Tex-Mex. The food scene is driven by immigration, affordability, and a lack of zoning laws that lets restaurants open anywhere. No food city in America offers more variety per dollar.' },
+      { label: 'East Texas — Soul Food & Southern Traditions', text: 'East Texas is where Texas meets the Deep South. The food reflects it: chicken fried steak, catfish, cornbread, collard greens, black-eyed peas, pecan pie, and BBQ that leans toward saucy, pork-heavy preparations similar to the Carolinas. Tyler has excellent Southern restaurants. Jefferson has antebellum-era dining. Pittsburg is the hot link sausage capital. East Texas is also pecan country — pecan pralines, pecan pie, and pecan-crusted everything appear on menus throughout the piney woods.' },
+      { label: 'West Texas — Border Cooking & Cowboy Culture', text: 'West Texas food is rugged, border-influenced, and built for appetite. El Paso has some of the best Mexican food in the United States — Chico\'s Tacos (rolled tacos in chile sauce) is a local institution. Marfa has a surprisingly good food scene for a town of 1,700 (the Food Shark truck, Cochineal restaurant). Alpine and Fort Davis have cowboy steakhouses. Big Bend region restaurants serve hearty portions designed for people who\'ve been hiking all day. Terlingua chili — the inspiration for the annual Terlingua Chili Cook-Off — is West Texas in a bowl.' },
+    ],
+  },
+  {
+    id: 'drinks',
+    icon: '🍺',
+    title: 'Texas Drinks — Beer, Wine & Spirits',
+    gradient: 'linear-gradient(135deg, #6A1B9A 0%, #AB47BC 100%)',
+    items: [
+      { label: 'Craft Beer Explosion', text: 'Texas has over 400 craft breweries, with Austin, Houston, Dallas-Fort Worth, and San Antonio leading the charge. Austin\'s Jester King (farmhouse ales), Live Oak (German-style lagers), and Pinthouse Pizza (IPAs) are nationally acclaimed. Houston\'s Saint Arnold (Texas\'s oldest craft brewery, founded 1994) and 8th Wonder are institutions. Dallas has Peticolas and Lakewood. San Antonio\'s Freetail and Weathered Souls are standouts. Shiner Bock from Shiner, Texas, is the state\'s most iconic beer — brewed since 1909 and served at every barbecue joint.' },
+      { label: 'Texas Wine Country', text: 'Texas is the fifth-largest wine-producing state in America. The Hill Country AVA around Fredericksburg has over 100 wineries, focusing on heat-loving grapes like Tempranillo, Mourvèdre, and Viognier. The High Plains AVA near Lubbock grows most of Texas\'s wine grapes at 3,000+ feet elevation. William Chris Vineyards, Becker Vineyards, and Duchman Family Winery consistently produce excellent wines. The 290 Wine Trail from Johnson City to Fredericksburg makes an outstanding day trip. Texas wine has earned legitimate critical respect in recent years.' },
+      { label: 'Margaritas & Tequila Culture', text: 'The frozen margarita machine was invented in Dallas in 1971 by Mariano Martinez. Texas consumes more tequila than any other state. The margarita is the default cocktail at every Tex-Mex restaurant — salt rim, lime, and tequila in a glass the size of a fishbowl. Austin\'s Escondido and Suerte make craft margaritas worth seeking out. Ranch Water (tequila, Topo Chico, lime) has become the unofficial drink of Texas summers — simple, refreshing, and increasingly available in canned versions at every gas station and grocery store.' },
+      { label: 'Sweet Tea & Dr Pepper', text: 'Sweet tea is the default beverage in Texas — brewed strong, sweetened with alarming amounts of sugar, and served over ice in mason jars. Ordering "unsweet" tea is your right, but ordering sweet tea is your heritage. Dr Pepper was invented in Waco, Texas, in 1885 — making it older than Coca-Cola. The Dr Pepper Museum in Waco tells the story. Big Red (a red cream soda) paired with barbacoa tacos is a San Antonio breakfast tradition so specific and beloved that it has its own hashtag.' },
+    ],
+  },
+  {
+    id: 'iconic',
+    icon: '🤠',
+    title: 'Iconic Texas Food Experiences',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #4DB6AC 100%)',
+    items: [
+      { label: 'Buc-ee\'s — The Texas Gas Station Experience', text: 'Buc-ee\'s is not a gas station — it\'s a Texas institution. These 50,000-square-foot travel centers have 120 fuel pumps, immaculate restrooms (famously the cleanest in America), and a food counter that rivals many restaurants. Brisket sandwiches, kolaches, beaver nuggets (caramel corn puffs), jerky by the pound, and fresh fudge. The Buc-ee\'s in New Braunfels holds the record for world\'s largest convenience store. Every road trip in Texas includes a Buc-ee\'s stop. It\'s a pilgrimage.' },
+      { label: 'Whataburger — Texas Fast Food Royalty', text: 'Whataburger is Texas\'s beloved burger chain — founded in Corpus Christi in 1950 and now an A-frame orange-and-white icon across the state. The signature Whataburger is a massive, customizable burger on a five-inch bun. The Honey Butter Chicken Biscuit (breakfast) and the Patty Melt are cult favorites. Whataburger is open 24 hours, serving as a post-bar destination, road trip fuel, and comfort food institution. Texans are fiercely loyal — suggesting that In-N-Out is better is fighting words.' },
+      { label: 'State Fair of Texas — Fried Everything', text: 'The State Fair of Texas in Dallas (late September through October) is the world capital of fried food innovation. Every year brings new deep-fried creations: fried Oreos, fried butter, fried beer, fried Thanksgiving dinner, fried bubblegum. The Big Tex Choice Awards honor the most creative fried food. Fletcher\'s Corny Dogs (corn dogs) have been sold at the fair since 1942 — it\'s the signature food. The fair also has massive turkey legs, funnel cakes, and elote (Mexican street corn). Bring elastic-waist pants.' },
+      { label: 'Pecan Pie & Blue Bell Ice Cream', text: 'Pecan pie is Texas\'s official state pie — a gooey, buttery, caramel-sweet filling packed with Texas-grown pecans in a flaky crust. Every diner, every grandmother, and every Thanksgiving table in Texas has one. Goode Company in Houston and Royer\'s Round Top Café are famous for theirs. Blue Bell Ice Cream, made in Brenham, Texas, since 1907, is the state\'s ice cream — "the best ice cream in the country" according to every Texan. Homemade Vanilla is the bestseller. The factory tour in Brenham includes all-you-can-eat samples.' },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  breadcrumbs={breadcrumbs}
+>
+  <header class="cuis-hero">
+    <div class="cuis-hero-gradient"></div>
+    <div class="cuis-hero-noise"></div>
+    <div class="cuis-hero-content">
+      <h1 class="cuis-hero-title">The Texas Table</h1>
+      <p class="cuis-hero-subtitle">Brisket smoked for 18 hours over post oak, breakfast tacos at dawn, Tex-Mex queso by the gallon, Gulf shrimp off the boat, and the most diverse food city in America.</p>
+      <div class="cuis-hero-meta">
+        <div class="cuis-hero-meta-item"><span class="cuis-hero-meta-label">Topics</span><span class="cuis-hero-meta-value">6</span></div>
+        <div class="cuis-hero-meta-item"><span class="cuis-hero-meta-label">Regions</span><span class="cuis-hero-meta-value">9</span></div>
+        <div class="cuis-hero-meta-item"><span class="cuis-hero-meta-label">Breweries</span><span class="cuis-hero-meta-value">400+</span></div>
+      </div>
+    </div>
+    <div class="cuis-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <div class="container-content"><Breadcrumb items={breadcrumbs} /></div>
+
+  <section class="cuis-personal reveal">
+    <div class="container-content">
+      <blockquote class="cuis-personal-quote">
+        <p>I stood in the Franklin Barbecue line at 7 AM on a Tuesday and thought I'd lost my mind. Then I took the first bite of brisket — bark like black velvet, fat rendered to silk, smoke flavor that went all the way through — and I understood. Texas food is built on conviction. The pitmasters who wake up at 2 AM. The abuela rolling tortillas at 5 AM. The Gulf fishermen hauling shrimp at dawn. Every great meal in Texas comes from someone who believes their version is the best in the world. They're usually right.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="cuis-quicknav reveal">
+    <div class="container-content">
+      <div class="cuis-quicknav-grid">
+        {topics.map((t) => (
+          <a href={`#${t.id}`} class="cuis-quicknav-chip">
+            <span class="cuis-quicknav-icon">{t.icon}</span>
+            <span class="cuis-quicknav-label">{t.title.split(' ').slice(0, 2).join(' ')}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {topics.map((topic) => (
+    <section class="cuis-topic reveal" id={topic.id}>
+      <div class="container-content">
+        <div class="cuis-topic-header" style={`background: ${topic.gradient};`}>
+          <div class="cuis-topic-header-inner">
+            <span class="cuis-topic-icon">{topic.icon}</span>
+            <h2 class="cuis-topic-title">{topic.title}</h2>
+            <span class="cuis-topic-count">{topic.items.length} items</span>
+          </div>
+        </div>
+        <div class="cuis-tip-grid">
+          {topic.items.map((item) => (
+            <div class="cuis-tip-card">
+              <h3 class="cuis-tip-label">{item.label}</h3>
+              <p class="cuis-tip-text" set:html={item.text} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="cuis-cta-section reveal">
+    <div class="container-content">
+      <div class="cuis-cta-card">
+        <h2 class="cuis-cta-heading">Plan Your Texas Food Trip</h2>
+        <p class="cuis-cta-text">Tell our AI planner you're a foodie and it will build a Texas itinerary around the best BBQ joints, taco spots, and culinary experiences across the Lone Star State.</p>
+        <a href="/plan/" class="cuis-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={[
+    { question: "What is Texas most famous for food-wise?", answer: "Texas BBQ (especially brisket smoked over post oak), Tex-Mex cuisine (queso, fajitas, enchiladas), breakfast tacos, chicken fried steak, Gulf Coast seafood, and kolaches. The state's food identity is built on brisket and Tex-Mex, but Houston's international food scene, Hill Country wine, and Gulf shrimp add enormous depth." },
+    { question: "Where is the best BBQ in Texas?", answer: "The BBQ trail centers on Central Texas: Franklin Barbecue and la Barbecue in Austin, Kreuz Market and Smitty's in Lockhart (the official BBQ capital), Snow's BBQ in Lexington (Saturday mornings only), and Louie Mueller in Taylor. Houston has Truth BBQ and Killen's. Dallas has Pecan Lodge and Cattleack. Most top joints sell out by early afternoon — arrive before 11 AM." },
+    { question: "What is Tex-Mex food?", answer: "Tex-Mex is a distinct cuisine born from the blending of Mexican cooking traditions with Texas ingredients. It features yellow cheese, flour tortillas, cumin-heavy seasoning, and dishes like queso, cheese enchiladas with chili gravy, fajitas, nachos, and puffy tacos. It's not Mexican food — it's its own thing, and Texans are fiercely proud of it." },
+    { question: "What are breakfast tacos?", answer: "Breakfast tacos are flour or corn tortillas filled with scrambled eggs and combinations of bacon, potato, cheese, beans, chorizo, or migas (eggs with fried tortilla strips). They're Austin and San Antonio's morning staple — sold at hundreds of taco trailers, restaurants, and gas stations. The debate over who invented them (Austin vs. San Antonio) is Texas's most passionate food argument." },
+    { question: "What food should I try first in Texas?", answer: "Start with brisket at a top BBQ joint (arrive early). Then have breakfast tacos the next morning. Get Tex-Mex with queso for lunch. Try chicken fried steak at a diner. Hit a Gulf Coast oyster bar or shrimp shack. Stop at Buc-ee's for kolaches and beaver nuggets on the road. End with pecan pie and Blue Bell ice cream. You'll need stretchy pants." },
+    { question: "Is Houston really the most diverse food city in America?", answer: "Yes — Houston's food diversity is staggering. Bellaire Boulevard's Chinatown, Hillcroft's Little India, a massive Vietnamese community (Viet-Cajun crawfish was invented here), Nigerian, Ethiopian, Salvadoran, and Korean restaurants — all alongside world-class BBQ, Tex-Mex, and steakhouses. No zoning laws let restaurants open anywhere. Houston may offer more variety per dollar than any city in the world." },
+  ]} />
+
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Texas BBQ & Food Trail Guide"
+      description="A printable PDF guide to Texas's best BBQ joints, taco spots, and food experiences — organized by region with honest, tested recommendations."
+      bullets={[
+        'Top 20 BBQ joints ranked with wait time tips and hours',
+        'Austin breakfast taco power rankings with trailer locations',
+        'Gulf Coast seafood guide with the best waterfront restaurants',
+        'Hill Country wine trail map with 25 must-visit wineries',
+      ]}
+      guideTag="pillar-cuisine"
+    />
+  </div>
+
+  <section class="cuis-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="cuis-crosslinks-heading">Explore More</h3>
+      <div class="cuis-crosslinks-grid">
+        <a href="/history/" class="cuis-crosslink-card">
+          <span class="cuis-crosslink-icon">&#127963;</span>
+          <span class="cuis-crosslink-label">Texas History</span>
+          <span class="cuis-crosslink-desc">The Alamo, oil booms, and the making of Texas</span>
+        </a>
+        <a href="/practical/" class="cuis-crosslink-card">
+          <span class="cuis-crosslink-icon">&#127890;</span>
+          <span class="cuis-crosslink-label">Travel Tips</span>
+          <span class="cuis-crosslink-desc">Driving distances, budget, and what to know</span>
+        </a>
+        <a href="/destinations/" class="cuis-crosslink-card">
+          <span class="cuis-crosslink-icon">&#127956;</span>
+          <span class="cuis-crosslink-label">All Destinations</span>
+          <span class="cuis-crosslink-desc">59 destinations across 9 regions</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver((entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else { document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible')); }
+</script>
+
+<style>
+  .cuis-hero { position: relative; min-height: 55vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; background: linear-gradient(135deg, #B71C1C 0%, #E65100 50%, #1B5E20 100%); }
+  .cuis-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%); }
+  .cuis-hero-noise { position: absolute; inset: 0; z-index: 2; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E"); pointer-events: none; }
+  .cuis-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .cuis-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .cuis-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .cuis-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .cuis-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .cuis-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.5); }
+  .cuis-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .cuis-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255, 255, 255, 0.35); text-align: center; animation: cuisBounce 2s ease-in-out infinite; }
+  @keyframes cuisBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+  .cuis-personal { padding-block: var(--space-8); }
+  .cuis-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid var(--color-warm-coral); background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .cuis-personal-quote p { font-size: var(--text-body); color: var(--color-heading); line-height: var(--leading-body); font-style: italic; margin-bottom: var(--space-3); }
+  .cuis-personal-quote cite { font-size: var(--text-caption); color: var(--color-warm-coral); font-weight: var(--weight-semibold); font-style: normal; }
+  .cuis-quicknav { padding: 0 0 var(--space-6); }
+  .cuis-quicknav-grid { display: flex; justify-content: center; gap: var(--space-2); flex-wrap: wrap; }
+  .cuis-quicknav-chip { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 40px; font-size: 0.8rem; font-weight: var(--weight-medium); color: var(--color-slate); text-decoration: none; transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+  .cuis-quicknav-chip:hover { background: var(--color-sky); color: var(--color-ocean-teal); transform: translateY(-2px); }
+  .cuis-quicknav-icon { font-size: 1rem; }
+  .cuis-quicknav-label { white-space: nowrap; }
+  .cuis-topic { padding: var(--space-4) 0 var(--space-6); scroll-margin-top: 80px; }
+  .cuis-topic-header { position: relative; border-radius: 20px; padding: var(--space-5) var(--space-6); margin-bottom: var(--space-5); overflow: hidden; }
+  .cuis-topic-header-inner { position: relative; z-index: 1; display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+  .cuis-topic-icon { font-size: 1.6rem; }
+  .cuis-topic-title { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: var(--weight-bold); color: #fff; margin: 0; line-height: 1.2; flex: 1; min-width: 200px; }
+  .cuis-topic-count { font-size: 0.7rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.1); padding: 4px 12px; border-radius: 20px; }
+  .cuis-tip-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+  @media (max-width: 768px) { .cuis-tip-grid { grid-template-columns: 1fr; } }
+  .cuis-tip-card { background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 14px; padding: var(--space-5); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .cuis-tip-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+  .cuis-tip-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0 0 var(--space-2); line-height: 1.3; }
+  .cuis-tip-text { font-size: 0.85rem; color: var(--color-slate); line-height: 1.65; margin: 0; }
+  .cuis-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .cuis-cta-card { background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .cuis-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .cuis-cta-text { font-size: 1rem; color: rgba(255, 255, 255, 0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .cuis-cta-button { display: inline-block; background: var(--color-warm-coral); color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .cuis-cta-button:hover { background: #d4553b; transform: translateY(-2px); }
+  .cuis-crosslinks { padding: 0 0 var(--space-10); }
+  .cuis-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .cuis-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  @media (max-width: 640px) { .cuis-crosslinks-grid { grid-template-columns: 1fr; } }
+  .cuis-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .cuis-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+  .cuis-crosslink-icon { font-size: 1.8rem; }
+  .cuis-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
+  .cuis-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
+  @media (max-width: 640px) { .cuis-hero { min-height: 50vh; padding: 0 var(--space-4) 40px; } .cuis-hero-meta { gap: var(--space-4); } .cuis-scroll-hint { display: none; } .cuis-topic-header { padding: var(--space-4) var(--space-4); } }
+</style>
