@@ -177,8 +177,8 @@ export function transformItinerary(apiItinerary: ApiItinerary): TripData {
   const numDays = apiItinerary.days.length;
 
   const contacts: Contact[] = [
-    { icon: '🚨', name: 'Philippine Emergency', role: 'Emergency Services', phone: '911' },
-    { icon: '🏥', name: 'Philippine Red Cross', role: 'Nationwide', phone: '143' },
+    { icon: '🚨', name: 'Emergency Services', role: '911 (Police, Fire, EMS)', phone: '911' },
+    { icon: '🏥', name: 'Texas Roadside Assistance', role: 'Statewide', phone: '1-800-525-5555' },
   ];
 
   const group: GroupMember[] = [

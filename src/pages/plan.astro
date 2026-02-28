@@ -30,8 +30,8 @@ const gmapMarkers = geoMarkers.map(m => {
 const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
 ---
 <BaseLayout
-  title="AI Trip Planner — Build Your Texass Itinerary"
-  description="Tell us your dream Texass trip and our AI builds a custom day-by-day itinerary backed by 20+ trips of real travel experience. Real prices in PHP & USD."
+  title="AI Trip Planner — Build Your Texas Itinerary"
+  description="Tell us your dream Texas trip and our AI builds a custom day-by-day itinerary backed by real travel experience. Real prices in USD."
 >
   <!-- ============================================================
        HERO
@@ -41,9 +41,9 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       <source src="/videos/pillar/plan-hero.mp4" type="video/mp4" />
     </video>
     <div class="planner-hero-gradient-overlay"></div>
-    <div class="planner-hero-eyebrow">AI-Powered &middot; Any Destination &middot; Real Prices in PHP &amp; USD &middot; <span class="free-badge-inline">Free Through June 30</span></div>
-    <h1>Plan Your Texass Trip</h1>
-    <p>Explore the map, pick your destinations, tell us your style — and our AI builds a custom day-by-day itinerary backed by 20+ trips of real Texass experience.</p>
+    <div class="planner-hero-eyebrow">AI-Powered &middot; Any Destination &middot; Real Prices in USD &middot; <span class="free-badge-inline">Free Through June 30</span></div>
+    <h1>Plan Your Texas Trip</h1>
+    <p>Explore the map, pick your destinations, tell us your style — and our AI builds a custom day-by-day itinerary backed by 20+ trips of real Texas experience.</p>
   </section>
 
   <!-- ============================================================
@@ -56,7 +56,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     </div>
     <div class="map-layout">
 
-      <!-- PHILIPPINES MAP -->
+      <!-- TEXAS MAP -->
       <div class="map-container" id="mapContainer">
         <div class="map-tooltip" id="mapTooltip">
           <div class="map-tooltip-name" id="tooltipName"></div>
@@ -72,71 +72,88 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
 
       <!-- REGION CARDS -->
       <div class="region-cards">
-        <div class="region-card" data-region="luzon">
-          <div class="region-card-header"><div class="region-card-name">Luzon</div><div class="region-card-count">23 destinations</div></div>
-          <div class="region-card-desc">The main island. Skip Manila, fly into Clark. Mountains in the north, surfing in the east, history everywhere.</div>
+        <div class="region-card" data-region="central-texas">
+          <div class="region-card-header"><div class="region-card-name">Central Texas</div><div class="region-card-count">10 destinations</div></div>
+          <div class="region-card-desc">The heart of Texas. Live music capital, Tex-Mex heaven, and the River Walk. Start here.</div>
           <div class="region-dest-tags">
-            <span class="dest-chip has-video" data-dest="clark">Clark</span>
-            <span class="dest-chip has-video" data-dest="manila">Manila</span>
-            <span class="dest-chip has-video" data-dest="laoag">Laoag</span>
-            <span class="dest-chip has-video" data-dest="vigan">Vigan</span>
-            <span class="dest-chip has-video" data-dest="sagada">Sagada</span>
-            <span class="dest-chip has-video" data-dest="legazpi">Legazpi</span>
-            <span class="dest-chip has-video" data-dest="donsol">Donsol</span>
-            <span class="dest-chip has-video" data-dest="tagaytay">Tagaytay</span>
-            <span class="dest-chip" data-dest="baguio">Baguio</span>
-            <span class="dest-chip" data-dest="baler">Baler</span>
-            <span class="dest-chip" data-dest="banaue">Banaue</span>
-            <span class="dest-chip" data-dest="bataan">Bataan</span>
-            <span class="dest-chip" data-dest="batanes">Batanes</span>
-            <span class="dest-chip" data-dest="batangas">Batangas</span>
-            <span class="dest-chip" data-dest="caramoan">Caramoan</span>
-            <span class="dest-chip" data-dest="laguna">Laguna</span>
-            <span class="dest-chip" data-dest="la-union">La Union</span>
-            <span class="dest-chip" data-dest="marinduque">Marinduque</span>
-            <span class="dest-chip" data-dest="mt-pulag">Mt. Pulag</span>
-            <span class="dest-chip" data-dest="pagudpud">Pagudpud</span>
-            <span class="dest-chip" data-dest="puerto-galera">Puerto Galera</span>
-            <span class="dest-chip" data-dest="subic">Subic</span>
-            <span class="dest-chip" data-dest="zambales">Zambales</span>
+            <span class="dest-chip" data-dest="austin">Austin</span>
+            <span class="dest-chip" data-dest="san-antonio">San Antonio</span>
+            <span class="dest-chip" data-dest="waco">Waco</span>
+            <span class="dest-chip" data-dest="new-braunfels">New Braunfels</span>
+            <span class="dest-chip" data-dest="georgetown">Georgetown</span>
+            <span class="dest-chip" data-dest="round-rock">Round Rock</span>
+            <span class="dest-chip" data-dest="san-marcos">San Marcos</span>
+            <span class="dest-chip" data-dest="killeen">Killeen</span>
+            <span class="dest-chip" data-dest="temple-belton">Temple-Belton</span>
+            <span class="dest-chip" data-dest="bryan-college-station">Bryan-College Station</span>
           </div>
         </div>
-        <div class="region-card" data-region="visayas">
-          <div class="region-card-header"><div class="region-card-name">Visayas</div><div class="region-card-count">13 destinations</div></div>
-          <div class="region-card-desc">Island-hopping paradise. Heart of Texas beach culture with best diving, waterfalls, and mystical islands.</div>
+        <div class="region-card" data-region="gulf-coast">
+          <div class="region-card-header"><div class="region-card-name">Gulf Coast</div><div class="region-card-count">9 destinations</div></div>
+          <div class="region-card-desc">Sandy beaches, fresh seafood, and island vibes. From Houston's energy to South Padre's party scene.</div>
           <div class="region-dest-tags">
-            <span class="dest-chip has-video" data-dest="cebu">Cebu</span>
-            <span class="dest-chip has-video" data-dest="bohol">Bohol</span>
-            <span class="dest-chip has-video" data-dest="siquijor">Siquijor</span>
-            <span class="dest-chip has-video" data-dest="dumaguete">Dumaguete</span>
-            <span class="dest-chip has-video" data-dest="boracay">Boracay</span>
-            <span class="dest-chip has-video" data-dest="iloilo">Iloilo</span>
-            <span class="dest-chip has-video" data-dest="bacolod">Bacolod</span>
-            <span class="dest-chip has-video" data-dest="malapascua">Malapascua</span>
-            <span class="dest-chip" data-dest="guimaras">Guimaras</span>
-            <span class="dest-chip" data-dest="sipalay">Sipalay</span>
-            <span class="dest-chip" data-dest="biliran">Biliran</span>
-            <span class="dest-chip" data-dest="samar">Samar</span>
-            <span class="dest-chip" data-dest="tacloban">Tacloban</span>
+            <span class="dest-chip" data-dest="houston">Houston</span>
+            <span class="dest-chip" data-dest="galveston">Galveston</span>
+            <span class="dest-chip" data-dest="corpus-christi">Corpus Christi</span>
+            <span class="dest-chip" data-dest="south-padre-island">South Padre Island</span>
+            <span class="dest-chip" data-dest="port-aransas">Port Aransas</span>
+            <span class="dest-chip" data-dest="port-isabel">Port Isabel</span>
+            <span class="dest-chip" data-dest="rockport-fulton">Rockport-Fulton</span>
+            <span class="dest-chip" data-dest="matagorda">Matagorda</span>
+            <span class="dest-chip" data-dest="surfside-beach">Surfside Beach</span>
           </div>
         </div>
-        <div class="region-card" data-region="palawan">
-          <div class="region-card-header"><div class="region-card-name">Palawan</div><div class="region-card-count">4 destinations</div></div>
-          <div class="region-card-desc">The Last Frontier. Dramatic limestone cliffs, hidden lagoons, clearest water on the planet.</div>
+        <div class="region-card" data-region="hill-country">
+          <div class="region-card-header"><div class="region-card-name">Hill Country</div><div class="region-card-count">10 destinations</div></div>
+          <div class="region-card-desc">Wine trails, wildflowers, swimming holes, and German heritage towns. Texas at its most charming.</div>
           <div class="region-dest-tags">
-            <span class="dest-chip has-video" data-dest="el-nido">El Nido</span>
-            <span class="dest-chip has-video" data-dest="coron">Coron</span>
-            <span class="dest-chip has-video" data-dest="puerto-princesa">Puerto Princesa</span>
-            <span class="dest-chip" data-dest="cuyo">Cuyo</span>
+            <span class="dest-chip" data-dest="fredericksburg">Fredericksburg</span>
+            <span class="dest-chip" data-dest="wimberley">Wimberley</span>
+            <span class="dest-chip" data-dest="dripping-springs">Dripping Springs</span>
+            <span class="dest-chip" data-dest="bandera">Bandera</span>
+            <span class="dest-chip" data-dest="boerne">Boerne</span>
+            <span class="dest-chip" data-dest="kerrville">Kerrville</span>
+            <span class="dest-chip" data-dest="enchanted-rock">Enchanted Rock</span>
+            <span class="dest-chip" data-dest="luckenbach">Luckenbach</span>
+            <span class="dest-chip" data-dest="marble-falls">Marble Falls</span>
+            <span class="dest-chip" data-dest="johnson-city">Johnson City</span>
           </div>
         </div>
-        <div class="region-card" data-region="mindanao">
-          <div class="region-card-header"><div class="region-card-name">Mindanao</div><div class="region-card-count">3 destinations</div></div>
-          <div class="region-card-desc">The road less traveled. World-class surfing in Siargao, volcanic islands in Camiguin, Davao's durian country.</div>
+        <div class="region-card" data-region="west-texas">
+          <div class="region-card-header"><div class="region-card-name">West Texas</div><div class="region-card-count">8 destinations</div></div>
+          <div class="region-card-desc">Big skies, desert landscapes, and wide-open spaces. Big Bend, Marfa art scene, and Guadalupe Mountains.</div>
           <div class="region-dest-tags">
-            <span class="dest-chip has-video" data-dest="siargao">Siargao</span>
-            <span class="dest-chip has-video" data-dest="davao">Davao</span>
-            <span class="dest-chip has-video" data-dest="camiguin">Camiguin</span>
+            <span class="dest-chip" data-dest="big-bend">Big Bend</span>
+            <span class="dest-chip" data-dest="marfa">Marfa</span>
+            <span class="dest-chip" data-dest="el-paso">El Paso</span>
+            <span class="dest-chip" data-dest="alpine">Alpine</span>
+            <span class="dest-chip" data-dest="terlingua">Terlingua</span>
+            <span class="dest-chip" data-dest="guadalupe-mountains">Guadalupe Mountains</span>
+            <span class="dest-chip" data-dest="abilene">Abilene</span>
+            <span class="dest-chip" data-dest="midland-odessa">Midland-Odessa</span>
+          </div>
+        </div>
+        <div class="region-card" data-region="north-texas">
+          <div class="region-card-header"><div class="region-card-name">North Texas</div><div class="region-card-count">7 destinations</div></div>
+          <div class="region-card-desc">DFW metroplex culture, Fort Worth stockyards, and charming small towns just outside the city.</div>
+          <div class="region-dest-tags">
+            <span class="dest-chip" data-dest="dallas">Dallas</span>
+            <span class="dest-chip" data-dest="fort-worth">Fort Worth</span>
+            <span class="dest-chip" data-dest="denton">Denton</span>
+            <span class="dest-chip" data-dest="grapevine">Grapevine</span>
+            <span class="dest-chip" data-dest="mckinney">McKinney</span>
+            <span class="dest-chip" data-dest="granbury">Granbury</span>
+            <span class="dest-chip" data-dest="glen-rose">Glen Rose</span>
+          </div>
+        </div>
+        <div class="region-card" data-region="panhandle">
+          <div class="region-card-header"><div class="region-card-name">Panhandle</div><div class="region-card-count">4 destinations</div></div>
+          <div class="region-card-desc">Palo Duro Canyon, Route 66, and wide-open plains. The Grand Canyon of Texas awaits.</div>
+          <div class="region-dest-tags">
+            <span class="dest-chip" data-dest="amarillo">Amarillo</span>
+            <span class="dest-chip" data-dest="canyon">Canyon</span>
+            <span class="dest-chip" data-dest="lubbock">Lubbock</span>
+            <span class="dest-chip" data-dest="palo-duro-canyon">Palo Duro Canyon</span>
           </div>
         </div>
       </div>
@@ -241,7 +258,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
   <section class="trust-section">
     <div class="trust-inner">
       <div class="trust-item-block"><div class="trust-icon">&#128506;</div><div class="trust-title">Any Destination</div><div class="trust-desc">Open-ended — plan trips to any island, city, or region in Texas</div></div>
-      <div class="trust-item-block"><div class="trust-icon">&#128176;</div><div class="trust-title">Real Prices</div><div class="trust-desc">Every cost in PHP with USD equivalent — no guesswork</div></div>
+      <div class="trust-item-block"><div class="trust-icon">&#128176;</div><div class="trust-title">Real Prices</div><div class="trust-desc">Every cost in USD — no guesswork</div></div>
       <div class="trust-item-block"><div class="trust-icon">&#129523;</div><div class="trust-title">20+ Trips Since 2003</div><div class="trust-desc">Itineraries informed by Scott &amp; Jenice's real travel experience</div></div>
       <div class="trust-item-block"><div class="trust-icon">&#129309;</div><div class="trust-title">Book With Confidence</div><div class="trust-desc">Direct links to trusted hotels, tours, transport — vetted by us</div></div>
     </div>
@@ -271,9 +288,8 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
   const budgetDisplay = document.getElementById('budgetDisplay');
   if (slider && budgetDisplay) {
     slider.addEventListener('input', () => {
-      const php = parseInt(slider.value);
-      const usd = (php / 56.5).toFixed(0);
-      budgetDisplay.innerHTML = `\u20B1${php.toLocaleString()} <span class="budget-usd">(~$${usd} USD)</span>`;
+      const usd = parseInt(slider.value);
+      budgetDisplay.innerHTML = `$${usd.toLocaleString()} USD`;
     });
   }
 
@@ -381,7 +397,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       { icon: '🏨', text: 'Finding hotels in your budget...' },
       { icon: '🍴', text: 'Picking restaurants & local eats...' },
       { icon: '🏄', text: 'Adding activities & experiences...' },
-      { icon: '💰', text: 'Calculating prices in PHP & USD...' },
+      { icon: '💰', text: 'Calculating prices in USD...' },
     ];
     container.innerHTML = `
       <div class="itinerary-loading">
@@ -418,30 +434,19 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
 
   // Destination display names for affiliate URLs
   const DEST_NAMES: Record<string, string> = {
-    'siquijor':'Siquijor','cebu':'Cebu','bohol':'Bohol','boracay':'Boracay',
-    'el-nido':'El Nido Palawan','coron':'Coron Palawan','siargao':'Siargao',
-    'dumaguete':'Dumaguete','clark':'Clark Pampanga','manila':'Manila',
-    'davao':'Davao','camiguin':'Camiguin','puerto-princesa':'Puerto Princesa',
-    'palawan':'Palawan','vigan':'Vigan','sagada':'Sagada','batanes':'Batanes',
-    'legazpi':'Legazpi','tagaytay':'Tagaytay','baguio':'Baguio',
-    'bacolod':'Bacolod','iloilo':'Iloilo','malapascua':'Malapascua',
-    'la-union':'La Union','baler':'Baler','donsol':'Donsol',
-    'puerto-galera':'Puerto Galera','subic':'Subic',
+    'austin':'Austin','san-antonio':'San Antonio','houston':'Houston','dallas':'Dallas',
+    'fort-worth':'Fort Worth','galveston':'Galveston','fredericksburg':'Fredericksburg',
+    'marfa':'Marfa','big-bend':'Big Bend','south-padre-island':'South Padre Island',
+    'corpus-christi':'Corpus Christi','el-paso':'El Paso','amarillo':'Amarillo',
+    'new-braunfels':'New Braunfels','wimberley':'Wimberley','port-aransas':'Port Aransas',
+    'waco':'Waco','lubbock':'Lubbock','denton':'Denton','alpine':'Alpine',
+    'terlingua':'Terlingua','bandera':'Bandera','boerne':'Boerne','kerrville':'Kerrville',
+    'palo-duro-canyon':'Palo Duro Canyon','enchanted-rock':'Enchanted Rock',
+    'guadalupe-mountains':'Guadalupe Mountains','jefferson':'Jefferson','caddo-lake':'Caddo Lake',
   };
 
-  // 12Go Asia slug mapping (site slug → 12Go city slug)
-  const TWELVE_GO_SLUGS: Record<string, string> = {
-    'manila':'manila','cebu':'cebu','bohol':'bohol','siquijor':'siquijor',
-    'dumaguete':'dumaguete','boracay':'boracay','el-nido':'el-nido',
-    'coron':'coron','siargao':'siargao','davao':'davao',
-    'puerto-princesa':'puerto-princesa','camiguin':'camiguin',
-    'iloilo':'iloilo','bacolod':'bacolod','legazpi':'legazpi',
-    'puerto-galera':'puerto-galera','batangas':'batangas',
-    'donsol':'donsol','vigan':'vigan','baguio':'baguio',
-    'sagada':'sagada','clark':'clark','la-union':'san-fernando-la-union',
-    'baler':'baler','pagudpud':'pagudpud','subic':'subic',
-    'malapascua':'malapascua','tagaytay':'tagaytay',
-  };
+  // Transport slug mapping — not applicable for Texas (domestic US driving)
+  const TWELVE_GO_SLUGS: Record<string, string> = {};
 
   // Parse trip form data into booking params
   function getBookingParams(): { checkin: string; checkout: string; adults: number; children: number } {
@@ -487,7 +492,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
 
     if (type === 'hotel') {
       const hotelName = description.split(/\s+or\s+similar|[.,—]/)[0].replace(/^check\s*into\s*/i, '').trim();
-      const query = hotelName ? hotelName + ' ' + destName : destName + ' Texass';
+      const query = hotelName ? hotelName + ' ' + destName : destName + ' Texas';
       let url = `https://www.booking.com/searchresults.html?ss=${enc(query)}&aid=2778866&label=discovertexas`;
       if (bp.checkin) url += `&checkin=${bp.checkin}&checkout=${bp.checkout}`;
       url += `&group_adults=${bp.adults}&no_rooms=1`;
@@ -500,9 +505,9 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     }
     if (type === 'transport' || type === 'ferry') {
       const slug12go = TWELVE_GO_SLUGS[destination] || destination.replace(/-/g, '-');
-      return `https://12go.asia/en/travel/${slug12go}?z=15062413&sub_id=discoverph-plan`;
+      return `https://12go.asia/en/travel/${slug12go}?z=15062413&sub_id=discovertexas-plan`;
     }
-    return `https://www.getyourguide.com/s/?q=${enc(destName + ' Texass')}&partner_id=IVN6IQ3&cmp=discover-texas`;
+    return `https://www.getyourguide.com/s/?q=${enc(destName + ' Texas')}&partner_id=IVN6IQ3&cmp=discover-texas`;
   }
 
   function buildViatorUrl(destination: string, description: string): string {
@@ -515,7 +520,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     const destName = DEST_NAMES[destination] || destination.replace(/-/g, ' ');
     const hotelName = description.split(/\s+or\s+similar|[.,—]/)[0].replace(/^check\s*into\s*/i, '').trim();
     const query = hotelName || destName;
-    const landingPage = encodeURIComponent(`https://www.hotels.com/Hotel-Search?destination=${encodeURIComponent(query + ' Texass')}`);
+    const landingPage = encodeURIComponent(`https://www.hotels.com/Hotel-Search?destination=${encodeURIComponent(query + ' Texas')}`);
     return `https://hotels.com/affiliate?landingPage=${landingPage}&camref=1101l5Eohj&creativeref=1011l66481&adref=trip-planner`;
   }
 
@@ -537,7 +542,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       html += `
         <div class="budget-summary">
           <span class="budget-summary-label">Estimated Total</span>
-          <span class="budget-summary-value">\u20B1${it.totalBudget.php?.toLocaleString() || '—'} <span class="budget-summary-usd">(~$${it.totalBudget.usd?.toLocaleString() || '—'} USD)</span></span>
+          <span class="budget-summary-value">$${it.totalBudget.usd?.toLocaleString() || '—'} USD</span>
         </div>`;
     }
 
@@ -771,7 +776,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
         marker.addListener('click', () => {
           const icon = { transport:'🚐', accommodation:'🏨', activity:'🏄', food:'🍴', ferry:'⛴️' }[item.category] || '';
           let priceStr = '';
-          if (item.pricePhp) priceStr = ` · ₱${item.pricePhp.toLocaleString()}`;
+          if (item.priceUsd) priceStr = ` · $${item.priceUsd.toLocaleString()}`;
           itinInfoWindow!.setContent(`
             <div style="font-family:Outfit,sans-serif;max-width:220px;">
               <div style="font-size:11px;font-weight:700;color:#0D7377;">Day ${day.dayNumber} · ${escapeHtml(item.time)}</div>
@@ -899,7 +904,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
         <div class="chat-log" id="chatLog"></div>
         <div class="chat-rate-notice" id="chatRateNotice" style="display:none;"></div>
         <div class="chat-input-row">
-          <input type="text" class="chat-input" id="chatInput" placeholder="e.g. Swap Boracay for Siargao" maxlength="500" />
+          <input type="text" class="chat-input" id="chatInput" placeholder="e.g. Add a day in Marfa" maxlength="500" />
           <button class="chat-send-btn" id="chatSendBtn" aria-label="Send">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           </button>
@@ -938,7 +943,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
 
       <div class="companion-upsell">
         <h3 class="companion-upsell-heading">Take This Itinerary Offline</h3>
-        <p class="companion-upsell-text">Get your itinerary with offline access, local directions, budget tracking, and Filipino phrases — all in one app. Free through June 30, 2026.</p>
+        <p class="companion-upsell-text">Get your itinerary with offline access, local directions, budget tracking, and Texas culture tips — all in one app. Free through June 30, 2026.</p>
         <a href="/companion/" class="companion-upsell-btn">Get Trip Companion — Free Until June 30</a>
       </div>
 
@@ -946,7 +951,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
         <p class="transport-widget-heading">Book Buses, Ferries & Flights</p>
         <p class="transport-widget-sub">Search routes between Texas destinations — ferries, buses, vans, and domestic flights.</p>
         <div class="transport-widget-wrap" id="transportWidget"></div>
-        <div class="transport-widget-powered">Powered by <a href="https://12go.asia/?z=15062413&sub_id=discoverph-plan" target="_blank" rel="noopener sponsored">12Go Asia</a></div>
+        <div class="transport-widget-powered">Powered by <a href="https://12go.asia/?z=15062413&sub_id=discovertexas-plan" target="_blank" rel="noopener sponsored">12Go Asia</a></div>
       </div>
     </div>`;
 
@@ -1000,7 +1005,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       const btn = document.getElementById('copyItinerary');
       const copyIt = currentItinerary || it;
       let text = copyIt.title + '\n' + copyIt.subtitle + '\n\n';
-      if (copyIt.totalBudget) text += `Estimated Total: \u20B1${copyIt.totalBudget.php?.toLocaleString()} (~$${copyIt.totalBudget.usd?.toLocaleString()} USD)\n\n`;
+      if (copyIt.totalBudget) text += `Estimated Total: $${copyIt.totalBudget.usd?.toLocaleString()} USD\n\n`;
       for (const day of copyIt.days) {
         text += `--- Day ${day.dayNumber}: ${day.title} ---\n`;
         for (const item of day.items) {
@@ -1078,7 +1083,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       s.dataset.border = '1';
       s.dataset.radius = '8';
       s.dataset.caption = 'Find Transport in Texas';
-      s.dataset.sub_id = 'discoverph-plan';
+      s.dataset.sub_id = 'discovertexas-plan';
       s.dataset.domain = '12go.asia';
       widgetWrap.appendChild(s);
     }
@@ -1088,7 +1093,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     container.innerHTML = `
       <div class="email-gate">
         <h3>Unlock More Itineraries</h3>
-        <p>You've used your free generations for today. Enter your email to unlock 10 more — plus get our free Texass planning guide.</p>
+        <p>You've used your free generations for today. Enter your email to unlock 10 more — plus get our free Texas planning guide.</p>
         <form class="email-gate-form" id="emailGateForm">
           <input type="email" class="email-gate-input" id="emailGateInput" placeholder="your@email.com" required />
           <button type="submit" class="planner-btn planner-btn--primary">Unlock &amp; Generate</button>
@@ -1271,10 +1276,12 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
 
     // Region card hover → highlight markers
     var regionBounds = {
-      luzon: { north: 21, south: 13, east: 126, west: 119.5 },
-      visayas: { north: 12.5, south: 9, east: 126, west: 121 },
-      palawan: { north: 13, south: 8.5, east: 121.5, west: 117.5 },
-      mindanao: { north: 10.5, south: 5.5, east: 127, west: 120 },
+      'central-texas': { north: 32, south: 29, east: -96.5, west: -99.5 },
+      'gulf-coast': { north: 30, south: 25.5, east: -93, west: -97.5 },
+      'hill-country': { north: 31, south: 29.5, east: -97.5, west: -99.5 },
+      'west-texas': { north: 33, south: 29, east: -100, west: -107 },
+      'north-texas': { north: 34, south: 32, east: -96, west: -98 },
+      'panhandle': { north: 36.5, south: 33, east: -100, west: -103 },
     };
 
     document.querySelectorAll('.region-card').forEach(function(card) {

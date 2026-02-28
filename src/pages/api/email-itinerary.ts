@@ -25,19 +25,20 @@ interface Day {
 interface Itinerary {
   title: string;
   subtitle: string;
-  totalBudget?: { php: number; usd: number };
+  totalBudget?: { usd: number };
   days: Day[];
 }
 
 const DEST_NAMES: Record<string, string> = {
-  'siquijor': 'Siquijor', 'cebu': 'Cebu', 'bohol': 'Bohol', 'boracay': 'Boracay',
-  'el-nido': 'El Nido Palawan', 'coron': 'Coron Palawan', 'siargao': 'Siargao',
-  'dumaguete': 'Dumaguete', 'clark': 'Clark Pampanga', 'manila': 'Manila',
-  'davao': 'Davao', 'camiguin': 'Camiguin', 'puerto-princesa': 'Puerto Princesa',
-  'vigan': 'Vigan', 'sagada': 'Sagada', 'batanes': 'Batanes', 'legazpi': 'Legazpi',
-  'tagaytay': 'Tagaytay', 'baguio': 'Baguio', 'bacolod': 'Bacolod', 'iloilo': 'Iloilo',
-  'malapascua': 'Malapascua', 'la-union': 'La Union', 'baler': 'Baler', 'donsol': 'Donsol',
-  'puerto-galera': 'Puerto Galera', 'subic': 'Subic',
+  'austin': 'Austin', 'san-antonio': 'San Antonio', 'houston': 'Houston', 'dallas': 'Dallas',
+  'fort-worth': 'Fort Worth', 'galveston': 'Galveston', 'fredericksburg': 'Fredericksburg',
+  'marfa': 'Marfa', 'big-bend': 'Big Bend', 'south-padre-island': 'South Padre Island',
+  'corpus-christi': 'Corpus Christi', 'el-paso': 'El Paso', 'amarillo': 'Amarillo',
+  'new-braunfels': 'New Braunfels', 'wimberley': 'Wimberley', 'port-aransas': 'Port Aransas',
+  'waco': 'Waco', 'lubbock': 'Lubbock', 'denton': 'Denton', 'alpine': 'Alpine',
+  'terlingua': 'Terlingua', 'bandera': 'Bandera', 'boerne': 'Boerne', 'kerrville': 'Kerrville',
+  'palo-duro-canyon': 'Palo Duro Canyon', 'enchanted-rock': 'Enchanted Rock',
+  'guadalupe-mountains': 'Guadalupe Mountains', 'jefferson': 'Jefferson', 'caddo-lake': 'Caddo Lake',
 };
 
 function esc(text: string): string {
@@ -92,17 +93,14 @@ function buildItineraryEmail(it: Itinerary, tp?: TripParams): string {
 
   for (const day of it.days) {
     let itemsHtml = '';
-    let dayPhp = 0;
     let dayUsd = 0;
 
     for (const item of day.items) {
       const icon = CATEGORY_ICONS[item.category] || '';
       let priceStr = '';
-      if (item.pricePhp) {
-        dayPhp += item.pricePhp;
-        if (item.priceUsd) dayUsd += item.priceUsd;
-        priceStr = ` — ₱${item.pricePhp.toLocaleString()}`;
-        if (item.priceUsd) priceStr += ` (~$${item.priceUsd} USD)`;
+      if (item.priceUsd) {
+        dayUsd += item.priceUsd;
+        priceStr = ` — $${item.priceUsd} USD`;
       }
 
       let bookLink = '';
@@ -127,7 +125,7 @@ function buildItineraryEmail(it: Itinerary, tp?: TripParams): string {
         </tr>`;
     }
 
-    const subtotalHtml = dayPhp > 0 ? `<tr><td colspan="2" style="text-align:right;font-size:12px;font-weight:600;color:#1A2332;padding-top:8px;border-top:1px solid #EBE4D8;">Day total: ₱${dayPhp.toLocaleString()} (~$${dayUsd} USD)</td></tr>` : '';
+    const subtotalHtml = dayUsd > 0 ? `<tr><td colspan="2" style="text-align:right;font-size:12px;font-weight:600;color:#1A2332;padding-top:8px;border-top:1px solid #EBE4D8;">Day total: $${dayUsd.toLocaleString()} USD</td></tr>` : '';
 
     daysHtml += `
       <div style="background:white;border-radius:12px;padding:20px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
@@ -140,7 +138,7 @@ function buildItineraryEmail(it: Itinerary, tp?: TripParams): string {
   const budgetHtml = it.totalBudget ? `
     <div style="display:flex;justify-content:space-between;align-items:center;background:#E8F4F5;border-radius:10px;padding:12px 20px;margin-bottom:20px;">
       <span style="font-size:14px;font-weight:600;color:#0D7377;">Estimated Total</span>
-      <span style="font-size:16px;font-weight:800;color:#1A2332;">₱${it.totalBudget.php?.toLocaleString() || '—'} <span style="font-size:13px;font-weight:400;color:#0D7377;">(~$${it.totalBudget.usd?.toLocaleString() || '—'} USD)</span></span>
+      <span style="font-size:16px;font-weight:800;color:#1A2332;">$${it.totalBudget.usd?.toLocaleString() || '—'} USD</span>
     </div>` : '';
 
   return `<!DOCTYPE html>

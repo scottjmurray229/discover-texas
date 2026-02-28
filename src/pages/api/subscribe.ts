@@ -6,16 +6,16 @@ import { hasMxRecords, signEmailCookie } from '../../lib/email-cookie';
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const GUIDE_NAMES: Record<string, string> = {
-  'destination-siquijor': 'Siquijor Travel Guide',
-  'destination-cebu': 'Cebu Travel Guide',
-  'destination-boracay': 'Boracay Travel Guide',
-  'destination-el-nido': 'El Nido Travel Guide',
-  'destination-clark': 'Clark & Pampanga Travel Guide',
-  'destination-coron': 'Coron Travel Guide',
-  'destination-bohol': 'Bohol Travel Guide',
-  'destination-siargao': 'Siargao Travel Guide',
-  'destination-dumaguete': 'Dumaguete Travel Guide',
-  'destination-puerto-princesa': 'Puerto Princesa Travel Guide',
+  'destination-austin': 'Austin Travel Guide',
+  'destination-san-antonio': 'San Antonio Travel Guide',
+  'destination-houston': 'Houston Travel Guide',
+  'destination-dallas': 'Dallas Travel Guide',
+  'destination-fort-worth': 'Fort Worth Travel Guide',
+  'destination-galveston': 'Galveston Travel Guide',
+  'destination-fredericksburg': 'Fredericksburg Travel Guide',
+  'destination-big-bend': 'Big Bend Travel Guide',
+  'destination-marfa': 'Marfa Travel Guide',
+  'destination-south-padre-island': 'South Padre Island Travel Guide',
 };
 
 function getGuideName(tag: string): string {

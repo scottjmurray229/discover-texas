@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import { COLORS, TAB_CONFIG } from './companion-shared';
 import type { TabId, TripData, Activity, ChangeLogEntry } from './companion-shared';
-import mockTrip from '../../data/mock-trip-palawan-family.json';
+import mockTrip from '../../data/mock-trip-austin-family.json';
 import TripTab from './tabs/TripTab';
 import EditTab from './tabs/EditTab';
 import UpdatesTab from './tabs/UpdatesTab';
@@ -150,7 +150,7 @@ export default function TripCompanion() {
             <div style={{
               fontSize: 11, fontWeight: 700, letterSpacing: 2,
               textTransform: 'uppercase' as const, opacity: 0.7, marginBottom: 4,
-            }}>DISCOVER PHILIPPINES</div>
+            }}>DISCOVER TEXAS</div>
             <div style={{
               fontSize: 22, fontWeight: 800, lineHeight: 1.15, marginBottom: 2,
               textShadow: '0 2px 8px rgba(0,0,0,0.3)',

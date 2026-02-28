@@ -29,15 +29,15 @@ const faqItems = [
   },
   {
     question: 'What destinations do you cover?',
-    answer: 'We currently cover 20+ destinations across Texas including Cebu, Bohol, Siquijor, Palawan (El Nido & Coron), Siargao, Boracay, Dumaguete, Manila, Clark, and more. Each destination has real directions, local restaurant picks, and insider tips from our personal trips.',
+    answer: 'We currently cover 59 destinations across Texas including Austin, San Antonio, Houston, Dallas, Fort Worth, Fredericksburg, Galveston, Marfa, Big Bend, South Padre Island, and more. Each destination has real directions, local restaurant picks, and insider tips from our personal trips.',
   },
 ];
 
 const features = [
-  { icon: '🧭', title: 'Real Directions', description: 'Not Google Maps pins — actual "take the Ceres bus, tell the conductor Panagsama" directions from every destination.' },
+  { icon: '🧭', title: 'Real Directions', description: 'Not Google Maps pins — actual "take I-35 south, exit Stassney Lane" directions from every destination.' },
   { icon: '🌅', title: 'Sunrise & Sunset', description: 'Golden hour times with best viewpoints matched to your daily locations. Never miss a sunset.' },
-  { icon: '💰', title: 'Budget Tracker', description: 'Log expenses in PHP or USD, see typical costs for your destinations, and convert currency — all offline.' },
-  { icon: '💬', title: 'Local Phrases', description: 'Cebuano and Tagalog phrases tuned to your specific destinations, with pronunciation guides.' },
+  { icon: '💰', title: 'Budget Tracker', description: 'Log expenses in USD, see typical costs for your destinations, and track your trip budget — all offline.' },
+  { icon: '💬', title: 'Local Tips', description: 'BBQ ordering etiquette, Tex-Mex must-orders, tipping customs, and "y\'all" culture guides for every region.' },
   { icon: '👥', title: 'Group Sharing', description: 'One purchase, up to 8 travelers. Everyone gets the full companion with real-time sync.' },
   { icon: '💵', title: 'Expense Splitter', description: 'Track shared costs, split bills, and settle up at the end of the trip. No more spreadsheets.' },
   { icon: '🎒', title: 'Smart Packing List', description: 'Auto-generated from your activities — canyoneering adds water shoes, snorkeling adds reef-safe sunscreen.' },
@@ -54,19 +54,19 @@ const steps = [
 
 const testimonials = [
   {
-    quote: 'We had zero signal on the ferry to Siquijor and the app had everything — directions, restaurant picks, even the right phrases. Felt like traveling with a local friend.',
+    quote: 'We were out in Big Bend with zero signal and the app had everything — directions, restaurant picks, even tips on where to stop for gas. Felt like traveling with a local friend.',
     author: 'Sarah & Mike',
-    trip: '7-day Visayas trip',
+    trip: '7-day West Texas road trip',
   },
   {
-    quote: 'The real directions are a game changer. Instead of staring at a map pin, I knew exactly which bus to take and what to tell the driver. Saved us hours.',
+    quote: 'The real directions are a game changer. Instead of staring at a map pin, I knew exactly which highway to take and where to stop. Saved us hours.',
     author: 'James',
-    trip: '5-day Cebu & Bohol',
+    trip: '5-day Hill Country tour',
   },
   {
     quote: 'Shared the companion with our whole group of 6. Everyone had the same info, we tracked expenses together, and the packing list was spot on.',
     author: 'Rachel & David',
-    trip: '10-day Palawan adventure',
+    trip: '10-day Texas grand tour',
   },
 ];
 
@@ -119,30 +119,30 @@ const testimonials = [
         <div class="cp-phone-frame">
           <div class="cp-phone-screen">
             <div class="cp-phone-header">
-              <span class="cp-phone-label">DISCOVER PHILIPPINES</span>
-              <span class="cp-phone-title">Central Visayas Explorer</span>
-              <span class="cp-phone-meta">7 days · 3 destinations · 14 activities</span>
+              <span class="cp-phone-label">DISCOVER TEXAS</span>
+              <span class="cp-phone-title">Hill Country Explorer</span>
+              <span class="cp-phone-meta">5 days · 4 destinations · 12 activities</span>
             </div>
             <div class="cp-phone-items">
               <div class="cp-phone-item">
                 <span class="cp-phone-item-icon">✈️</span>
                 <div>
-                  <span class="cp-phone-item-title">Arrive Mactan-Cebu</span>
+                  <span class="cp-phone-item-title">Arrive Austin-Bergstrom</span>
                   <span class="cp-phone-item-tag">Directions included</span>
                 </div>
               </div>
               <div class="cp-phone-item">
                 <span class="cp-phone-item-icon">🐟</span>
                 <div>
-                  <span class="cp-phone-item-title">Sardine Run Snorkeling</span>
+                  <span class="cp-phone-item-title">Hike Enchanted Rock</span>
                   <span class="cp-phone-item-tag">Directions + local tips</span>
                 </div>
               </div>
               <div class="cp-phone-item">
                 <span class="cp-phone-item-icon">🍽️</span>
                 <div>
-                  <span class="cp-phone-item-title">Dinner at Pleasure Point</span>
-                  <span class="cp-phone-item-tag">Local pick by Jenice</span>
+                  <span class="cp-phone-item-title">BBQ at Franklin</span>
+                  <span class="cp-phone-item-tag">Insider ordering tips</span>
                 </div>
               </div>
             </div>
@@ -169,17 +169,17 @@ const testimonials = [
                 <span class="cp-mockup-icons">📶 🔋</span>
               </div>
               <div class="cp-mockup-header" style="background: var(--gradient-companion-hero);">
-                <span class="cp-mockup-label">DISCOVER PHILIPPINES</span>
-                <span class="cp-mockup-title">Central Visayas</span>
-                <span class="cp-mockup-sub">Day 1 of 7 · Cebu City</span>
+                <span class="cp-mockup-label">DISCOVER TEXAS</span>
+                <span class="cp-mockup-title">Hill Country</span>
+                <span class="cp-mockup-sub">Day 1 of 5 · Austin</span>
               </div>
               <div class="cp-mockup-body">
                 <div class="cp-mockup-item">
-                  <span class="cp-mockup-time">8:00 AM</span>
+                  <span class="cp-mockup-time">10:00 AM</span>
                   <div class="cp-mockup-row">
                     <span class="cp-mockup-emoji">✈️</span>
                     <div>
-                      <span class="cp-mockup-name">Arrive Mactan-Cebu</span>
+                      <span class="cp-mockup-name">Arrive Austin-Bergstrom</span>
                       <span class="cp-mockup-tag">Directions included</span>
                     </div>
                   </div>
@@ -247,34 +247,34 @@ const testimonials = [
               </div>
               <div class="cp-mockup-header cp-mockup-header--teal">
                 <span class="cp-mockup-label">GETTING TO</span>
-                <span class="cp-mockup-title">Moalboal Beach</span>
-                <span class="cp-mockup-sub">From Cebu City · 3 hours</span>
+                <span class="cp-mockup-title">Fredericksburg</span>
+                <span class="cp-mockup-sub">From Austin · 80 minutes</span>
               </div>
               <div class="cp-mockup-body">
                 <div class="cp-mockup-direction">
                   <div class="cp-mockup-step-circle">1</div>
                   <div>
-                    <span class="cp-mockup-dir-title">South Bus Terminal</span>
-                    <span class="cp-mockup-dir-detail">Take a taxi or Grab to Cebu South Bus Terminal (₱150-200). Tell the driver "South Bus."</span>
+                    <span class="cp-mockup-dir-title">Head West on US-290</span>
+                    <span class="cp-mockup-dir-detail">Take US-290 West from Austin. Scenic Hill Country drive, ~80 minutes with no traffic.</span>
                   </div>
                 </div>
                 <div class="cp-mockup-direction">
                   <div class="cp-mockup-step-circle">2</div>
                   <div>
-                    <span class="cp-mockup-dir-title">Ceres Bus to Moalboal</span>
-                    <span class="cp-mockup-dir-detail">Look for the Ceres bus with "Bato via Barili" sign. Tell the conductor "Moalboal." ₱155, ~3 hrs.</span>
+                    <span class="cp-mockup-dir-title">Stop at Dripping Springs</span>
+                    <span class="cp-mockup-dir-detail">Optional stop for coffee at the 290 Wine Trail area. Several wineries open by 11 AM.</span>
                   </div>
                 </div>
                 <div class="cp-mockup-direction">
                   <div class="cp-mockup-step-circle">3</div>
                   <div>
-                    <span class="cp-mockup-dir-title">Tricycle to Panagsama</span>
-                    <span class="cp-mockup-dir-detail">At Moalboal town, take a tricycle to Panagsama Beach. ₱50 per person, 10 minutes.</span>
+                    <span class="cp-mockup-dir-title">Arrive on Main Street</span>
+                    <span class="cp-mockup-dir-detail">Park on Main Street or side streets. Free parking everywhere. Walk the shops and biergartens.</span>
                   </div>
                 </div>
                 <div class="cp-mockup-tip">
                   <span class="cp-mockup-tip-icon">💡</span>
-                  <span class="cp-mockup-tip-text">Leave before 7 AM to avoid traffic through Naga.</span>
+                  <span class="cp-mockup-tip-text">Go on a weekday to avoid weekend crowds on Main Street.</span>
                 </div>
               </div>
               <div class="cp-mockup-tabs">
@@ -361,30 +361,30 @@ const testimonials = [
                 <span class="cp-mockup-icons">📶 🔋</span>
               </div>
               <div class="cp-mockup-header cp-mockup-header--coral">
-                <span class="cp-mockup-label">LOCAL PHRASES</span>
-                <span class="cp-mockup-title">Cebuano (Bisaya)</span>
-                <span class="cp-mockup-sub">For your Visayas destinations</span>
+                <span class="cp-mockup-label">LOCAL TIPS</span>
+                <span class="cp-mockup-title">Texas Culture Guide</span>
+                <span class="cp-mockup-sub">For your Texas destinations</span>
               </div>
               <div class="cp-mockup-body">
                 <div class="cp-mockup-phrase">
-                  <div class="cp-mockup-phrase-local">Maayong buntag!</div>
-                  <div class="cp-mockup-phrase-eng">Good morning!</div>
-                  <div class="cp-mockup-phrase-say">ma-AH-yong boon-TAG</div>
+                  <div class="cp-mockup-phrase-local">BBQ Ordering</div>
+                  <div class="cp-mockup-phrase-eng">Order by the pound, not the plate. Brisket is king.</div>
+                  <div class="cp-mockup-phrase-say">Ask for "moist" brisket for the fattier, juicier cut</div>
                 </div>
                 <div class="cp-mockup-phrase">
-                  <div class="cp-mockup-phrase-local">Pila ni?</div>
-                  <div class="cp-mockup-phrase-eng">How much is this?</div>
-                  <div class="cp-mockup-phrase-say">PEE-la nee</div>
+                  <div class="cp-mockup-phrase-local">Y'all Culture</div>
+                  <div class="cp-mockup-phrase-eng">"Y'all" is singular. "All y'all" is plural.</div>
+                  <div class="cp-mockup-phrase-say">Always say "yes ma'am" and "yes sir"</div>
                 </div>
                 <div class="cp-mockup-phrase">
-                  <div class="cp-mockup-phrase-local">Asa ang Panagsama?</div>
-                  <div class="cp-mockup-phrase-eng">Where is Panagsama?</div>
-                  <div class="cp-mockup-phrase-say">AH-sa ang pa-nag-SA-ma</div>
+                  <div class="cp-mockup-phrase-local">Tex-Mex 101</div>
+                  <div class="cp-mockup-phrase-eng">Breakfast tacos are a way of life, not just a meal.</div>
+                  <div class="cp-mockup-phrase-say">Order queso as an appetizer everywhere</div>
                 </div>
                 <div class="cp-mockup-phrase">
-                  <div class="cp-mockup-phrase-local">Salamat kaayo!</div>
-                  <div class="cp-mockup-phrase-eng">Thank you very much!</div>
-                  <div class="cp-mockup-phrase-say">sa-LA-mat ka-AH-yo</div>
+                  <div class="cp-mockup-phrase-local">Tipping</div>
+                  <div class="cp-mockup-phrase-eng">20% is standard at restaurants. Always tip.</div>
+                  <div class="cp-mockup-phrase-say">Tip bartenders $1-2 per drink</div>
                 </div>
               </div>
               <div class="cp-mockup-tabs">
@@ -396,7 +396,7 @@ const testimonials = [
             </div>
           </div>
           <h3 class="cp-carousel-title">Local Phrases</h3>
-          <p class="cp-carousel-desc">Cebuano & Tagalog phrases matched to your destinations with pronunciation.</p>
+          <p class="cp-carousel-desc">Texas culture tips, BBQ etiquette, and local customs matched to your destinations.</p>
         </div>
 
         <!-- 5. Group Sharing -->
@@ -409,7 +409,7 @@ const testimonials = [
               </div>
               <div class="cp-mockup-header cp-mockup-header--purple">
                 <span class="cp-mockup-label">GROUP TRIP</span>
-                <span class="cp-mockup-title">Visayas Adventure</span>
+                <span class="cp-mockup-title">Texas Road Trip</span>
                 <span class="cp-mockup-sub">6 travelers · Synced</span>
               </div>
               <div class="cp-mockup-body">

@@ -108,24 +108,24 @@ function extractDestsFromText(text: string): string[] {
 
   // Keyword-based fallback: map common themes to popular destinations
   const themeMap: Record<string, string[]> = {
-    'beach': ['boracay', 'el-nido', 'siargao'],
-    'island': ['el-nido', 'coron', 'boracay'],
-    'snorkel': ['cebu', 'coron', 'bohol'],
-    'dive': ['coron', 'cebu', 'bohol'],
-    'diving': ['coron', 'cebu', 'bohol'],
-    'surf': ['siargao'],
-    'culture': ['cebu', 'bohol', 'siquijor'],
-    'history': ['cebu', 'clark'],
-    'food': ['cebu', 'dumaguete', 'clark'],
-    'relax': ['siquijor', 'siargao', 'boracay'],
-    'adventure': ['el-nido', 'coron', 'siargao'],
-    'family': ['cebu', 'bohol', 'boracay'],
-    'honeymoon': ['el-nido', 'boracay', 'siargao'],
-    'romantic': ['el-nido', 'boracay', 'siquijor'],
-    'budget': ['cebu', 'dumaguete', 'siquijor'],
-    'luxury': ['boracay', 'el-nido', 'coron'],
-    'palawan': ['el-nido', 'coron', 'puerto-princesa'],
-    'visayas': ['cebu', 'bohol', 'siquijor'],
+    'beach': ['galveston', 'south-padre-island', 'port-aransas'],
+    'bbq': ['austin', 'fort-worth', 'san-antonio'],
+    'music': ['austin', 'dallas', 'fort-worth'],
+    'history': ['san-antonio', 'dallas', 'fredericksburg'],
+    'food': ['austin', 'houston', 'san-antonio'],
+    'relax': ['fredericksburg', 'wimberley', 'marfa'],
+    'adventure': ['big-bend', 'guadalupe-mountains', 'enchanted-rock'],
+    'family': ['san-antonio', 'houston', 'galveston'],
+    'honeymoon': ['fredericksburg', 'marfa', 'wimberley'],
+    'romantic': ['fredericksburg', 'wimberley', 'marfa'],
+    'budget': ['austin', 'san-antonio', 'galveston'],
+    'luxury': ['dallas', 'houston', 'fredericksburg'],
+    'hill-country': ['fredericksburg', 'wimberley', 'dripping-springs'],
+    'gulf-coast': ['galveston', 'corpus-christi', 'south-padre-island'],
+    'west-texas': ['big-bend', 'marfa', 'el-paso'],
+    'nature': ['big-bend', 'enchanted-rock', 'palo-duro-canyon'],
+    'culture': ['san-antonio', 'austin', 'marfa'],
+    'nightlife': ['austin', 'dallas', 'houston'],
   };
 
   const matched = new Set<string>();
@@ -137,7 +137,7 @@ function extractDestsFromText(text: string): string[] {
   if (matched.size > 0) return [...matched].slice(0, 4);
 
   // Ultimate fallback: popular starter destinations when description exists
-  return ['cebu', 'bohol', 'el-nido'];
+  return ['austin', 'san-antonio', 'fredericksburg'];
 }
 
 async function computeHash(input: string): Promise<string> {
@@ -282,34 +282,34 @@ async function cacheResponse(db: any, hash: string, destinations: string, durati
 // --- Claude API ---
 
 function buildSystemPrompt(): string {
-  return `You are the Discover Texas AI Trip Planner. You generate detailed day-by-day itineraries for Texass travel.
+  return `You are the Discover Texas AI Trip Planner. You generate detailed day-by-day itineraries for Texas travel.
 
 RULES:
-- All prices in BOTH PHP (₱) and USD ($). Use rate: $1 = ₱56.50
+- All prices in USD ($)
 - Include specific restaurant names, hotel recommendations, and transport details
 - Use first-person plural voice: "we recommend...", "you'll love..."
 - Be specific: real place names, real prices, real transport options
 - Tag hotel/tour/transport items with affiliateType and affiliateSlotId for future monetization
-- affiliateSlotId format: "day{N}-{type}-{destination}" e.g. "day1-hotel-cebu"
+- affiliateSlotId format: "day{N}-{type}-{destination}" e.g. "day1-hotel-austin"
 
 SCALING BY TRIP LENGTH — this is critical to stay within output limits:
 - 1-7 days: 3-5 items per day, full descriptions (1-2 sentences each)
 - 8-14 days: 2-4 items per day, concise descriptions (1 sentence each)
-- 15+ days: 2-3 items per day, brief descriptions (under 15 words each). Group similar days (e.g. "Days 5-6: Beach days in Samar"). Only include key activities, one meal, and accommodation.
+- 15+ days: 2-3 items per day, brief descriptions (under 15 words each). Group similar days. Only include key activities, one meal, and accommodation.
 
 KNOWLEDGE BASE:
 ${JSON.stringify(knowledgeBase, null, 2)}
 
 RESPONSE FORMAT — Return ONLY valid JSON matching this schema:
 {
-  "title": "string — trip title like '7-Day Visayas Island Hopping'",
+  "title": "string — trip title like '7-Day Hill Country Road Trip'",
   "subtitle": "string — budget + month like 'Mid-Range · March 2026'",
   "totalBudget": { "php": number, "usd": number },
   "days": [
     {
       "dayNumber": 1,
-      "title": "string — day title like 'Arrive in Cebu City'",
-      "destination": "string — slug like 'cebu'",
+      "title": "string — day title like 'Arrive in Austin'",
+      "destination": "string — slug like 'austin'",
       "items": [
         {
           "time": "string — like 'Morning' or '5:30 AM'",
@@ -319,7 +319,7 @@ RESPONSE FORMAT — Return ONLY valid JSON matching this schema:
           "category": "transport|accommodation|activity|food|ferry",
           "affiliateType": "hotel|tour|transport|null",
           "affiliateSlotId": "string_or_null",
-          "locationName": "string — specific place name for map pin, e.g. 'Nacpan Beach', 'Kawasan Falls', 'Cebu IT Park'. Use real, specific place names."
+          "locationName": "string — specific place name for map pin, e.g. 'Barton Springs Pool', 'Enchanted Rock', 'The Alamo'. Use real, specific place names."
         }
       ]
     }
