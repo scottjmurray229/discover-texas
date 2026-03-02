@@ -108,7 +108,7 @@ export async function GET(context: APIContext): Promise<Response> {
     const monthlyRate = (d30Cost / daysWithData) * 30;
     const allCost = estimateCost(allTime?.input_tokens ?? 0, allTime?.output_tokens ?? 0);
 
-    const subject = `DP Daily: ${calls} calls, ${fmtCost(cost)}, ${users} users`;
+    const subject = `TX Daily: ${calls} calls, ${fmtCost(cost)}, ${users} users`;
 
     // --- Shared inline styles ---
     const S = {
