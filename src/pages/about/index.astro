@@ -6,6 +6,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
 import scottImg from '../../images/scott-murray.jpg';
+import jeniceImg from '../../images/jenice-murray.jpg';
 ---
 
 <BaseLayout
@@ -90,12 +91,26 @@ import scottImg from '../../images/scott-murray.jpg';
       <Image src={scottImg} alt="Scott Murray" class="profile-avatar scott-av" width={96} height={96} format="webp" loading="lazy" />
       <div class="profile-body">
         <div class="profile-name">Scott</div>
-        <div class="profile-role">Founder · Writer · Videographer</div>
+        <div class="profile-role">Co-founder · Writer · Videographer</div>
         <p class="profile-bio">Healthcare IT professional by day, Texas travel obsessive by every other waking moment. Based in Southern California. Enjoys the trip planning almost as much as the travel itself. Has driven every major Texas highway, eaten at BBQ joints across the state, floated the rivers, and hiked the canyons.</p>
         <div class="profile-stats">
           <div class="profile-stat"><div class="profile-stat-num">59</div><div class="profile-stat-label">TX destinations covered</div></div>
           <div class="profile-stat"><div class="profile-stat-num">9</div><div class="profile-stat-label">Regions explored</div></div>
           <div class="profile-stat"><div class="profile-stat-num">40+</div><div class="profile-stat-label">Countries traveled</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="profile-card reveal">
+      <div class="profile-banner jenice"><div class="profile-banner-bg"></div></div>
+      <Image src={jeniceImg} alt="Jenice Murray" class="profile-avatar jenice-av" width={96} height={96} format="webp" loading="lazy" />
+      <div class="profile-body">
+        <div class="profile-name">Jenice</div>
+        <div class="profile-role">Co-founder · Local Expert · Cultural Perspective</div>
+        <p class="profile-bio">Filipina by birth, world traveler by marriage. Jenice brings a fresh outsider perspective to Texas travel — someone who notices what locals take for granted and asks the questions that visitors actually want answered. Her love of food, festivals, and genuine local culture shapes the recommendations that make this site different from every generic Texas travel guide.</p>
+        <div class="profile-stats">
+          <div class="profile-stat"><div class="profile-stat-num">20+</div><div class="profile-stat-label">Years traveling</div></div>
+          <div class="profile-stat"><div class="profile-stat-num">Pampanga</div><div class="profile-stat-label">Hometown</div></div>
+          <div class="profile-stat"><div class="profile-stat-num">Real</div><div class="profile-stat-label">Local insights</div></div>
         </div>
       </div>
     </div>
