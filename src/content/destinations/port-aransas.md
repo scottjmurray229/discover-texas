@@ -3,7 +3,7 @@ title: "Port Aransas"
 description: "Port Aransas is a laid-back fishing village on Mustang Island with world-class fishing, uncrowded beaches, and fresh seafood."
 heroVideo: ""
 heroImage: ""
-tagline: "Fishing Capital of Texas"
+tagline: "The real Texas beach town — laid-back, unpretentious, excellent fishing, and ferry access from Aransas Pass that keeps the chain restaurants mostly at bay"
 region: gulf-coast
 bestMonths:
   - March

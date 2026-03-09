@@ -3,7 +3,7 @@ title: "Fredericksburg"
 description: "Fredericksburg is the heart of Texas Wine Country with German heritage, 50+ wineries, and stunning Enchanted Rock."
 heroVideo: ""
 heroImage: ""
-tagline: "Wine Country and German Heritage"
+tagline: "German settlers built this Hill Country town in 1846 and left behind excellent sausage, Oktoberfest, and the foundation for one of Texas's best wine regions"
 region: hill-country
 bestMonths:
   - March

@@ -3,7 +3,7 @@ title: "Austin"
 description: "Austin is Texas vibrant capital city with live music on every corner, world-class BBQ, and a culture that is proudly weird."
 heroVideo: ""
 heroImage: ""
-tagline: "Live Music Capital of the World"
+tagline: "Live music on every corner, breakfast tacos that will ruin all future breakfast tacos, and a tech boom that has made it one of the fastest-changing cities in America"
 region: central-texas
 bestMonths:
   - March

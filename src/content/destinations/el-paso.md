@@ -3,7 +3,7 @@ title: "El Paso"
 description: "El Paso is Texas western outpost with stunning Franklin Mountains, vibrant border culture, and the best Mexican food."
 heroVideo: ""
 heroImage: ""
-tagline: "Sun City on the Border"
+tagline: "Where Texas, New Mexico, and Mexico converge in a border city of real binational character — Juarez is a walk across the bridge, and the green chile is outstanding"
 region: west-texas
 bestMonths:
   - October

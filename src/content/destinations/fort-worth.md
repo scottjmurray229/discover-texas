@@ -3,7 +3,7 @@ title: "Fort Worth"
 description: "Fort Worth is the real-deal cowtown with the Stockyards, world-class museums, and a western culture uniquely Texan."
 heroVideo: ""
 heroImage: ""
-tagline: "Where the West Begins"
+tagline: "The real cowboy city — a working stockyards district, the finest American Western art collection on earth, and a cultural scene that Dallas can't quite match"
 region: north-texas
 bestMonths:
   - March

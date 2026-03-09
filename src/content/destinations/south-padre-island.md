@@ -3,7 +3,7 @@ title: "South Padre Island"
 description: "South Padre Island is Texas tropical escape with warm Gulf waters, sea turtle rescue, and the best beach vibes in the state."
 heroVideo: ""
 heroImage: ""
-tagline: "Tropical Texas Paradise"
+tagline: "The southernmost point of Texas — spring break legend, excellent birding at the World Birding Center, and the most Caribbean-blue water the Gulf Coast produces"
 region: gulf-coast
 bestMonths:
   - March

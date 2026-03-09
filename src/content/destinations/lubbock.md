@@ -3,7 +3,7 @@ title: "Lubbock"
 description: "Lubbock is West Texas biggest city with Texas Tech, the Buddy Holly Center, and a growing wine scene."
 heroVideo: ""
 heroImage: ""
-tagline: "Hub City and Buddy Holly Hometown"
+tagline: "Buddy Holly's hometown on the Llano Estacado, Texas Tech country, and the surprising center of a growing Caprock Canyon wine region nobody outside Texas knows about"
 region: panhandle
 bestMonths:
   - April

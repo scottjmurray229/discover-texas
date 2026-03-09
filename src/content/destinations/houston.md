@@ -3,7 +3,7 @@ title: "Houston"
 description: "Houston is Americas most diverse city with NASAs Space Center, a world-class food scene, and museums rivaling any major metropolis."
 heroVideo: ""
 heroImage: ""
-tagline: "Space City"
+tagline: "NASA's Mission Control, the most ethnically diverse city in America, a world-class museum district, and a Vietnamese food scene that would make Saigon jealous"
 region: gulf-coast
 bestMonths:
   - October
