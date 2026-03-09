@@ -7,7 +7,7 @@ aeoFacts:
   currency: "USD (US Dollar)"
   plugType: "A/B, 120V"
   language: "English (Spanish widely spoken)"
-  bestTime: "September–November, March–May"
+  bestTime: "March–May, September–November"
   visaInfo: "US territory — no visa for US citizens"
   timeZone: "UTC-6 (CST), UTC-5 summer"
   emergencyNumber: "911"
@@ -25,18 +25,18 @@ budgetPerDay:
   luxury: 180
 gettingThere: "Drive from Austin (70 min) via US-183 or I-35."
 essentials:
-  - icon: "plane"
+  - icon: "car"
     label: "Getting There"
-    value: "Drive from Austin (70 min) via US-183 or I-35."
+    value: "Drive from Austin (70 min) via US-183. Waco is 45 minutes north on I-35. Temple-Belton is 20 minutes east."
   - icon: "car"
     label: "Getting Around"
-    value: "Car rental recommended. Rideshare available in metro areas."
+    value: "Car essential. Fort Cavazos is adjacent to the city. Stillhouse Hollow Lake is 10 miles south. Belton Lake is 15 miles northeast."
   - icon: "dollar"
     label: "Daily Budget"
-    value: "$30-$180 USD per day depending on style."
+    value: "$30-$180 USD per day. 1st Cavalry Division Museum free; lake recreation fees $5-$10."
 highlights:
-  - "Visit the 1st Cavalry Division Museum"
-  - "Fish at Stillhouse Hollow Lake"
+  - "Visit the 1st Cavalry Division Museum at Fort Cavazos"
+  - "Fish and boat at Stillhouse Hollow Lake"
   - "Hike at Dana Peak Park"
 gradientColors: "from-amber-900 via-orange-800 to-red-900"
 relatedDestinations: []
@@ -44,89 +44,143 @@ faqItems: []
 affiliatePicks: []
 lastVerified: 2026-02-27
 faqItems:
-  - question: "When is the best time to visit?"
-    answer: "Spring (March-May) and fall (October-November) offer the most comfortable temperatures for outdoor activities across most of Texas. Summer heat can be extreme — plan outdoor activities for early morning."
-  - question: "Do I need a car?"
-    answer: "Yes — a car is essential for almost all Texas destinations outside of downtown Houston, Dallas, and Austin. The distances between attractions are significant."
-  - question: "What is Texas weather like?"
-    answer: "Hot and variable. Most of Texas experiences hot summers (95-105°F), mild winters, and dramatic weather swings including thunderstorms. The Gulf Coast gets hurricanes in summer/fall; West Texas is dry desert; East Texas is humid subtropical."
-  - question: "What is the local food like?"
-    answer: "Texas cuisine varies by region — BBQ in Central Texas, Tex-Mex and Mexican-American food throughout, Gulf seafood on the coast, and fusion cuisine in the major cities. Each region has distinct culinary traditions worth exploring."
-  - question: "How do I get around Texas efficiently?"
-    answer: "Fly between cities — Texas is enormous. Dallas-Houston-San Antonio-Austin form the main travel triangle. Driving between any two major cities takes 3-5 hours. Southwest Airlines has excellent intra-Texas coverage."
-  - question: "What makes Texas special?"
-    answer: "Texas has a distinct cultural identity — a blend of Southern, Mexican, and Western traditions that's unlike any other US state. The pride in Texas identity is genuine and pervasive."
-  - question: "Is Texas good for outdoor adventures?"
-    answer: "Excellent — Big Bend National Park, Enchanted Rock, Guadalupe Mountains, Padre Island National Seashore, and the Hill Country provide outstanding outdoor experiences across diverse environments."
-  - question: "What are the Texas state parks like?"
-    answer: "Texas state parks are generally excellent and affordable. The Lone Star Land Steward Pass ($70/year) covers most state park entry fees and is worth purchasing for a multi-destination Texas trip."
+  - question: "What is Fort Cavazos?"
+    answer: "Fort Cavazos (formerly Fort Hood) is the largest active-duty armored post in the US military — home to the 1st Cavalry Division and III Corps. The installation covers 214,000 acres across Bell and Coryell counties. The fort was renamed in 2023 to honor General Richard E. Cavazos, the first Hispanic-American four-star general in US Army history."
+  - question: "What is the 1st Cavalry Division Museum?"
+    answer: "The 1st Cavalry Division Museum at Fort Cavazos is a free military history museum covering the history of the Army's premier armored division from World War II through Iraq and Afghanistan. The outdoor display includes tanks, helicopters, and armored vehicles. The Vietnam War exhibit is particularly comprehensive. Visitors need a valid ID for base access — non-Department of Defense visitors should check current entry requirements."
+  - question: "What are Stillhouse Hollow and Belton Lake like?"
+    answer: "Stillhouse Hollow Lake and Belton Lake (both US Army Corps of Engineers reservoirs) are the primary outdoor recreation destinations near Killeen. Stillhouse Hollow (6,430 acres) has excellent bass and catfish fishing, swimming, and camping at several parks. Belton Lake (12,300 acres) is larger with more developed marina and camping facilities. Both are within 15 miles of Killeen."
 affiliatePicks:
-  - name: "Texas State Park Hotels"
+  - name: "Killeen Hotel"
     type: hotel
-    url: "https://www.booking.com/region/us/texas.html?aid=2778866&ss=Texas"
-    description: "Find accommodations near Texas destinations."
-    priceRange: "$$"
-  - name: "Texas Guided Day Tour"
+    url: "https://www.booking.com/city/us/killeen.html?aid=2778866"
+    description: "Find accommodations in Killeen near Fort Cavazos and Central Texas lakes."
+    priceRange: "$"
+  - name: "Central Texas Lake Tour"
     type: tour
-    url: "https://www.getyourguide.com/?partner_id=IVN6IQ3&q=Texas+guided+tour"
-    description: "Discover local highlights with an experienced guide."
+    url: "https://www.getyourguide.com/?partner_id=IVN6IQ3&q=Killeen+Temple+Texas+lake+outdoor+tour"
+    description: "Central Texas lake fishing and outdoor recreation near Killeen."
     priceRange: "$$"
-  - name: "Texas Travel Guide"
+  - name: "US Army 1st Cavalry History"
     type: activity
-    url: "https://www.amazon.com/s?k=texas+travel&tag=discoverphili-20&k=texas+travel+guide"
-    description: "Comprehensive Texas travel guide for planning your trip."
+    url: "https://www.amazon.com/s?k=1st+cavalry+division+history+vietnam+war&tag=discoverphili-20"
+    description: "1st Cavalry Division history from WWII through Vietnam and beyond."
     priceRange: "$"
 scottTips:
-  logistics: "Texas is large — fly between major cities rather than driving. Southwest Airlines has excellent intra-Texas routes. A car is essential once you arrive."
-  bestTime: "March-May and October-November for the most comfortable outdoor temperatures. Summer heat (95-105°F+) limits midday outdoor activities."
-  gettingAround: "Car essential for all Texas travel outside major city centers. Distances are significant — plan driving time carefully."
-  money: "Texas has no state income tax, which contributes to generally affordable pricing for dining and activities. Hotels range widely by location and season."
-  safety: "Texas is generally safe for tourists in established destinations. Summer heat is the primary safety concern — carry water and limit outdoor exposure at midday."
-  packing: "Light clothing for the heat. Layers for air-conditioned interiors. Sun protection year-round. Good walking shoes."
-  localCulture: "Texas pride is genuine and pervasive — locals are proud of their state's scale, history, and culture. The BBQ, Tex-Mex, and live music traditions are living culture, not tourist performance."
+  logistics: "Austin is 70 minutes south on US-183. Waco is 45 minutes north. Temple-Belton is 20 minutes east. The I-35/US-190 junction is the regional transportation hub."
+  bestTime: "March–April for spring wildflowers and lake conditions. October–November for fall weather and fishing. The lakes are active year-round but most pleasant in shoulder seasons."
+  gettingAround: "Car essential. Fort Cavazos access requires valid ID. The museum is well worth the access process. Both lakes require driving to different park units."
+  money: "Very affordable destination. The 1st Cavalry Museum is free. Lake recreation fees are $5–$10. Killeen has Texas-competitive restaurant prices driven by the military community's budget consciousness."
+  safety: "Very safe. Fort Cavazos access requires ID verification — follow installation security protocols."
+  packing: "Valid government-issued ID for fort access. Fishing license for lake recreation. Sun protection for lake activities."
+  localCulture: "Killeen is defined by Fort Cavazos — the military community is the city's economic and cultural foundation. The diversity of the base population (soldiers and families from every background) gives Killeen a more culturally varied restaurant and community scene than many Central Texas cities of similar size."
 contentStatus: published
 draft: false
 fmContentType: destination
 ---
 
-## What Makes Killeen Special
+Killeen exists because of Fort Cavazos — the largest active-duty armored military installation in the United States, covering 214,000 acres across Bell and Coryell counties. The city of 150,000 grew up around the base and maintains an economic and cultural relationship with the military that makes it distinctly different from every other Central Texas city. The diversity of the base population — soldiers and military families from across the country and around the world — has produced a food scene and cultural mix that surprises visitors expecting a homogeneous Central Texas town.
 
-<div class="immersive-break-inline">
-  <video autoplay muted loop playsinline preload="metadata">
-    <source src="/videos/destinations/killeen-hero.mp4" type="video/mp4" />
-  </video>
-  <div class="ib-gradient" style="background: linear-gradient(135deg, #dc2626, #92400e, #1e40af);"></div>
+The 1st Cavalry Division Museum at Fort Cavazos is the primary visitor attraction — a free military history museum covering the premier American armored division from its World War II origins through Korea, Vietnam, Desert Storm, and Iraq. The outdoor vehicle display includes tanks, Huey helicopters, and armored personnel carriers from multiple eras. The Vietnam War exhibit is particularly comprehensive, covering the 1st Cav's air mobility doctrine and the Ia Drang Valley campaign. Base access requires valid identification, and current entry requirements should be verified before visiting.
+
+Stillhouse Hollow Lake and Belton Lake are the natural counterparts — US Army Corps of Engineers reservoirs within 15 miles of Killeen that provide some of the best bass fishing, swimming, and camping in Central Texas. Stillhouse Hollow's clear water and the Dana Peak Park section are particularly good for kayaking and swimming. The lakes fill the outdoor recreation gap that the military base's size creates — there's no way to recreate within the base perimeter for civilians, but the surrounding reservoirs are excellent.
+
+The regional food scene reflects the base population: excellent Vietnamese, Korean, Filipino, and Caribbean restaurants alongside the Texas BBQ and Tex-Mex that the Hill Country proximity demands.
+
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #7C2D12 0%, #B91C1C 35%, #F87171 65%, #7C2D12 100%);"></div>
   <div class="ib-content">
-    <div class="ib-title">Discover Texas</div>
-    <p class="ib-text">The Lone Star State. Everything is bigger here.</p>
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">Drive into Central Texas and find the military city that built America's largest armored post and keeps one of the most diverse food scenes between Austin and Waco.</p>
   </div>
 </div>
 
+## Why Killeen is quintessentially Texas
 
-Killeen is one of Texas's most beloved destinations. Known as the "Gateway to Fort Cavazos," this central texas gem delivers authentic Lone Star experiences you won't find anywhere else.
+Killeen represents the military Texas that the state's frontier mythology anticipated — the US Army has been stationed in Texas since the Mexican-American War, and Fort Cavazos continues the tradition of the American military's largest permanent presence in the American West. The 1st Cavalry Division's history intersects with every major American military operation since World War II, and the museum tells that story with the directness that military history institutions at active posts can achieve.
 
-Killeen sits next to Fort Cavazos military base and offers access to Belton Lake and Stillhouse Hollow.
+The renaming from Fort Hood to Fort Cavazos in 2023 — honoring General Richard E. Cavazos, the Army's first Hispanic-American four-star general and a combat hero of Korea and Vietnam — is a meaningful change for a base located in a region with a majority Hispanic population. Cavazos grew up in Kingsville, served 34 years, and received the Distinguished Service Cross twice for actions in Korea. His legacy is embedded in the South Texas and Central Texas communities that produced many of Fort Cavazos's soldiers.
 
-## Things to Do in Killeen
+The lakes — Stillhouse Hollow and Belton — were both created by the Army Corps of Engineers as flood control and water supply projects for Central Texas. Their management as public recreation areas reflects the public benefit model of Corps water projects across the American South and Midwest.
 
-Whether you're looking for outdoor adventure, cultural experiences, or great food, Killeen has something for everyone.
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #7C2D12 0%, #B91C1C 35%, #F87171 65%, #7C2D12 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">What To Explore</h2>
+    <p class="ib-text">1st Cavalry Division Museum, Stillhouse Hollow Lake, Dana Peak Park kayaking, and the most culturally diverse food scene in Central Texas.</p>
+  </div>
+</div>
 
-- **Visit the 1st Cavalry Division Museum** — A must-do for any visitor. This is the experience that puts Killeen on the map.
-- **Fish at Stillhouse Hollow Lake** — Another highlight that showcases the best of the area.
-- **Hike at Dana Peak Park** — Round out your visit with this local favorite.
+## What should you do in Killeen?
 
-## Where to Eat in Killeen
+**1st Cavalry Division Museum** — Free. Fort Cavazos base access required. WWII through Afghanistan military history with extensive outdoor vehicle display. Allow 2–3 hours. Verify current civilian access requirements.
 
-Texas cuisine shines in Killeen. From legendary BBQ joints to Tex-Mex favorites and local specialties, you'll eat well here. Budget about $30-$85 per person per day for food.
+**Stillhouse Hollow Lake** — The Corps of Engineers manages several parks on the 6,430-acre reservoir. Dana Peak Park has excellent swimming and kayaking. Wilson H. Fox Park has camping and fishing access. $5 day use.
 
-## Where to Stay in Killeen
+**Belton Lake** — The 12,300-acre reservoir 15 miles northeast has full marina facilities, camping, fishing for bass and catfish, and the Winkler boat ramp for lake access. More developed than Stillhouse Hollow.
 
-Accommodations range from budget options ($30/night) to mid-range hotels ($85/night) to luxury properties ($180/night). Book ahead during peak season and major events.
+**Museum of the American GI** — Civilian military museum in Temple (20 minutes east) with a large collection of tanks, vehicles, and weapons from WWII through Vietnam. $12 adult.
 
-## Best Time to Visit Killeen
+**Dana Peak Park** — Stillhouse Hollow Lake unit with swimming area, kayak launches, and hiking trails. The best single outdoor recreation day from Killeen.
 
-The best months to visit are March through November when temperatures are comfortable and outdoor activities are at their best. Summer months can be extremely hot across most of Texas.
+**Chalk Ridge Falls Park** — 10 miles south in Belton. Small waterfall and swimming hole on Stillhouse Hollow. Free. Pleasant for families.
 
-## Getting to Killeen
+<div class="scott-tips">
+  <div class="scott-tips-header">&#9992;&#65039; Scott's Killeen Tips</div>
+  <ul>
+    <li><strong>Getting There:</strong> Austin is 70 minutes south. Waco is 45 minutes north on I-35. Temple is 20 minutes east. The US-190/I-35 junction is the regional hub.</li>
+    <li><strong>Best Time:</strong> March–April for spring lake conditions and wildflowers. October–November for fall bass fishing and comfortable temperatures.</li>
+    <li><strong>Museum Access:</strong> The 1st Cavalry Museum requires Fort Cavazos base access with valid ID. Check the fort's current visitor access requirements — they change based on security conditions. The museum is worth the process.</li>
+    <li><strong>Don't Miss:</strong> The 1st Cavalry Museum Vietnam War exhibit. The Air Cavalry's role in Vietnam — the Ia Drang Valley campaign, the development of helicopter assault doctrine — is told with the directness of an institution still actively using that doctrine.</li>
+    <li><strong>Avoid:</strong> Expecting a conventional tourist destination. Killeen is a military and working community. The interesting things here — the museum, the lakes, the diverse food scene — are functional rather than decorative.</li>
+    <li><strong>Texas Truth:</strong> The 1st Cavalry's distinctive patch (a black and yellow diagonal shield with a horse head) is the most recognizable military symbol in Central Texas. When you see it, you're in 1st Cav country — which extends across multiple continents and two centuries of American military history.</li>
+  </ul>
+</div>
 
-Drive from Austin (70 min) via US-183 or I-35. Car rental is the most practical way to explore the area.
+<div class="immersive-break-inline" id="food">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #7C2D12 0%, #B91C1C 35%, #F87171 65%, #7C2D12 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Food</h2>
+    <p class="ib-text">The most diverse food scene between Austin and Waco — military community diversity produces excellent Vietnamese, Korean, and Caribbean alongside Texas BBQ and Tex-Mex.</p>
+  </div>
+</div>
+
+## Where should you eat in Killeen?
+
+- **Bravos BBQ** — Local Central Texas BBQ with brisket smoked over post oak. The most serious BBQ option in Killeen proper. $$
+- **Kim's Pho** — The Vietnamese food in Killeen is excellent — a function of the military community's Southeast Asian connection. The pho and banh mi are the standards. $
+- **Korean BBQ Killeen** — Several Korean BBQ restaurants serve the Korean military family community. The all-you-can-eat Korean BBQ options near the base are exceptional value. $$
+- **El Fenix** — Traditional Tex-Mex with the combination plates and margaritas. Local institution. $$
+- **Soju Korean BBQ and Bar** — The best full-service Korean BBQ in the area. The tableside grilling and banchan selection are the draws. $$
+- **Crazy Cajun** — The Cajun and Southern cooking that reflects Killeen's Louisiana connection (many Gulf Coast military families). The crawfish étouffée is excellent. $$
+- **Fuji Japanese Steakhouse** — Teppanyaki in a full-service setting. Popular for celebrations and military promotion dinners. $$$
+
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #7C2D12 0%, #B91C1C 35%, #F87171 65%, #7C2D12 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Where to Stay</h2>
+    <p class="ib-text">Affordable military-city hotel rates — Killeen has the full range at prices well below Austin standards.</p>
+  </div>
+</div>
+
+## Where should you stay in Killeen?
+
+**Budget ($50–$80/night):** Multiple chain hotels on US-190 at very affordable rates. The La Quinta, Hampton Inn, and Holiday Inn Express are all well-priced by Central Texas standards.
+
+**Mid-range ($80–$140/night):** The Hilton Garden Inn and similar full-service properties offer business amenities at mid-range military-city rates.
+
+**Camping ($15–$25/night):** The Corps of Engineers campgrounds at Stillhouse Hollow and Belton Lake provide the best outdoor accommodation in the area. Dana Peak Park at Stillhouse Hollow is the most scenic.
+
+<div class="immersive-break-inline" id="essentials">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #7C2D12 0%, #B91C1C 35%, #F87171 65%, #7C2D12 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Before You Go</h2>
+    <p class="ib-text">Everything you need to know before visiting the gateway city to America's largest armored military post.</p>
+  </div>
+</div>
+
+## When is the best time to visit Killeen?
+
+March and April bring spring lake conditions and wildflowers along the Central Texas highways. October and November are ideal for bass fishing on Stillhouse Hollow and Belton Lake, with comfortable temperatures and reduced summer boat traffic. The 1st Cavalry Museum is open year-round. The military community maintains consistent activity year-round — there's no off-season in a base city.
+
+Killeen works best as part of a Central Texas circuit that includes Temple-Belton (20 minutes east), Waco (45 minutes north), and Austin (70 minutes south). The 1st Cavalry Museum is worth the base access process for military history enthusiasts, and the lakes provide excellent outdoor recreation for visitors who combine a museum day with a lake day. Find more Central Texas destinations on our [destinations page](/destinations/) or plan your trip at our [Texas travel guide](/plan/).

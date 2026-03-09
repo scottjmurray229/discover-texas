@@ -7,7 +7,7 @@ aeoFacts:
   currency: "USD (US Dollar)"
   plugType: "A/B, 120V"
   language: "English (Spanish widely spoken)"
-  bestTime: "September–November, March–May"
+  bestTime: "March–May, September–November"
   visaInfo: "US territory — no visa for US citizens"
   timeZone: "UTC-6 (CST), UTC-5 summer"
   emergencyNumber: "911"
@@ -15,118 +15,179 @@ heroAlt: "Schlitterbahn Waterpark tube chutes and Gruene Hall dance hall, New Br
 tagline: "German Heritage and River Fun"
 region: central-texas
 bestMonths:
+  - March
   - April
-  - May
-  - September
   - October
+  - November
 budgetPerDay:
   backpacker: 40
-  midRange: 120
-  luxury: 280
+  midRange: 100
+  luxury: 220
 gettingThere: "Located between Austin and San Antonio on I-35, 45 min from San Antonio International (SAT)."
 essentials:
-  - icon: "plane"
+  - icon: "car"
     label: "Getting There"
-    value: "Located between Austin and San Antonio on I-35, 45 min from San Antonio International (SAT)."
+    value: "Located on I-35 between Austin (50 min) and San Antonio (45 min). Fly into either major airport."
   - icon: "car"
     label: "Getting Around"
-    value: "Car rental recommended. Rideshare available in metro areas."
+    value: "Car helpful. The Comal River tubing, Gruene Historic District, and Schlitterbahn are all within a few miles."
   - icon: "dollar"
     label: "Daily Budget"
-    value: "$40-$280 USD per day depending on style."
+    value: "$40-$220 USD per day. Schlitterbahn admission $40-$50; tubing rental $25-$35."
 highlights:
-  - "Float the Comal River"
-  - "Visit Schlitterbahn Waterpark"
-  - "Dance at Gruene Hall"
+  - "Float the Comal River on an inner tube"
+  - "Two-step at Gruene Hall (oldest dance hall in Texas)"
+  - "Swim through Schlitterbahn's famous river rapids"
 gradientColors: "from-amber-900 via-orange-800 to-red-900"
 relatedDestinations: []
 faqItems: []
 affiliatePicks: []
 lastVerified: 2026-02-27
 faqItems:
-  - question: "When is the best time to visit?"
-    answer: "Spring (March-May) and fall (October-November) offer the most comfortable temperatures for outdoor activities across most of Texas. Summer heat can be extreme — plan outdoor activities for early morning."
-  - question: "Do I need a car?"
-    answer: "Yes — a car is essential for almost all Texas destinations outside of downtown Houston, Dallas, and Austin. The distances between attractions are significant."
-  - question: "What is Texas weather like?"
-    answer: "Hot and variable. Most of Texas experiences hot summers (95-105°F), mild winters, and dramatic weather swings including thunderstorms. The Gulf Coast gets hurricanes in summer/fall; West Texas is dry desert; East Texas is humid subtropical."
-  - question: "What is the local food like?"
-    answer: "Texas cuisine varies by region — BBQ in Central Texas, Tex-Mex and Mexican-American food throughout, Gulf seafood on the coast, and fusion cuisine in the major cities. Each region has distinct culinary traditions worth exploring."
-  - question: "How do I get around Texas efficiently?"
-    answer: "Fly between cities — Texas is enormous. Dallas-Houston-San Antonio-Austin form the main travel triangle. Driving between any two major cities takes 3-5 hours. Southwest Airlines has excellent intra-Texas coverage."
-  - question: "What makes Texas special?"
-    answer: "Texas has a distinct cultural identity — a blend of Southern, Mexican, and Western traditions that's unlike any other US state. The pride in Texas identity is genuine and pervasive."
-  - question: "Is Texas good for outdoor adventures?"
-    answer: "Excellent — Big Bend National Park, Enchanted Rock, Guadalupe Mountains, Padre Island National Seashore, and the Hill Country provide outstanding outdoor experiences across diverse environments."
-  - question: "What are the Texas state parks like?"
-    answer: "Texas state parks are generally excellent and affordable. The Lone Star Land Steward Pass ($70/year) covers most state park entry fees and is worth purchasing for a multi-destination Texas trip."
+  - question: "What is river tubing in New Braunfels like?"
+    answer: "River tubing on the Comal River is the quintessential New Braunfels summer experience. The 2.5-mile Comal River float from Hinman Island Park to Prince Solms Park takes 1.5–2.5 hours on a standard tube. The water is spring-fed and stays 72°F year-round. Outfitters line the river with tube rentals ($25–$35), shuttle service included. The experience is social, family-friendly, and genuinely pleasant."
+  - question: "What is Gruene Hall?"
+    answer: "Gruene Hall is the oldest continuously operating dance hall in Texas, built in 1878 in the German settlement of Gruene (pronounced 'Green'). The hall is a simple wooden structure with no air conditioning, dirt floors (originally), and excellent acoustics for country and Texas blues acts. Lyle Lovett, Willie Nelson, and Garth Brooks have all played here. Admission is typically free or minimal cover."
+  - question: "What is Schlitterbahn?"
+    answer: "Schlitterbahn is the most famous waterpark in Texas, built on the banks of the Comal River in New Braunfels. The park's signature feature is its use of the actual spring-fed river water (72°F, crystal clear) throughout the park's chutes and pools. The Master Blaster (uphill water coaster) and the Torrent river tube ride are the signature experiences. The park fills to capacity on summer weekends."
+  - question: "Is New Braunfels just a waterpark town?"
+    answer: "No — the waterpark and tubing are the summer identity but New Braunfels has year-round appeal. Gruene Historic District has antique shops, restaurants, and the dance hall operating year-round. The Comal County wine trail is developing. Landa Park has a spring-fed swimming pool that operates year-round. The Canyon Lake (15 minutes north) has excellent boating and camping."
 affiliatePicks:
-  - name: "Texas State Park Hotels"
+  - name: "New Braunfels Hotel"
     type: hotel
-    url: "https://www.booking.com/region/us/texas.html?aid=2778866&ss=Texas"
-    description: "Find accommodations near Texas destinations."
+    url: "https://www.booking.com/city/us/new-braunfels.html?aid=2778866"
+    description: "Find accommodations near Gruene Hall and the Comal River in New Braunfels."
     priceRange: "$$"
-  - name: "Texas Guided Day Tour"
+  - name: "Gruene Hall Live Music"
     type: tour
-    url: "https://www.getyourguide.com/?partner_id=IVN6IQ3&q=Texas+guided+tour"
-    description: "Discover local highlights with an experienced guide."
+    url: "https://www.getyourguide.com/?partner_id=IVN6IQ3&q=New+Braunfels+Gruene+Hall+tubing"
+    description: "New Braunfels tubing and Gruene Hall guided experience."
     priceRange: "$$"
-  - name: "Texas Travel Guide"
+  - name: "Texas Hill Country Cookbook"
     type: activity
-    url: "https://www.amazon.com/s?k=texas+travel&tag=discoverphili-20&k=texas+travel+guide"
-    description: "Comprehensive Texas travel guide for planning your trip."
+    url: "https://www.amazon.com/s?k=texas+hill+country+german+cookbook&tag=discoverphili-20"
+    description: "German-Texan Hill Country recipes and food culture."
     priceRange: "$"
 scottTips:
-  logistics: "Texas is large — fly between major cities rather than driving. Southwest Airlines has excellent intra-Texas routes. A car is essential once you arrive."
-  bestTime: "March-May and October-November for the most comfortable outdoor temperatures. Summer heat (95-105°F+) limits midday outdoor activities."
-  gettingAround: "Car essential for all Texas travel outside major city centers. Distances are significant — plan driving time carefully."
-  money: "Texas has no state income tax, which contributes to generally affordable pricing for dining and activities. Hotels range widely by location and season."
-  safety: "Texas is generally safe for tourists in established destinations. Summer heat is the primary safety concern — carry water and limit outdoor exposure at midday."
-  packing: "Light clothing for the heat. Layers for air-conditioned interiors. Sun protection year-round. Good walking shoes."
-  localCulture: "Texas pride is genuine and pervasive — locals are proud of their state's scale, history, and culture. The BBQ, Tex-Mex, and live music traditions are living culture, not tourist performance."
+  logistics: "On I-35 between Austin (50 min) and San Antonio (45 min). Easy to include in either city's itinerary. Schlitterbahn sells out on summer weekends — buy tickets online in advance."
+  bestTime: "June–August for river tubing (peak season). March–April and September–November for Gruene Hall and the Hill Country without waterpark crowds. The Comal River is 72°F year-round."
+  gettingAround: "The Comal River, Schlitterbahn, and Gruene are all within 3 miles. Walk from Gruene Hall to the river tubing operations."
+  money: "Summer is full tourist pricing. Off-season (October–April) is significantly cheaper. Schlitterbahn admission $40–$50; tubing rental $25–$35 includes shuttle."
+  safety: "Comal River tubing is extremely safe — the river is spring-fed, shallow, and gentle. Standard sun protection and alcohol moderation are the main considerations."
+  packing: "Old shoes that can get wet for river tubing. Waterproof bag for phone. Sunscreen (the spring-fed water is cold enough to lower your perception of sun exposure)."
+  localCulture: "New Braunfels's German heritage is similar to Fredericksburg's — 175 years of evolution into German-Texan hybrid culture. The Wurstfest sausage festival in November is the major German heritage event, drawing 100,000 visitors."
 contentStatus: published
 draft: false
 fmContentType: destination
 ---
 
-## What Makes New Braunfels Special
+New Braunfels exists at the intersection of two Texas pleasures that should coexist less smoothly than they do: the spring-fed river tubing culture of the Hill Country and the German dance hall tradition of the 19th century immigrant communities. Somehow they fit perfectly together. You float the Comal River for two hours on a warm June afternoon, cold spring water keeping you comfortable despite the Texas sun, and then drive five minutes to Gruene Hall — the oldest continuously operating dance hall in Texas — where a band is setting up and the doors are open and cold beer is six dollars.
 
-<div class="immersive-break-inline">
-  <video autoplay muted loop playsinline preload="metadata">
-    <source src="/videos/destinations/new-braunfels-hero.mp4" type="video/mp4" />
-  </video>
-  <div class="ib-gradient" style="background: linear-gradient(135deg, #dc2626, #92400e, #1e40af);"></div>
+The Comal River float is worth understanding as a specifically Texas institution. The river is spring-fed and stays 72°F year-round — cool enough to be refreshing in summer, warm enough to be comfortable in spring and fall. The 2.5-mile float from Hinman Island Park to Prince Solms Park takes 1.5–2.5 hours depending on river levels. The outfitters on the bank handle tube rentals, cooler rentals, and shuttle service back to the start. The experience is communal in the best Texas way: families, college students, couples, and retirees all sharing the same 40-foot-wide spring, laughing at the same drops, helping each other navigate the same eddies. I've floated it three times and enjoyed it more each time.
+
+Gruene Hall is one of those places that photographs cannot prepare you for. The 1878 wooden building has hosted every significant figure in Texas country music at some point — Lyle Lovett played here before he was famous, Willie Nelson plays here regularly despite being very famous, and Garth Brooks stood on this stage before he became Garth Brooks. The hall is unair-conditioned, the floors are original wood, the acoustics are exceptional, and the cover charge is typically $5–$10. On a Wednesday night in October with a local band playing Texas blues, it was one of the best evenings I spent in the state.
+
+Schlitterbahn is the reason most Texans under 30 know New Braunfels exists. The waterpark uses the actual spring-fed Comal River water throughout its slides and pools — the result is crystal-clear, 72°F water in every ride, which is a genuinely different experience from the chlorinated pools of most waterparks. The park fills to capacity on summer weekends.
+
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #365314 0%, #4D7C0F 35%, #A3E635 65%, #365314 100%);"></div>
   <div class="ib-content">
-    <div class="ib-title">Discover Texas</div>
-    <p class="ib-text">The Lone Star State. Everything is bigger here.</p>
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">Exit I-35 between Austin and San Antonio and find yourself in the Hill Country's river and dance hall capital.</p>
   </div>
 </div>
 
+## Why New Braunfels is quintessentially Texas
 
-New Braunfels is one of Texas's most beloved destinations. Known as the "German Heritage and River Fun," this central texas gem delivers authentic Lone Star experiences you won't find anywhere else.
+New Braunfels was founded in 1845 by German immigrants organized by Prince Carl of Solms-Braunfels, who was trying to establish a German colony in the Texas Republic. The prince lasted about a year before returning to Europe; the settlers stayed and built a community that maintained German language and culture into the 20th century. The Comal River — the shortest river in Texas and one of the most spring-fed in the region — provided water, power, and the swimming-and-floating culture that defines New Braunfels today.
 
-New Braunfels is a Texas town with deep German roots featuring the Comal River, Schlitterbahn, and historic Gruene Hall.
+That German heritage and Texas river culture have been fusing for 175 years into something specifically Hill Country. The Wurstfest sausage festival (November, 100,000 visitors over 10 days) is the major annual event. The German bakeries and sausage shops operate year-round. But the Comal River tubing, the Schlitterbahn waterpark, and Gruene Hall have become the primary identity of a city that has grown from 20,000 to 100,000 people in two decades, driven largely by its position between Austin and San Antonio.
 
-## Things to Do in New Braunfels
+Canyon Lake, 15 minutes north, adds another dimension. The 8,000-acre reservoir behind Guadalupe River Canyon Dam has excellent boating, fishing, camping, and swimming. The Canyon Lake Gorge — exposed when the dam nearly failed in 2002 and the spillway cut through limestone to reveal 110-million-year-old dinosaur tracks — is open for guided tours through the Guadalupe-Blanco River Authority.
 
-Whether you're looking for outdoor adventure, cultural experiences, or great food, New Braunfels has something for everyone.
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #365314 0%, #4D7C0F 35%, #A3E635 65%, #365314 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">What To Explore</h2>
+    <p class="ib-text">Float the Comal, two-step at Gruene Hall, ride Schlitterbahn's river, and drive 15 minutes to Canyon Lake.</p>
+  </div>
+</div>
 
-- **Float the Comal River** — A must-do for any visitor. This is the experience that puts New Braunfels on the map.
-- **Visit Schlitterbahn Waterpark** — Another highlight that showcases the best of the area.
-- **Dance at Gruene Hall** — Round out your visit with this local favorite.
+## What should you do in New Braunfels?
 
-## Where to Eat in New Braunfels
+**Comal River Tubing** — Rent a tube from Rockin' R River Rides, Bergheim Campground, or similar outfitters. The 2.5-mile float takes 1.5–2.5 hours. The outfitters handle everything — tube rental, cooler rental, shuttle back to the start. $25–$35 per person.
 
-Texas cuisine shines in New Braunfels. From legendary BBQ joints to Tex-Mex favorites and local specialties, you'll eat well here. Budget about $40-$120 per person per day for food.
+**Gruene Hall** — The oldest continuously operating dance hall in Texas. Live music Thursday–Sunday typically. Walk from the adjacent Gruene Historic District. Cover varies but is usually under $15.
 
-## Where to Stay in New Braunfels
+**Schlitterbahn Waterpark** — Buy tickets online in advance (summer weekends sell out). The Master Blaster uphill water coaster and the Torrent river ride are the signature experiences. $40–$50 adult.
 
-Accommodations range from budget options ($40/night) to mid-range hotels ($120/night) to luxury properties ($280/night). Book ahead during peak season and major events.
+**Gruene Historic District** — The preserved 1800s German settlement adjacent to Gruene Hall has antique shops, boutiques, wine shops, and the Gristmill Restaurant overlooking the Guadalupe River.
 
-## Best Time to Visit New Braunfels
+**Landa Park** — Spring-fed swimming pool, paddleboat rentals on the spring-fed lake, miniature golf, and excellent picnic facilities. Free park entry; activities priced separately.
 
-The best months to visit are April through October when temperatures are comfortable and outdoor activities are at their best. Summer months can be extremely hot across most of Texas.
+**Canyon Lake Gorge** — 15 minutes north. Guided tours of the gorge exposed during the 2002 spillway overflow reveal 110-million-year-old dinosaur tracks and remarkable geology. Pre-book with the GBRA.
 
-## Getting to New Braunfels
+**New Braunfels Museum of Art and Music** — Small but earnest collection of Texas art and music history in a downtown location. Worth an hour.
 
-Located between Austin and San Antonio on I-35, 45 min from San Antonio International (SAT). Car rental is the most practical way to explore the area.
+**Naegelin's Bakery** — The oldest bakery in Texas (1868). The cinnamon rolls and strudel are the signatures. $
+
+<div class="scott-tips">
+  <div class="scott-tips-header">&#9992;&#65039; Scott's New Braunfels Tips</div>
+  <ul>
+    <li><strong>Getting There:</strong> I-35 between Austin (50 min) and San Antonio (45 min). Easy to add to either city's trip. Exit at Loop 337 for Gruene, or FM 725 for Schlitterbahn.</li>
+    <li><strong>Best Time:</strong> June–August for peak river tubing season. September–November for Gruene Hall without waterpark crowds. Wurstfest in November is the biggest annual event.</li>
+    <li><strong>Schlitterbahn:</strong> Buy online, arrive at opening (10am), and go straight to the Master Blaster — the line builds fast. Summer weekends routinely sell to capacity.</li>
+    <li><strong>Don't Miss:</strong> Gruene Hall on a Wednesday or Thursday night when local bands play and the crowds are manageable. The space feels most authentic when it's not packed.</li>
+    <li><strong>Avoid:</strong> Comal River tubing on a holiday weekend without planning — Memorial Day and July 4th see the river become extremely crowded. Weekday floats are dramatically more pleasant.</li>
+    <li><strong>Texas Truth:</strong> The Comal River is 72°F year-round. You can tube it in October in comfortable conditions and have the river almost to yourself. The cold water feels better in October than in July.</li>
+  </ul>
+</div>
+
+<div class="immersive-break-inline" id="food">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #365314 0%, #4D7C0F 35%, #A3E635 65%, #365314 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Food</h2>
+    <p class="ib-text">German sausage and schnitzel, Texas BBQ, the oldest bakery in Texas, and a Gristmill restaurant overlooking the Guadalupe River.</p>
+  </div>
+</div>
+
+## Where should you eat in New Braunfels?
+
+- **Gristmill River Restaurant** — Gruene Historic District, overlooking the Guadalupe River. Texas comfort food (chicken fried steak, ribs, burgers) in a renovated 1878 cotton gin. The river deck is outstanding. $$
+- **Naegelin's Bakery** — The oldest bakery in Texas (1868). Kolaches, cinnamon rolls, and German pastries from a family recipe. $
+- **McAdoo's Seafood Company** — Gulf Coast seafood in New Braunfels, surprisingly excellent. The boiled shrimp and fried oysters are consistent. $$
+- **Friedhelm's Bavarian Inn** — German food that honors the heritage: schnitzel, sauerbraten, and sausage platter with good imported German beer. $$
+- **Krause's Biergarten** — Traditional German beer garden with communal tables and excellent sausage. The outdoor seating on a mild evening is excellent. $
+- **New Braunfels Smokehouse** — BBQ that has been smoking meat since 1951. The brisket and sausage links are the standards. $
+- **Huisache Grill** — Contemporary American bistro in a historic building. The most sophisticated dining in New Braunfels. $$$
+- **Chili's** — New Braunfels is where the chain was founded in 1975. The original Chili's cookoff tradition started here. Not a destination restaurant but a historical footnote. $
+
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #365314 0%, #4D7C0F 35%, #A3E635 65%, #365314 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Where to Stay</h2>
+    <p class="ib-text">Historic Gruene guesthouses, I-35 chain hotels, and river cottage rentals that put you steps from the Comal.</p>
+  </div>
+</div>
+
+## Where should you stay in New Braunfels?
+
+**Budget ($55–$90/night):** Chain hotels along I-35 at the New Braunfels exits are reliable and affordable. The Fairfield Inn and Hampton Inn are the best value options.
+
+**Mid-range ($90–$180/night):** The Gruene Mansion Inn B&B has historic cottages in the Gruene Historic District, steps from Gruene Hall. The Inn on the River has riverside rooms with Comal River access.
+
+**Luxury ($180–$350/night):** River cottage rentals on VRBO and Airbnb offer the best luxury experience — private pool access or direct Comal River frontage at prices competitive with hotels. Several properties sleep 8–12 for group river trips.
+
+<div class="immersive-break-inline" id="essentials">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #365314 0%, #4D7C0F 35%, #A3E635 65%, #365314 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Before You Go</h2>
+    <p class="ib-text">Everything you need to know before visiting the Hill Country's river and dance hall capital.</p>
+  </div>
+</div>
+
+## When is the best time to visit New Braunfels?
+
+June through August is peak river tubing season — the Comal is warm enough for extended floating, Schlitterbahn is fully operational, and the town is at its most festive. September and October are the ideal compromise — the river is still comfortable (72°F is year-round), crowds thin significantly, and Gruene Hall is at its most atmospheric. Wurstfest in November (10 days, 100,000 visitors) is the major fall event and worth planning around. Winter (December–February) is quiet but the dance hall and restaurants operate year-round.
+
+New Braunfels is one of the most reliably enjoyable towns in Texas — it delivers on its promises (river, dance hall, waterpark), the German heritage is genuine rather than performed, and its position between Austin and San Antonio makes it a natural stopping point on any Central Texas road trip. Find more Hill Country destinations on our [destinations page](/destinations/) or plan your trip at our [Texas travel guide](/plan/).
