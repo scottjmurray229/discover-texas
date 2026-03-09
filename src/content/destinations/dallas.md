@@ -34,12 +34,67 @@ relatedDestinations: []
 faqItems: []
 affiliatePicks: []
 lastVerified: 2026-02-27
-contentStatus: draft
+faqItems:
+  - question: "Is the Sixth Floor Museum at Dealey Plaza worth visiting?"
+    answer: "Yes — the Sixth Floor Museum is one of the best history museums in the US. It occupies the 6th floor of the Texas School Book Depository where Lee Harvey Oswald fired on President Kennedy in 1963. The exhibits are thoughtful and comprehensive. The view from the window where the shots were fired is genuinely affecting. Buy tickets online."
+  - question: "What is Deep Ellum?"
+    answer: "Deep Ellum is Dallas's historic arts and music district east of downtown — a grid of 1900s commercial buildings now housing live music venues, bars, restaurants, and galleries. The area was the center of Texas blues in the 1920s and 1930s (Blind Lemon Jefferson, Leadbelly). Today it's the most vibrant nightlife district in Dallas."
+  - question: "What is the difference between Dallas and Fort Worth?"
+    answer: "Dallas and Fort Worth are 30 miles apart and often grouped as the 'Metroplex.' Dallas is the business and arts center — gleaming glass towers, the arts district, corporate headquarters. Fort Worth is authentically Western — the Stockyards National Historic District, rodeos, Western wear shops, and a genuine cowboy culture. Do both if you can."
+  - question: "What are the best restaurants in Dallas?"
+    answer: "Uchi Dallas for Japanese-inspired fine dining. Pecan Lodge in Deep Ellum for Dallas's best BBQ. Sachet in Knox-Henderson for Mediterranean. Niwa for Japanese beef. The Indian food in Irving (Dallas suburb) — particularly along Esters Road — is among the best in the South."
+  - question: "What is the Dallas Arts District?"
+    answer: "The Dallas Arts District is the largest urban arts district in the US — a 68-acre stretch north of downtown with the Dallas Museum of Art (free admission), the Nasher Sculpture Center (Renzo Piano building, world-class collection), the AT&T Performing Arts Center, and the Meyerson Symphony Center."
+  - question: "When is the best time to visit Dallas?"
+    answer: "March–May and October–November. Dallas summers are extremely hot (100°F+) and humid. The State Fair of Texas (3 weeks in October) at Fair Park is the biggest state fair in the US by attendance."
+  - question: "How do I get from Dallas to Fort Worth?"
+    answer: "Trinity Railway Express (TRE) commuter rail runs between Dallas Union Station and Fort Worth T&P Station — 1 hour, $5. The DART light rail in Dallas also connects to TRE. Easy day trip in either direction."
+  - question: "What is the Dallas Museum of Art?"
+    answer: "The Dallas Museum of Art has one of the best collections in the South — strong in pre-Columbian art, American art, and contemporary work. Free general admission. The building (designed by Edward Larrabee Barnes) is attractive. The Nasher Sculpture Center next door (Renzo Piano) has an extraordinary collection of 20th-century sculpture in an outdoor garden setting."
+affiliatePicks:
+  - name: "The Joule Dallas"
+    type: hotel
+    url: "https://www.booking.com/hotel/us/the-joule.html?aid=2778866"
+    description: "Dallas's best boutique hotel — Gothic Revival skyscraper with a famous cantilevered rooftop pool over Main Street."
+    priceRange: "$$$$"
+  - name: "Sixth Floor Museum at Dealey Plaza Tickets"
+    type: activity
+    url: "https://www.getyourguide.com/dallas-l193/?partner_id=IVN6IQ3&q=Sixth+Floor+Museum+JFK"
+    description: "Advance tickets for the JFK assassination museum — skip the line with reserved entry."
+    priceRange: "$"
+  - name: "Dallas Food and Deep Ellum Tour"
+    type: tour
+    url: "https://www.getyourguide.com/dallas-l193/?partner_id=IVN6IQ3&q=Dallas+food+tour+Deep+Ellum"
+    description: "Guided food and neighborhood tour through Deep Ellum and Dallas's restaurant scene."
+    priceRange: "$$"
+scottTips:
+  logistics: "Dallas/Fort Worth International (DFW) is one of the largest airports in the world — plan extra time for connections. DART light rail Orange Line runs from DFW to downtown Dallas. Domestic Love Field (DAL, Southwest hub) is closer to downtown."
+  bestTime: "March–May and October–November. October brings the State Fair of Texas. March is warm and less crowded than summer."
+  gettingAround: "DART light rail covers the Arts District, Deep Ellum, and connections to DFW. Car necessary for broader Dallas exploration. TRE rail to Fort Worth is excellent."
+  money: "Dallas has a wide range of hotel options — $120–200/night for solid mid-range. The Dallas Museum of Art is free. Arts District and Deep Ellum restaurants run $20–50/person."
+  safety: "Deep Ellum and the Arts District are safe tourist areas with active foot traffic. Downtown Dallas has some empty blocks at night — stick to the active zones."
+  packing: "Business casual for arts district evenings. Comfortable shoes for Deep Ellum walking. Sun protection for the heat."
+  localCulture: "Dallas has a palpable ambition — the city is proud of its growth and transformation. The arts scene is taken seriously. Football (Cowboys) is genuinely quasi-religious. The 'Big D' identity blends genuine Texas pride with cosmopolitan aspirations."
+contentStatus: published
 draft: false
 fmContentType: destination
 ---
+Dallas is Texas's financial and business capital — a gleaming skyline city of 1.3 million (metro area 7+ million) that's home to the Sixth Floor Museum at Dealey Plaza (JFK assassination site), the Dallas Museum of Art, Deep Ellum's music and bar scene, and some of the best Indian food in the South. It's 30 minutes from Fort Worth, which has a legitimate Western heritage.
+
 
 ## What Makes Dallas Special
+
+<div class="immersive-break-inline">
+  <video autoplay muted loop playsinline preload="metadata">
+    <source src="/videos/destinations/dallas-hero.mp4" type="video/mp4" />
+  </video>
+  <div class="ib-gradient" style="background: linear-gradient(135deg, #1e40af, #dc2626, #166534);"></div>
+  <div class="ib-content">
+    <div class="ib-title">Dallas: Big D</div>
+    <p class="ib-text">JFK, Deep Ellum, and a skyline built on oil money.</p>
+  </div>
+</div>
+
 
 Dallas is one of Texas's most beloved destinations. Known as the "Big D Energy," this north texas gem delivers authentic Lone Star experiences you won't find anywhere else.
 
