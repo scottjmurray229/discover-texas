@@ -1,181 +1,1969 @@
 {
   "destinations": {
-    "siquijor": {
-      "title": "Siquijor",
-      "tagline": "Isla del Fuego — Island of Fire",
-      "region": "visayas",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 25, "midRange": 60, "luxury": 120 },
-      "gettingThere": "Fly to Dumaguete (DGT), then 1-hour ferry to Siquijor port. Ferries run hourly from 6am-5pm via Montenegro or GL Shipping.",
-      "highlights": ["Cambugahay Falls", "Salagdoong Beach", "Enchanted Balete Tree", "Mount Bandilaan", "Paliton Beach", "Bolo-Bolo Healing", "Lazi Church & Convent", "72km Motorcycle Loop"],
+    "austin": {
+      "title": "Austin",
+      "tagline": "Live Music Capital of the World",
+      "region": "central-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 50,
+        "midRange": 150,
+        "luxury": 350
+      },
+      "gettingThere": "Fly into Austin-Bergstrom International Airport (AUS), 8 miles southeast of downtown \u00e2\u20ac\u201d about 20 minutes by Uber ($20-30) or 40 minutes by MetroExpress bus ($1.25). Southwest, American, United, Delta, and Frontier all serve AUS with non-stop flights from most major US cities.",
+      "highlights": [
+        "6th Street entertainment district \u00e2\u20ac\u201d 60+ live music venues in six blocks",
+        "South Congress Avenue (SoCo) \u00e2\u20ac\u201d boutiques, food trucks, and the Continental Club",
+        "Barton Springs Pool \u00e2\u20ac\u201d spring-fed natural swimming hole in Zilker Park ($5-9)",
+        "Texas State Capitol \u00e2\u20ac\u201d free tours of the 1888 pink granite landmark",
+        "Franklin Barbecue \u00e2\u20ac\u201d legendary Central Texas brisket, arrive before 9am ($25-35/lb)",
+        "Lady Bird Lake hike-and-bike trail \u00e2\u20ac\u201d 10-mile loop through downtown",
+        "The Blanton Museum of Art on UT campus (free Thursdays)",
+        "Rainey Street bar district \u00e2\u20ac\u201d converted bungalows with craft beer and live music"
+      ],
       "essentials": {
-        "gettingAround": "Rent a motorcycle (₱350-500/day) — the island is a perfect 72km loop.",
-        "airport": "Dumaguete-Sibulan (DGT)",
-        "ferryConnections": ["Dumaguete (45 min, ₱200)", "Bohol (2 hr, ₱800)"],
-        "language": "Cebuano, Tagalog, English"
+        "gettingAround": "Car rental or rideshare essential outside downtown. Capital Metro bus and rail covers central Austin. Lime and Bird scooters available. Downtown is walkable.",
+        "airport": "AUS \u00e2\u20ac\u201d Austin-Bergstrom International Airport",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
       }
     },
-    "cebu": {
-      "title": "Cebu",
-      "tagline": "Queen City of the South",
-      "region": "visayas",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 30, "midRange": 80, "luxury": 180 },
-      "gettingThere": "Fly to Mactan-Cebu International (CEB) — major hub with direct flights from Manila, Singapore, Tokyo, Seoul, and more.",
-      "highlights": ["Oslob whale shark watching", "Kawasan Falls canyoneering", "Magellan's Cross & Basilica del Santo Niño", "Best lechon in the Philippines", "Moalboal sardine run and diving"],
+    "houston": {
+      "title": "Houston",
+      "tagline": "Space City \u00e2\u20ac\u201d America's Most Diverse Metropolis",
+      "region": "gulf-coast",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 50,
+        "midRange": 150,
+        "luxury": 400
+      },
+      "gettingThere": "George Bush Intercontinental (IAH) is 23 miles north of downtown \u00e2\u20ac\u201d the main international hub. William P. Hobby Airport (HOU) is 7 miles southeast and handles Southwest flights plus some internationals. IAH to downtown by SuperShuttle runs $25; Uber/Lyft $35-55.",
+      "highlights": [
+        "Space Center Houston \u00e2\u20ac\u201d NASA's official visitor center with Saturn V rocket ($34)",
+        "Houston Museum District \u00e2\u20ac\u201d 19 museums including the free Menil Collection",
+        "Buffalo Bayou Park \u00e2\u20ac\u201d 160-acre green corridor with skyline views and kayaking",
+        "The Galleria \u00e2\u20ac\u201d 400 stores, two hotels, and an ice rink in one mall",
+        "Hermann Park and Houston Zoo ($25)",
+        "Montrose and Midtown \u00e2\u20ac\u201d Houston's eclectic dining and LGBTQ+ hub",
+        "Kemah Boardwalk amusement park on Galveston Bay (40 min south)",
+        "Houston Livestock Show & Rodeo \u00e2\u20ac\u201d world's largest, 20 days in February-March"
+      ],
       "essentials": {
-        "gettingAround": "Grab for city. Private van or bus for south Cebu activities.",
-        "airport": "Mactan-Cebu International (CEB)",
-        "ferryConnections": ["Bohol (2 hr, OceanJet, ₱800)", "Dumaguete (5 hr ferry or 45 min flight)"],
-        "language": "Cebuano, Tagalog, English"
+        "gettingAround": "Car essential \u00e2\u20ac\u201d Houston is spread across 670 sq miles. METRORail light rail serves the Museum District and Midtown. Uber/Lyft widely available. Parking is cheap and plentiful.",
+        "airport": "IAH \u00e2\u20ac\u201d George Bush Intercontinental / HOU \u00e2\u20ac\u201d William P. Hobby Airport",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
       }
     },
-    "bohol": {
-      "title": "Bohol",
-      "tagline": "Nature's Wonder in the Heart of Visayas",
-      "region": "visayas",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
-      "budgetPerDay": { "backpacker": 30, "midRange": 80, "luxury": 150 },
-      "gettingThere": "Fly to Tagbilaran (TAG) or ferry from Cebu (2 hours via OceanJet).",
-      "highlights": ["Chocolate Hills — 1,200+ limestone mounds", "Philippine Tarsier Sanctuary", "Alona Beach — white sand and diving", "Loboc River cruise", "Panglao Island beaches"],
+    "san-antonio": {
+      "title": "San Antonio",
+      "tagline": "Where Texas History Lives",
+      "region": "central-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 45,
+        "midRange": 130,
+        "luxury": 300
+      },
+      "gettingThere": "Fly into San Antonio International Airport (SAT), 8 miles north of downtown. Uber/Lyft to downtown costs $18-28 and takes 20 minutes. American, Southwest, United, and Delta serve SAT. Amtrak's Sunset Limited stops in San Antonio three times weekly from Los Angeles and New Orleans.",
+      "highlights": [
+        "The Alamo \u00e2\u20ac\u201d the Shrine of Texas Liberty, free admission",
+        "San Antonio River Walk (Paseo del Rio) \u00e2\u20ac\u201d 15-mile network of stone paths, restaurants, and river barges",
+        "Pearl District \u00e2\u20ac\u201d converted Pearl Brewery with 50+ restaurants, a farmers market, and Hotel Emma",
+        "San Antonio Missions World Heritage Site \u00e2\u20ac\u201d four 18th-century Spanish colonial missions",
+        "La Villita Historic Arts Village \u00e2\u20ac\u201d oldest neighborhood in the city",
+        "San Fernando Cathedral \u00e2\u20ac\u201d Texas's oldest active cathedral",
+        "Market Square (El Mercado) \u00e2\u20ac\u201d largest Mexican market in the US",
+        "Tower of the Americas 750-foot observation deck ($14)"
+      ],
       "essentials": {
-        "gettingAround": "Rent a motorcycle or hire a driver for countryside tour (~₱2,000/day).",
-        "airport": "Tagbilaran (TAG) / New Bohol-Panglao International",
-        "ferryConnections": ["Cebu (2 hr, OceanJet, ₱800)", "Siquijor (2 hr, ₱800)"],
-        "language": "Boholano, Cebuano, Tagalog, English"
+        "gettingAround": "VIA streetcar and bus serve downtown. The River Walk connects major attractions on foot. Uber/Lyft for wider explorations. Bike share available along the river.",
+        "airport": "SAT \u00e2\u20ac\u201d San Antonio International Airport",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
       }
     },
-    "boracay": {
-      "title": "Boracay",
-      "tagline": "Where It All Began",
-      "region": "visayas",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 50, "midRange": 120, "luxury": 250 },
-      "gettingThere": "Fly to Caticlan (MPH) — 1 hour from Manila — then 10-minute banca boat crossing. Kalibo (KLO) is cheaper but adds a 1.5-2 hour van ride.",
-      "highlights": ["White Beach — 4km of powder sand", "Puka Beach", "Island Hopping", "Sunset Paraw Sailing", "Ariel's Point cliff diving", "Willy's Rock"],
+    "dallas": {
+      "title": "Dallas",
+      "tagline": "Big D \u00e2\u20ac\u201d Where Ambition Meets Texas Style",
+      "region": "north-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 50,
+        "midRange": 150,
+        "luxury": 400
+      },
+      "gettingThere": "Dallas/Fort Worth International (DFW) is one of the world's busiest airports, served by virtually every major airline. DART Orange Line connects DFW to downtown Dallas in 45 minutes ($2.50). Dallas Love Field (DAL) is 6 miles northwest \u00e2\u20ac\u201d Southwest's main hub, 15 minutes to downtown by Uber ($15-20).",
+      "highlights": [
+        "Sixth Floor Museum at Dealey Plaza \u00e2\u20ac\u201d definitive JFK assassination museum ($18)",
+        "Dallas Arts District \u00e2\u20ac\u201d largest urban arts district in the US with AT&T Performing Arts Center",
+        "Deep Ellum \u00e2\u20ac\u201d live music, murals, craft breweries, and BBQ",
+        "Reunion Tower GeO-Deck \u00e2\u20ac\u201d 360-degree views from 470 feet ($20)",
+        "Dallas Arboretum and Botanical Garden on White Rock Lake ($17)",
+        "Perot Museum of Nature and Science (free Tuesdays, otherwise $25)",
+        "Bishop Arts District \u00e2\u20ac\u201d 60+ locally-owned shops and restaurants",
+        "NorthPark Center \u00e2\u20ac\u201d Dallas's landmark upscale mall with rotating art exhibitions"
+      ],
       "essentials": {
-        "gettingAround": "Electric tricycles ₱20/person shared, ₱50-100 private. Island is compact.",
-        "airport": "Caticlan (MPH) or Kalibo (KLO)",
-        "ferryConnections": [],
-        "language": "Aklanon, Tagalog, English"
+        "gettingAround": "DART light rail covers major areas including Uptown, Downtown, and Bishop Arts. Car recommended for wider Dallas. Uber/Lyft active. Downtown is walkable.",
+        "airport": "DFW \u00e2\u20ac\u201d Dallas/Fort Worth International / DAL \u00e2\u20ac\u201d Dallas Love Field",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
       }
     },
-    "clark": {
-      "title": "Clark & Angeles",
-      "tagline": "Former US Air Force Base — Central Luzon Hub",
-      "region": "luzon",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 35, "midRange": 70, "luxury": 106 },
-      "gettingThere": "Fly direct to Clark International Airport (CRK) — international and domestic flights. Domestic: ~$30 to Cebu (1hr), ~$30-50 to Manila.",
-      "highlights": ["Aling Lucing's Sisig", "Clark Freeport Zone", "Dinosaurs Island", "Korean BBQ Row", "Skyway to Manila", "Pool Villa Rentals"],
+    "fort-worth": {
+      "title": "Fort Worth",
+      "tagline": "Where the West Begins",
+      "region": "north-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 45,
+        "midRange": 130,
+        "luxury": 350
+      },
+      "gettingThere": "Fly into Dallas/Fort Worth International (DFW), 17 miles northeast \u00e2\u20ac\u201d TRE commuter rail to downtown Fort Worth in 35 minutes ($5.50). Or fly into Dallas Love Field and drive 35 miles west via I-30. Amtrak's Texas Eagle stops at Fort Worth's historic T&P Station weekly.",
+      "highlights": [
+        "Fort Worth Stockyards National Historic District \u00e2\u20ac\u201d twice-daily longhorn cattle drive on Exchange Avenue",
+        "Kimbell Art Museum \u00e2\u20ac\u201d Louis Kahn masterpiece with Caravaggio, Michelangelo, and Rembrandt (free)",
+        "Amon Carter Museum of American Art (free)",
+        "Sundance Square \u00e2\u20ac\u201d 35-block walkable entertainment district",
+        "Fort Worth Botanic Garden \u00e2\u20ac\u201d Texas's oldest botanical garden (free grounds)",
+        "Bass Performance Hall \u00e2\u20ac\u201d world-class performing arts venue",
+        "National Cowgirl Museum and Hall of Fame ($15)",
+        "Billy Bob's Texas \u00e2\u20ac\u201d world's largest honky-tonk with indoor rodeo"
+      ],
       "essentials": {
-        "gettingAround": "Grab (best option). Car rental ~$30/day. Tricycles for short hops.",
-        "airport": "Clark International (CRK)",
-        "ferryConnections": [],
-        "language": "Kapampangan, Tagalog, English"
+        "gettingAround": "Molly the Trolley free downtown shuttle. Uber/Lyft for stockyards and museums. Car recommended for wider Fort Worth. TRE rail to/from DFW airport.",
+        "airport": "DFW \u00e2\u20ac\u201d Dallas/Fort Worth International Airport",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
       }
     },
-    "dumaguete": {
-      "title": "Dumaguete",
-      "tagline": "City of Gentle People",
-      "region": "visayas",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
-      "budgetPerDay": { "backpacker": 25, "midRange": 60, "luxury": 120 },
-      "gettingThere": "Fly to Dumaguete-Sibulan (DGT) from Manila or Cebu. Direct flights on Cebu Pacific and Philippine Airlines.",
-      "highlights": ["Rizal Boulevard sunset promenade", "Apo Island diving & snorkeling", "Casaroro Falls", "Silliman University campus", "Gateway to Siquijor ferries"],
+    "big-bend": {
+      "title": "Big Bend National Park",
+      "tagline": "Texas's Last Frontier \u00e2\u20ac\u201d Desert Canyons and Dark Skies",
+      "region": "west-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 100,
+        "luxury": 250
+      },
+      "gettingThere": "Big Bend is deliberately remote. Drive from El Paso (4.5 hours via I-10 and US-90) or Midland-Odessa (3.5 hours via US-385). Fly to Midland International (MAF) and rent a car. The nearest gas is in Study Butte or Marathon \u00e2\u20ac\u201d fill up before entering the park. Park entry is $35/vehicle, valid 7 days.",
+      "highlights": [
+        "Santa Elena Canyon Trail \u00e2\u20ac\u201d 1.7-mile out-and-back into sheer 1,500-foot canyon walls",
+        "Rio Grande Hot Springs \u00e2\u20ac\u201d soaking pools on the river at 105\u00c2\u00b0F (5-mile round trip)",
+        "Bortle 1 dark sky stargazing \u00e2\u20ac\u201d among the darkest skies in the continental US",
+        "Chisos Basin and Window Trail with mountain lion habitat",
+        "Ross Maxwell Scenic Drive \u00e2\u20ac\u201d 30 miles of volcanic formations and desert vistas",
+        "Boquillas del Carmen border crossing to Mexico by rowboat ($5)",
+        "Emory Peak \u00e2\u20ac\u201d Big Bend's highest point at 7,832 feet (8.5 miles round trip)",
+        "Lost Mine Trail panoramic ridge hike at sunrise"
+      ],
       "essentials": {
-        "gettingAround": "Tricycles within city (₱10-50). Motorcycle rental for day trips.",
-        "airport": "Dumaguete-Sibulan (DGT)",
-        "ferryConnections": ["Siquijor (45 min, ₱200)", "Cebu (5 hr ferry)", "Bohol (via Siquijor)"],
-        "language": "Cebuano, Tagalog, English"
+        "gettingAround": "Personal vehicle essential \u00e2\u20ac\u201d no public transport inside the park. High-clearance 4WD recommended for dirt roads. Gas available at Panther Junction Visitor Center. Cell service essentially nonexistent.",
+        "airport": "MAF \u00e2\u20ac\u201d Midland International Air and Space Port (3.5 hours away)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
       }
     },
-    "el-nido": {
-      "title": "El Nido",
-      "tagline": "Gateway to Palawan's Paradise",
-      "region": "luzon",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
-      "budgetPerDay": { "backpacker": 40, "midRange": 100, "luxury": 250 },
-      "gettingThere": "Fly direct to El Nido Lio Airport (ENI) via AirSWIFT from Manila or Clark. Or fly to Puerto Princesa (PPS), then 5-6 hour van ride north.",
-      "highlights": ["Big & Small Lagoon (Tour A)", "Secret Beach & Helicopter Island (Tour C)", "Nacpan Beach twin beaches", "Island hopping Tours A-D", "Kayaking through limestone karsts"],
+    "fredericksburg": {
+      "title": "Fredericksburg",
+      "tagline": "Texas Wine Country and German Heritage",
+      "region": "hill-country",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 50,
+        "midRange": 160,
+        "luxury": 400
+      },
+      "gettingThere": "Drive from Austin (1 hour 20 minutes via US-290 West) or San Antonio (1 hour 10 minutes via I-10 West to TX-16 North). No commercial airport \u00e2\u20ac\u201d nearest is San Antonio (SAT) or Austin (AUS). US-290 through the Hill Country is one of Texas's most scenic drives.",
+      "highlights": [
+        "Texas Wine Trail on US-290 \u00e2\u20ac\u201d 50+ Hill Country wineries within 30 miles",
+        "Enchanted Rock State Natural Area \u00e2\u20ac\u201d massive pink granite dome with summit hike ($8/person)",
+        "National Museum of the Pacific War (Admiral Nimitz Museum) \u00e2\u20ac\u201d world-class WWII museum ($18)",
+        "Main Street antiques, German bakeries, and boutique shopping",
+        "Wildseed Farms \u00e2\u20ac\u201d largest working wildflower farm in the US (free entry)",
+        "Fredericksburg Brewing Company \u00e2\u20ac\u201d Texas's oldest brewpub (1994)",
+        "Luckenbach Texas dance hall and live music every weekend",
+        "Grape Creek Vineyards estate tastings with Hill Country views ($15-25)"
+      ],
       "essentials": {
-        "gettingAround": "Tricycle within town (₱50-100). Boat tours for islands. Motorcycle rental ₱500-700/day.",
-        "airport": "El Nido Lio (ENI) or Puerto Princesa (PPS)",
-        "ferryConnections": ["Coron (3-4 hr fast ferry, ₱1,800)"],
-        "language": "Tagalog, Cuyonon, English"
+        "gettingAround": "Car essential. Main Street walkable. Wine trail requires driving between wineries \u00e2\u20ac\u201d use a designated driver or hire a wine tour shuttle. Bike rentals available in town.",
+        "airport": "SAT \u00e2\u20ac\u201d San Antonio International (70 min) / AUS \u00e2\u20ac\u201d Austin-Bergstrom (80 min)",
+        "language": "English, German (historic), Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
       }
     },
-    "coron": {
-      "title": "Coron",
-      "tagline": "Diver's Paradise in Palawan",
-      "region": "luzon",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
-      "budgetPerDay": { "backpacker": 40, "midRange": 100, "luxury": 220 },
-      "gettingThere": "Fly to Francisco B. Reyes Airport (USU) in Busuanga from Manila or Clark (~1 hr). Then 30-45 min van ride to Coron town.",
-      "highlights": ["Kayangan Lake — cleanest lake in Philippines", "Twin Lagoon hot/cold layers", "WWII Japanese shipwreck diving", "Barracuda Lake thermocline", "Malcapuya Island white sand"],
+    "galveston": {
+      "title": "Galveston",
+      "tagline": "Texas Beach Getaway \u00e2\u20ac\u201d Victorian Island on the Gulf",
+      "region": "gulf-coast",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "May",
+        "Oct"
+      ],
+      "budgetPerDay": {
+        "backpacker": 45,
+        "midRange": 130,
+        "luxury": 300
+      },
+      "gettingThere": "Drive from Houston (60 minutes via I-45 South) \u00e2\u20ac\u201d the most common approach. No commercial airport on the island; fly into Houston IAH or HOU then drive. Galveston is 50 miles south of Houston. The 2-mile causeway onto the island can back up on summer weekends.",
+      "highlights": [
+        "The Strand Historic District \u00e2\u20ac\u201d Victorian iron-front buildings with galleries, restaurants, and Mardi Gras festivities",
+        "Moody Gardens \u00e2\u20ac\u201d three glass pyramids with aquarium, rainforest, and IMAX ($30-65 combo)",
+        "Stewart Beach and East Beach \u00e2\u20ac\u201d family and party beaches with facilities",
+        "Galveston Island State Park \u00e2\u20ac\u201d unspoiled beach and birding on the west end ($5/person)",
+        "Pleasure Pier amusement park on the Gulf with the Iron Shark coaster ($35)",
+        "Galveston Railroad Museum \u00e2\u20ac\u201d restored 1930s Santa Fe depot",
+        "Schlitterbahn Galveston water park (summer only, $60)",
+        "Fresh Gulf seafood \u00e2\u20ac\u201d shrimp, redfish, and blue crab at Fisherman's Wharf or Gaido's"
+      ],
       "essentials": {
-        "gettingAround": "Tricycle within town (₱50). Boat tours for islands. Walking distance for most of Coron town.",
-        "airport": "Busuanga / Francisco B. Reyes (USU)",
-        "ferryConnections": ["El Nido (3-4 hr fast ferry, ₱1,800)", "Manila (overnight ferry, ₱1,500-2,500)"],
-        "language": "Tagalog, Tagbanwa, English"
+        "gettingAround": "Car recommended. The Island Transit bus ($1.25) covers main routes. Seawall Boulevard is bikeable. Golf cart rentals popular on the west end. Ride-share available but limited.",
+        "airport": "HOU \u00e2\u20ac\u201d William P. Hobby Airport, Houston (60 min drive)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
       }
     },
-    "puerto-princesa": {
-      "title": "Puerto Princesa",
-      "tagline": "Eco-Tourism Capital of the Philippines",
-      "region": "luzon",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 30, "midRange": 70, "luxury": 150 },
-      "gettingThere": "Fly to Puerto Princesa International (PPS) — direct flights from Manila (1.5 hr), Cebu, and Clark.",
-      "highlights": ["Puerto Princesa Underground River (UNESCO)", "Honda Bay island hopping", "Iwahig Firefly Watching", "Baker's Hill viewpoint", "Sabang Beach"],
+    "marfa": {
+      "title": "Marfa",
+      "tagline": "Art Meets Desert \u00e2\u20ac\u201d The World's Most Unlikely Art Town",
+      "region": "west-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 130,
+        "luxury": 300
+      },
+      "gettingThere": "Drive from El Paso (3 hours east via I-10 to US-90) or Midland/Odessa (2.5 hours southwest via US-385). No commercial service at the small local airport. The drive through alpine high desert on US-90 and TX-67 is spectacular \u00e2\u20ac\u201d Marfa sits at 4,688 feet elevation.",
+      "highlights": [
+        "Chinati Foundation \u00e2\u20ac\u201d Donald Judd's monumental art installations in converted military buildings ($30)",
+        "Marfa Mystery Lights \u00e2\u20ac\u201d unexplained atmospheric phenomenon viewed from the official viewing area east of town",
+        "Ballroom Marfa gallery and cultural space (free)",
+        "Prada Marfa \u00e2\u20ac\u201d Elmgreen and Dragset's permanent art installation on US-90 near Valentine",
+        "Hotel Saint George rooftop bar with desert panoramas",
+        "The Do Your Thang food truck scene on Highland Avenue",
+        "Alpine (30 min east) and Presidio (60 min south) day trips",
+        "Fort Davis National Historic Site and McDonald Observatory (45 min north, star parties from $20)"
+      ],
       "essentials": {
-        "gettingAround": "Tricycle within city (₱10-50). Van rental for Underground River day trip (~₱2,500). Motorcycle rental ₱400-500/day.",
-        "airport": "Puerto Princesa International (PPS)",
-        "ferryConnections": [],
-        "language": "Tagalog, Cuyonon, English"
+        "gettingAround": "Car essential. Marfa itself is walkable (population 1,800). No rideshare \u00e2\u20ac\u201d rent a car from El Paso or Midland. Fill up with gas before arriving; supplies are limited.",
+        "airport": "ELP \u00e2\u20ac\u201d El Paso International Airport (3 hours west)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
       }
     },
-    "siargao": {
-      "title": "Siargao",
-      "tagline": "Surfer's Paradise in the Pacific",
-      "region": "mindanao",
-      "bestMonths": ["Sep", "Oct", "Nov", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 30, "midRange": 80, "luxury": 180 },
-      "gettingThere": "Fly to Sayak Airport (IAO) from Manila (~2 hr) or Cebu (~1 hr). Cebu Pacific and Philippine Airlines have daily flights.",
-      "highlights": ["Cloud 9 surfing — world-famous barrel wave", "Sugba Lagoon paddleboarding", "Magpupungko Rock Pools at low tide", "Naked Island, Daku Island, Guyam Island hopping", "Sohoton Cove & jellyfish sanctuary"],
+    "corpus-christi": {
+      "title": "Corpus Christi",
+      "tagline": "Sparkling City by the Sea",
+      "region": "gulf-coast",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 260
+      },
+      "gettingThere": "Fly into Corpus Christi International Airport (CRP) with connections via American and United through Dallas and Houston hubs. Or drive from San Antonio (2.5 hours via I-37 South) or Houston (3.5 hours via US-59 South). CRP is 10 minutes from downtown.",
+      "highlights": [
+        "USS Lexington Museum \u00e2\u20ac\u201d decommissioned WWII aircraft carrier open for self-guided tours ($18)",
+        "Texas State Aquarium \u00e2\u20ac\u201d Gulf ecosystems with dolphins, sharks, and sea turtles ($25)",
+        "Padre Island National Seashore \u00e2\u20ac\u201d longest stretch of undeveloped barrier island in the US (free with park pass)",
+        "Corpus Christi Museum of Science and History ($8)",
+        "The Harbor Bridge waterfront and Whataburger Field minor league ballpark",
+        "North Beach \u00e2\u20ac\u201d calm bay-side beach popular with families",
+        "Port Aransas \u00e2\u20ac\u201d 30-minute ferry ride to the surf beach town (ferry is free)",
+        "Mustang Island State Park camping and surf fishing ($5/person)"
+      ],
       "essentials": {
-        "gettingAround": "Motorcycle rental ₱350-500/day (the island way). Habal-habal (motorcycle taxi) ₱50-200. No Grab available.",
-        "airport": "Sayak (IAO)",
-        "ferryConnections": ["Surigao City (2.5 hr ferry, ₱200-350)"],
-        "language": "Surigaonon, Cebuano, Tagalog, English"
+        "gettingAround": "Car essential for Padre Island and beyond. Downtown and the bayfront are walkable. Regional Transit Authority (RTA) bus covers main corridors. Free ferry to Port Aransas from the north end of Mustang Island.",
+        "airport": "CRP \u00e2\u20ac\u201d Corpus Christi International Airport",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "el-paso": {
+      "title": "El Paso",
+      "tagline": "Sun City on the Border",
+      "region": "west-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 250
+      },
+      "gettingThere": "Fly into El Paso International Airport (ELP), 5 miles northeast of downtown. American, Southwest, United, and Frontier serve ELP with connections through Dallas, Houston, Phoenix, and Denver. Uber to downtown costs $15-20. Sun Metro city bus #33 runs from the airport.",
+      "highlights": [
+        "Franklin Mountains State Park \u00e2\u20ac\u201d 26,000 acres of desert hiking inside city limits, accessible by aerial tramway ($4.50)",
+        "El Paso Mission Trail \u00e2\u20ac\u201d three 17th-century Spanish missions (Ysleta, Socorro, San Elizario) east of the city",
+        "El Paso Museum of Art downtown (free)",
+        "Sunland Park Racetrack and Casino just across the New Mexico border",
+        "Ciudad Ju\u00c3\u00a1rez day trip across the border \u00e2\u20ac\u201d markets, murals, and street tacos (bring US passport)",
+        "Concordia Cemetery \u00e2\u20ac\u201d historic resting place of gunslingers and Buffalo Soldiers",
+        "Hueco Tanks State Park and Historic Site \u00e2\u20ac\u201d rock climbing and ancient Native American pictographs ($7)",
+        "Downtown El Paso walkable arts district with murals and local restaurants"
+      ],
+      "essentials": {
+        "gettingAround": "Car recommended for the sprawling city. Sun Metro bus covers main routes. Downtown walkable. El Paso Streetcar (historic) runs through downtown and the University District ($1.50).",
+        "airport": "ELP \u00e2\u20ac\u201d El Paso International Airport",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "south-padre-island": {
+      "title": "South Padre Island",
+      "tagline": "Tropical Texas Paradise on the Gulf",
+      "region": "gulf-coast",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "May",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 120,
+        "luxury": 300
+      },
+      "gettingThere": "Fly into Valley International Airport (HRL) in Harlingen \u00e2\u20ac\u201d 30 minutes from the island via US-83 and Queen Isabella Causeway. American and Southwest serve HRL. Brownsville South Padre Island International (BRO) is another option, 45 minutes away. SPI is the southernmost tip of Texas, 5 miles from the Mexican border.",
+      "highlights": [
+        "South Padre Island beach \u00e2\u20ac\u201d wide Gulf shoreline with warm water and gentle waves",
+        "Sea Turtle Inc. rehabilitation centre (free, but donations welcomed)",
+        "Dolphin and whale watching tours in the Laguna Madre (from $25)",
+        "Andy Bowie Park \u00e2\u20ac\u201d unspoiled north island with camping and birding",
+        "Schlitterbahn South Padre Island water park (summer, $50)",
+        "SandCastle Days \u00e2\u20ac\u201d US Open Sand Castle Competition in October",
+        "Wakeboarding and kiteboarding lessons on the bay side (from $60)",
+        "Night fishing and crabbing on the causeway bridge"
+      ],
+      "essentials": {
+        "gettingAround": "Car required to get on and off the island. The island itself is walkable or bikeable north-south along Padre Blvd. Wave (trolley) bus runs the length of the island in summer ($2). Uber limited.",
+        "airport": "HRL \u00e2\u20ac\u201d Valley International Airport, Harlingen (30 min drive)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "waco": {
+      "title": "Waco",
+      "tagline": "Home of the Magnolia Empire",
+      "region": "central-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 250
+      },
+      "gettingThere": "Drive from Dallas (1.5 hours south on I-35) or Austin (1.5 hours north on I-35). No major commercial airport \u00e2\u20ac\u201d nearest are Dallas/Fort Worth (DFW) and Austin-Bergstrom (AUS), both 90 miles away. Waco is perfectly positioned as a day trip or overnight stop between the two cities.",
+      "highlights": [
+        "Magnolia Market at the Silos \u00e2\u20ac\u201d Chip and Joanna Gaines's flagship shop, gardens, and food trucks",
+        "Dr Pepper Museum \u00e2\u20ac\u201d birthplace of Dr Pepper in 1885 (free entry, tastings $5)",
+        "Waco Mammoth National Monument \u00e2\u20ac\u201d fossil site of Columbian mammoths ($8)",
+        "Cameron Park Zoo with 1,700 animals ($13)",
+        "Baylor University campus and the Bear Habitat (free)",
+        "Lake Waco waterfront parks and paddleboarding",
+        "Balcones Distilling \u00e2\u20ac\u201d award-winning Texas whisky tasting room",
+        "Texas Ranger Hall of Fame and Museum ($7)"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Downtown Waco is walkable around the Magnolia Silos area. No meaningful public transit. Uber/Lyft available but limited outside peak hours.",
+        "airport": "DFW \u00e2\u20ac\u201d Dallas/Fort Worth International (90 min north) / AUS \u00e2\u20ac\u201d Austin-Bergstrom (90 min south)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "new-braunfels": {
+      "title": "New Braunfels",
+      "tagline": "Texas Tubing Capital and German Roots",
+      "region": "hill-country",
+      "bestMonths": [
+        "Apr",
+        "May",
+        "Sep",
+        "Oct"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 250
+      },
+      "gettingThere": "Drive from San Antonio (30 minutes north on I-35) or Austin (45 minutes south on I-35). Perfectly situated between the two cities. No commercial airport \u00e2\u20ac\u201d use SAT or AUS. The Comal and Guadalupe rivers run through town and are the main attractions.",
+      "highlights": [
+        "Schlitterbahn New Braunfels \u00e2\u20ac\u201d consistently rated America's best water park ($60-80)",
+        "Tubing the Comal River \u00e2\u20ac\u201d 2.5-mile natural waterway through downtown ($20-30 with tube rental)",
+        "Tubing the Guadalupe River \u00e2\u20ac\u201d class I-II rapids, 5-7 mile float trips",
+        "Gruene Hall \u00e2\u20ac\u201d Texas's oldest dance hall (1878) with live music every weekend",
+        "Historic Gruene district shops and restaurants along the river",
+        "Natural Bridge Caverns \u00e2\u20ac\u201d one of Texas's most spectacular cave systems ($28)",
+        "Landa Park with Comal Springs \u00e2\u20ac\u201d largest springs in Texas",
+        "Wurstfest \u00e2\u20ac\u201d 10-day German sausage and beer festival in November"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Historic Gruene and downtown New Braunfels are walkable. River operators provide shuttle buses between put-in and take-out points. No public transit.",
+        "airport": "SAT \u00e2\u20ac\u201d San Antonio International (30 min south) / AUS \u00e2\u20ac\u201d Austin-Bergstrom (45 min north)",
+        "language": "English, German (historic), Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "san-marcos": {
+      "title": "San Marcos",
+      "tagline": "Crystal Springs and College Town Energy",
+      "region": "central-texas",
+      "bestMonths": [
+        "Apr",
+        "May",
+        "Sep",
+        "Oct"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 200
+      },
+      "gettingThere": "Drive from Austin (30 minutes south on I-35) or San Antonio (50 minutes north on I-35). No commercial airport. Conveniently located at the midpoint of the Austin-San Antonio corridor. Greyhound and Flixbus stop at San Marcos on their Austin-San Antonio runs.",
+      "highlights": [
+        "Aquarena Springs \u00e2\u20ac\u201d glass-bottom boats over the crystal-clear San Marcos Springs ($9)",
+        "Tubing the San Marcos River through City Park ($5 tube rental)",
+        "Wonder World Cave and Earthquake Fault Tour \u00e2\u20ac\u201d unique tectonics geology ($27)",
+        "San Marcos Premium Outlets \u00e2\u20ac\u201d two malls with 150+ outlet stores",
+        "Wimberley Blue Hole Regional Park (day pass, reservation required, $10)",
+        "Texas State University campus and the LBJ Student Center",
+        "Downtown square bars and music venues for Texas State students and visitors",
+        "Tangerine restaurant for Hill Country farm-to-table dining"
+      ],
+      "essentials": {
+        "gettingAround": "Car recommended. Downtown square and riverside are walkable. CARTS rural transit connects to surrounding Hill Country towns. Bike-friendly with greenway trails.",
+        "airport": "AUS \u00e2\u20ac\u201d Austin-Bergstrom (30 min north) / SAT \u00e2\u20ac\u201d San Antonio International (50 min south)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "wimberley": {
+      "title": "Wimberley",
+      "tagline": "Hill Country Artists' Village on the Blanco River",
+      "region": "hill-country",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 45,
+        "midRange": 130,
+        "luxury": 350
+      },
+      "gettingThere": "Drive from Austin (45 minutes southwest via TX-290 W and TX-12) or San Antonio (1 hour via I-35 N and TX-12). No public transit. RV Road is TX-12 through the Hill Country \u00e2\u20ac\u201d allow time for the scenic drive through Wimberley Valley.",
+      "highlights": [
+        "Blue Hole Regional Park \u00e2\u20ac\u201d famous spring-fed swimming hole on the Blanco River ($10, advance reservation required)",
+        "Wimberley Zipline Adventures over the Blanco River canyon",
+        "Market Days at Lions Field \u00e2\u20ac\u201d huge outdoor market on the first Saturday of each month (Mar-Dec)",
+        "EmilyAnn Theatre outdoor amphitheatre performances",
+        "Cypress Creek Nature Trail boardwalk through spring-fed stream",
+        "Wimberley Glass Works \u00e2\u20ac\u201d working studio and gallery",
+        "The Driftwood Estate Winery (25 min east)",
+        "Millrace Park for paddleboarding and kayaking on the Blanco"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Village square is walkable. No public transit or rideshare. Book Blue Hole reservations weeks in advance in summer.",
+        "airport": "AUS \u00e2\u20ac\u201d Austin-Bergstrom (45 min northeast)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "dripping-springs": {
+      "title": "Dripping Springs",
+      "tagline": "Wedding Capital of Texas and Hill Country Spirits",
+      "region": "hill-country",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 50,
+        "midRange": 140,
+        "luxury": 350
+      },
+      "gettingThere": "Drive from Austin (30 minutes west on US-290) or Fredericksburg (45 minutes east on US-290). The US-290 corridor through Dripping Springs is Texas's Distillery District \u00e2\u20ac\u201d home to over a dozen craft spirits producers. No public transit.",
+      "highlights": [
+        "Dripping Springs Distillery District \u00e2\u20ac\u201d Treaty Oak, Desert Door, Bendt, and a dozen more on US-290",
+        "Hamilton Pool Preserve \u00e2\u20ac\u201d stunning collapsed grotto with 50-foot waterfall ($30, reservation required)",
+        "Pedernales Falls State Park \u00e2\u20ac\u201d swimming holes and limestone waterfalls ($6)",
+        "Jester King Brewery \u00e2\u20ac\u201d award-winning farmhouse ales in a 165-acre ranch setting",
+        "Salt Lick BBQ in Driftwood \u00e2\u20ac\u201d legendary pit BBQ on a cash-only hilltop ranch",
+        "Mercer Street district boutiques and farm-to-table restaurants",
+        "Firefly Resort glamping with Hill Country views",
+        "Reimers Ranch Park on the Pedernales for rock climbing and swimming"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Designate a driver for the distillery trail. Hamilton Pool requires advance reservation \u00e2\u20ac\u201d book online weeks ahead in spring. No rideshare in the rural areas.",
+        "airport": "AUS \u00e2\u20ac\u201d Austin-Bergstrom (30 min east)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "round-rock": {
+      "title": "Round Rock",
+      "tagline": "Dell Diamond, Donuts, and Outfield Sports",
+      "region": "central-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Sep",
+        "Oct"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 100,
+        "luxury": 220
+      },
+      "gettingThere": "Drive from Austin (20 minutes north on I-35). Part of the greater Austin metropolitan area. No separate commercial airport \u00e2\u20ac\u201d use AUS. Capital Metro rail (MetroRail) connects downtown Austin to downtown Round Rock ($3.50).",
+      "highlights": [
+        "Round Rock Express AAA baseball at Dell Diamond \u00e2\u20ac\u201d minor league baseball from $12",
+        "Round Rock Donuts \u00e2\u20ac\u201d famous Texas-sized donuts, served since 1926",
+        "Old Settlers Park and sports complex",
+        "Round Rock Premium Outlets \u00e2\u20ac\u201d 125+ outlet stores",
+        "Rock'N River Family Aquatic Center (summer, $10)",
+        "Brushy Creek Lake Park trails and fishing",
+        "Round Rock historic downtown square",
+        "IKEA Round Rock \u00e2\u20ac\u201d Texas's largest home goods destination for shoppers"
+      ],
+      "essentials": {
+        "gettingAround": "Car recommended. MetroRail to Austin. Downtown walkable. Uber/Lyft active.",
+        "airport": "AUS \u00e2\u20ac\u201d Austin-Bergstrom International Airport (20 min south)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "georgetown": {
+      "title": "Georgetown",
+      "tagline": "The Most Beautiful Town Square in Texas",
+      "region": "central-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 100,
+        "luxury": 220
+      },
+      "gettingThere": "Drive from Austin (30 minutes north on I-35). Capital Metro MetroRail commuter train connects Georgetown to downtown Austin in 60 minutes ($4.50). MetroRail is a convenient car-free option from Austin.",
+      "highlights": [
+        "Georgetown historic downtown square \u00e2\u20ac\u201d Williamson County Courthouse (1911) and locally-owned shops",
+        "Blue Hole Park on the South Fork of the San Gabriel River (free)",
+        "Georgetown's Inner Space Cavern \u00e2\u20ac\u201d active cave system open for guided tours ($20)",
+        "Lake Georgetown reservoir for boating, fishing, and camping",
+        "Southwestern University campus \u00e2\u20ac\u201d Texas's oldest university (founded 1840)",
+        "Wildflower season (March-April) along roadsides and Georgetown's parks",
+        "Russell Fish hatchery and visitor center (free)",
+        "Two Steps Wine Trail on the nearby Hill Country"
+      ],
+      "essentials": {
+        "gettingAround": "MetroRail from Austin to Georgetown station. Car recommended once in Georgetown. Downtown walkable. CARTS bus connects surrounding communities.",
+        "airport": "AUS \u00e2\u20ac\u201d Austin-Bergstrom International Airport (35 min south)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "marble-falls": {
+      "title": "Marble Falls",
+      "tagline": "Heart of the Highland Lakes",
+      "region": "hill-country",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 260
+      },
+      "gettingThere": "Drive from Austin (50 minutes northwest via US-183 to US-281) or San Antonio (1.5 hours via I-35 N and TX-71 W). Part of the Highland Lakes chain formed by six dams on the Colorado River. No public transit.",
+      "highlights": [
+        "Lake Marble Falls and Lake LBJ \u00e2\u20ac\u201d fishing, boating, and lakeside restaurants",
+        "Bluebonnet Trail drives in spring (March-April) through the Hill Country",
+        "Balcones Canyonlands National Wildlife Refuge birding (free)",
+        "Longhorn Cavern State Park \u00e2\u20ac\u201d 11-mile cave tour ($20)",
+        "Inks Lake State Park \u00e2\u20ac\u201d swimming, paddling, and camping on crystal-clear water ($6)",
+        "Falls Creek Winery tasting room overlooking the lake",
+        "Bluebonnet Cafe \u00e2\u20ac\u201d legendary small-town diner since 1929 (pie is mandatory)",
+        "Colorado Bend State Park tubing and gorman falls hiking"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Small walkable downtown. No public transit or rideshare. Boat rentals available on the lakefront.",
+        "airport": "AUS \u00e2\u20ac\u201d Austin-Bergstrom International Airport (50 min east)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "kerrville": {
+      "title": "Kerrville",
+      "tagline": "Heart of the Texas Hill Country",
+      "region": "hill-country",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 240
+      },
+      "gettingThere": "Drive from San Antonio (1 hour northwest via I-10 W and TX-16 N) or Austin (1.5 hours via TX-71 W). No commercial airport \u00e2\u20ac\u201d use SAT or AUS. The Guadalupe River runs through Kerrville and is the focal point of outdoor recreation.",
+      "highlights": [
+        "Guadalupe River State Park tubing and swimming ($7)",
+        "Kerrville Folk Festival \u00e2\u20ac\u201d 18-day acoustic music extravaganza in May-June",
+        "Museum of Western Art with cowboy and ranching heritage ($5)",
+        "Louise Hays Park on the Guadalupe River (free)",
+        "Cowboy Capital of the World Rodeo and Western heritage events",
+        "Schreiner University campus and grounds",
+        "Y.O. Ranch Day Trips for Texas longhorn and exotic game",
+        "Hill Country Arts Foundation theater and gallery"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Downtown Kerrville walkable along the river. No public transit. River tube rentals downtown in summer.",
+        "airport": "SAT \u00e2\u20ac\u201d San Antonio International (60 min southeast)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "boerne": {
+      "title": "Boerne",
+      "tagline": "Charming Hill Country Town Square",
+      "region": "hill-country",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 45,
+        "midRange": 120,
+        "luxury": 280
+      },
+      "gettingThere": "Drive from San Antonio (30 minutes northwest via I-10 W). A popular weekend escape from San Antonio. No commercial airport \u00e2\u20ac\u201d use SAT. Exit 543 on I-10 leads straight to historic Main Street.",
+      "highlights": [
+        "Boerne historic Main Street \u00e2\u20ac\u201d antique shops, boutiques, and German restaurants",
+        "Cave Without a Name \u00e2\u20ac\u201d stalactite and stalagmite show cave ($20)",
+        "Cibolo Nature Center on Cibolo Creek (free)",
+        "Cascade Caverns \u00e2\u20ac\u201d family-friendly cave tour with underground waterfall ($22)",
+        "Herff Farm \u00e2\u20ac\u201d local agricultural history and wildflower meadows",
+        "Boerne City Lake Park trails and fishing",
+        "Dienger Trading Company farm-to-table restaurant on Main Street",
+        "The Barrier Reef at Boerne Lake for swimming"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Main Street walkable. No public transit. Short drive to many Hill Country attractions.",
+        "airport": "SAT \u00e2\u20ac\u201d San Antonio International Airport (30 min southeast)",
+        "language": "English, German (historic), Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "bandera": {
+      "title": "Bandera",
+      "tagline": "Cowboy Capital of the World",
+      "region": "hill-country",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 260
+      },
+      "gettingThere": "Drive from San Antonio (45 minutes northwest via TX-16 N). The Medina River and Hill Country setting make Bandera a quintessential Texas cowboy experience. No commercial airport \u00e2\u20ac\u201d use SAT.",
+      "highlights": [
+        "Frontier Times Museum \u00e2\u20ac\u201d Tex-Mex curios and frontier history ($5)",
+        "Medina River tubing and swimming in summer",
+        "Eleventh Street Cowboy Bar \u00e2\u20ac\u201d honky-tonk with live country music nightly",
+        "Arkey Blue's Silver Dollar \u00e2\u20ac\u201d oldest dance hall in Bandera",
+        "Bandera Downs racetrack on race days",
+        "Y.O. Ranch and Hill Country guest ranch stays (from $150/night all-inclusive)",
+        "Polly's Pit Stop BBQ \u00e2\u20ac\u201d pit-smoked brisket in a converted gas station",
+        "Bandera Crossing \u00e2\u20ac\u201d Medina River swimming hole"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Downtown Bandera walkable. No public transit or rideshare. Guest ranch stays typically include activities and transport.",
+        "airport": "SAT \u00e2\u20ac\u201d San Antonio International Airport (45 min southeast)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "johnson-city": {
+      "title": "Johnson City",
+      "tagline": "LBJ Country and Pedernales Wine Territory",
+      "region": "hill-country",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 250
+      },
+      "gettingThere": "Drive from Austin (50 minutes west via US-290 W) or Fredericksburg (30 minutes east via US-290 E). The US-290 Wine Corridor connects Johnson City to the Hill Country wine trail. No commercial airport.",
+      "highlights": [
+        "Lyndon B. Johnson National Historical Park \u00e2\u20ac\u201d LBJ's childhood home and Texas White House Ranch (free)",
+        "Pedernales Falls State Park \u00e2\u20ac\u201d dramatic limestone falls and river swimming ($6)",
+        "LBJ State Park and Historic Site adjacent to the national park (free)",
+        "Alamo Springs Cafe \u00e2\u20ac\u201d remote Hill Country burger institution",
+        "US-290 wine trail access \u00e2\u20ac\u201d Pedernales, Kuhlman Cellars, and others nearby",
+        "Christmas lights at Blanco and Marble Falls (November-January)",
+        "Johnson City historic town square and Courthouse",
+        "Exotic Wildlife Association land and ranches viewing from public roads"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Small walkable downtown. No public transit. Self-guided LBJ auto tour available from visitor center.",
+        "airport": "AUS \u00e2\u20ac\u201d Austin-Bergstrom International Airport (50 min east)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "luckenbach": {
+      "title": "Luckenbach",
+      "tagline": "Everybody's Somebody in Luckenbach",
+      "region": "hill-country",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 25,
+        "midRange": 60,
+        "luxury": 150
+      },
+      "gettingThere": "Drive from Fredericksburg (10 minutes east via Luckenbach Road / FM 1376) or Austin (1.5 hours via US-290 W). Luckenbach is tiny \u00e2\u20ac\u201d a dance hall, a bar, a blacksmith shop, and a post office. No commercial airport nearby; use AUS or SAT.",
+      "highlights": [
+        "Luckenbach Texas Dance Hall \u00e2\u20ac\u201d 1849 limestone building with live music every weekend",
+        "World's Fair Pickin' Party acoustic jams Sunday afternoons",
+        "Willie Nelson's 4th of July Picnic held here most years",
+        "Shiner Bock on tap at the general store bar ($5)",
+        "Waylon and Willie memorabilia throughout the property",
+        "Finger-picking guitar circles under the oak trees (impromptu, free)",
+        "Adjacent to the Fredericksburg wine trail on US-290",
+        "Photo op at the iconic Luckenbach post office"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential \u00e2\u20ac\u201d Luckenbach has no services beyond the venue. 10 minutes from Fredericksburg. Designated driver mandatory on dance hall nights.",
+        "airport": "AUS \u00e2\u20ac\u201d Austin-Bergstrom International Airport (90 min northeast)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "enchanted-rock": {
+      "title": "Enchanted Rock",
+      "tagline": "Ancient Pink Granite Dome Rising from the Hill Country",
+      "region": "hill-country",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 25,
+        "midRange": 60,
+        "luxury": 120
+      },
+      "gettingThere": "Drive from Fredericksburg (18 miles north via TX-965) or Austin (1 hour 45 minutes via US-290 W to TX-965). Enchanted Rock State Natural Area is on FM 965 \u00e2\u20ac\u201d the road dead-ends at the park. Entry is $8/person; reservations mandatory during peak seasons via Texas Parks and Wildlife website.",
+      "highlights": [
+        "Summit Trail to the top of the dome \u00e2\u20ac\u201d stunning 360-degree Hill Country panoramas (2.6 miles round trip)",
+        "Rock climbing on the north face and surrounding smaller domes",
+        "Vernal pools on the summit hosting rare salamanders and fairy shrimp",
+        "Echo Canyon slot canyon hike (4.5 miles)",
+        "Geology: 1 billion-year-old pink Llano Uplift granite",
+        "Turkey Peak Trail for solitude and wildflower meadows",
+        "Dark sky stargazing \u00e2\u20ac\u201d minimal light pollution in this remote Hill Country valley",
+        "Wildlife: white-tailed deer, ring-tailed cats, and canyon wrens"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. No transit. Park capacity is strictly managed \u00e2\u20ac\u201d book day passes online in advance for spring and fall weekends. No camping (day use only for non-campers).",
+        "airport": "AUS \u00e2\u20ac\u201d Austin-Bergstrom International Airport (2 hours east)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "palo-duro-canyon": {
+      "title": "Palo Duro Canyon",
+      "tagline": "The Grand Canyon of Texas",
+      "region": "panhandle",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 30,
+        "midRange": 80,
+        "luxury": 180
+      },
+      "gettingThere": "Drive from Amarillo (25 miles southeast via TX-217). Fly into Rick Husband Amarillo International Airport (AMA) \u00e2\u20ac\u201d American and Southwest serve AMA from Dallas and other hubs. The canyon is the second-largest canyon in the United States after the Grand Canyon.",
+      "highlights": [
+        "Lighthouse Trail \u00e2\u20ac\u201d Palo Duro's iconic 5.8-mile hike to a 310-foot stone pillar",
+        "TEXAS Outdoor Musical \u00e2\u20ac\u201d spectacular outdoor amphitheatre drama performed June-August ($20-45)",
+        "Juniper Ravine and Rojo Grande mountain biking trails",
+        "Prairie Dog Town Fork of the Red River canyon floor drive",
+        "Rock climbing on the canyon walls (permit required)",
+        "Equestrian rides on the canyon floor from the park stables",
+        "Capital Peak viewpoint for sunrise photography",
+        "Mesquite camping in the canyon bottom"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. 16-mile scenic drive in the canyon. Mountain bikes rentable at the park. No public transit. Park entry $8/person.",
+        "airport": "AMA \u00e2\u20ac\u201d Rick Husband Amarillo International Airport (25 min northwest)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "amarillo": {
+      "title": "Amarillo",
+      "tagline": "Where the Texas Panhandle Meets Route 66",
+      "region": "panhandle",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Sep",
+        "Oct"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 100,
+        "luxury": 220
+      },
+      "gettingThere": "Fly into Rick Husband Amarillo International Airport (AMA), 9 miles east of downtown. American and Southwest operate direct service to Dallas, Denver, Houston, and Las Vegas. Historic Route 66 (Sixth Street) runs through downtown \u00e2\u20ac\u201d Amarillo is a classic road trip stop.",
+      "highlights": [
+        "Cadillac Ranch \u00e2\u20ac\u201d 10 graffiti-covered Cadillacs half-buried nose-down on a ranch along I-40 (free)",
+        "Palo Duro Canyon State Park (25 miles SE) \u00e2\u20ac\u201d Grand Canyon of Texas",
+        "Big Texan Steak Ranch \u00e2\u20ac\u201d free 72-oz steak if you eat it all in one hour",
+        "Historic Route 66 / Sixth Street entertainment district",
+        "Amarillo Zoo in Thompson Park (free)",
+        "Panhandle-Plains Historical Museum in Canyon \u00e2\u20ac\u201d largest history museum in Texas ($15)",
+        "Wonderland Amusement Park (summer, $30)",
+        "Tascosa ghost town ruins at Cal Farley's Boys Ranch west of town"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Downtown walkable around Sixth Street. CityBus covers main routes. Uber/Lyft available.",
+        "airport": "AMA \u00e2\u20ac\u201d Rick Husband Amarillo International Airport",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "lubbock": {
+      "title": "Lubbock",
+      "tagline": "Buddy Holly's Hometown on the South Plains",
+      "region": "panhandle",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Sep",
+        "Oct"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 200
+      },
+      "gettingThere": "Fly into Lubbock Preston Smith International Airport (LBB) \u00e2\u20ac\u201d American and Southwest serve LBB with connections through Dallas and Denver. LBB is 5 miles north of downtown. Car rental at the airport recommended.",
+      "highlights": [
+        "Buddy Holly Center \u00e2\u20ac\u201d comprehensive museum and performing arts center ($10)",
+        "Buddy Holly's Walk of Fame statues on the Crickets Avenue",
+        "Texas Tech University Museum of Texas Tech and Moody Planetarium (free)",
+        "Lubbock Lake Landmark \u00e2\u20ac\u201d archaeological site with 12,000 years of human history (free)",
+        "Llano Estacado Winery \u00e2\u20ac\u201d Texas High Plains wine country touring (free tasting)",
+        "Mackenzie Park and Prairie Dog Town \u00e2\u20ac\u201d free-roaming colony in the urban park",
+        "Caprock Canyons State Park (100 miles south) \u00e2\u20ac\u201d Texas bison herd and red rock canyon",
+        "Blue Light Live music venue and McAdoo's Seafood Company"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential in this sprawling flat city. Citibus covers main corridors ($1.50). Texas Tech area walkable. Uber/Lyft available.",
+        "airport": "LBB \u00e2\u20ac\u201d Lubbock Preston Smith International Airport",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "midland-odessa": {
+      "title": "Midland-Odessa",
+      "tagline": "Permian Basin Oil Country",
+      "region": "west-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 250
+      },
+      "gettingThere": "Fly into Midland International Air and Space Port (MAF), served by American, United, and Southwest with direct flights to Dallas, Houston, Phoenix, and Las Vegas. MAF is the gateway airport for Big Bend National Park (3.5 hours south) and West Texas road trips.",
+      "highlights": [
+        "Permian Basin Petroleum Museum \u00e2\u20ac\u201d world's leading oil industry museum ($12)",
+        "George W. Bush Childhood Home Museum in Midland ($10)",
+        "Museum of the Southwest and Centennial Science Museum (free)",
+        "Odessa Meteor Crater \u00e2\u20ac\u201d second largest in the US (free)",
+        "Odessa Jackalopes hockey at Ector County Coliseum",
+        "Buddy Holly's first performance was in Lubbock, but the Permian Basin is the oil heartland",
+        "Big Spring State Park (60 miles northeast) for prairie dog watching and birding",
+        "Gateway to Big Bend National Park and Guadalupe Mountains"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential \u00e2\u20ac\u201d the two cities sprawl across the flat Permian Basin. No meaningful public transit. Uber/Lyft available. Rent a car at MAF for regional exploration.",
+        "airport": "MAF \u00e2\u20ac\u201d Midland International Air and Space Port",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "guadalupe-mountains": {
+      "title": "Guadalupe Mountains National Park",
+      "tagline": "Texas's Highest Peaks and Ancient Fossil Reef",
+      "region": "west-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 30,
+        "midRange": 80,
+        "luxury": 160
+      },
+      "gettingThere": "Drive from El Paso (110 miles east via US-62/180) or Carlsbad Caverns (35 miles northeast via US-62/180). No public transit. The park sits on the Texas-New Mexico border. Fill up with gas in El Paso or Carlsbad before arriving \u00e2\u20ac\u201d none available in the park. Entry is $15/vehicle.",
+      "highlights": [
+        "Guadalupe Peak \u00e2\u20ac\u201d highest point in Texas at 8,751 feet, 8.4-mile round trip hike",
+        "El Capitan \u00e2\u20ac\u201d massive limestone escarpment visible from 50 miles away",
+        "McKittrick Canyon fall foliage (October-November) \u00e2\u20ac\u201d Texas's best autumn color",
+        "Permian Reef Geology Trail \u00e2\u20ac\u201d 280 million-year-old fossilized reef now exposed",
+        "Pine Springs Visitor Center and Butterfield Overland Mail site",
+        "Dog Canyon remote campground accessible from New Mexico side",
+        "Salt Basin Dunes day hike through white gypsum sand",
+        "Smith Spring oasis trail \u00e2\u20ac\u201d natural water source in the desert"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential and mandatory. Backcountry hiking only \u00e2\u20ac\u201d no paved roads within the park. High-clearance vehicle recommended for Dog Canyon route. Carlsbad Caverns (NM) is 35 miles north for combined trip.",
+        "airport": "ELP \u00e2\u20ac\u201d El Paso International Airport (110 miles west)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "port-aransas": {
+      "title": "Port Aransas",
+      "tagline": "Texas's Laid-Back Surf Town on Mustang Island",
+      "region": "gulf-coast",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "May",
+        "Oct"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 120,
+        "luxury": 280
+      },
+      "gettingThere": "Drive from Corpus Christi (30 minutes) via the free ferry or TX-361 bridge (free). Fly into Corpus Christi International (CRP), then drive. The free Aransas Pass ferry from the mainland is part of the Port A experience \u00e2\u20ac\u201d short queues most of the year.",
+      "highlights": [
+        "Mustang Island State Park beach \u00e2\u20ac\u201d 5 miles of undeveloped Gulf shoreline ($5/person)",
+        "Deep sea and bay fishing charters (from $60/person half day)",
+        "Whooping crane viewing tours in winter at Aransas National Wildlife Refuge (from $45)",
+        "Roberts Point Park and fishing pier (free)",
+        "Port Aransas Birding Center (free) \u00e2\u20ac\u201d exceptional shorebird and warbler habitat",
+        "Lydia Ann Channel dolphin boat tours",
+        "Beachcombing for sand dollars on the Gulf side",
+        "Tourist District bars, beach bars, and fresh Gulf seafood"
+      ],
+      "essentials": {
+        "gettingAround": "Car recommended. The town is bikeable. Tram service runs along the main strip in peak season ($2). Free ferry from Aransas Pass to Port A. Uber/Lyft limited.",
+        "airport": "CRP \u00e2\u20ac\u201d Corpus Christi International Airport (45 min by car and ferry)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "rockport-fulton": {
+      "title": "Rockport-Fulton",
+      "tagline": "Hummingbird Capital of Texas",
+      "region": "gulf-coast",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Sep",
+        "Oct"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 250
+      },
+      "gettingThere": "Drive from Corpus Christi (35 miles north via TX-35) or San Antonio (2.5 hours via US-181 and TX-35). No commercial airport \u00e2\u20ac\u201d use CRP. The twin communities sit on Aransas Bay, sheltered from the Gulf.",
+      "highlights": [
+        "Aransas National Wildlife Refuge \u00e2\u20ac\u201d only wild flock of endangered whooping cranes winters here (Nov-Mar, $5/car)",
+        "Rockport Beach Park \u00e2\u20ac\u201d one of Texas's best-kept beach secrets ($6/person)",
+        "Rockport Center for the Arts galleries (free)",
+        "Texas Maritime Museum covering 500 years of Gulf history ($8)",
+        "Hummingbird Festival in September \u00e2\u20ac\u201d millions of ruby-throated hummingbirds migrate through",
+        "Rockport Sea Center Texas fish hatchery and aquarium (free)",
+        "Fulton Mansion State Historic Site \u00e2\u20ac\u201d 1877 French Second Empire mansion ($5)",
+        "Kayaking the back bays for dolphin spotting"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Rockport beach and downtown walkable. No public transit. Kayak rentals on the bay.",
+        "airport": "CRP \u00e2\u20ac\u201d Corpus Christi International Airport (35 min south)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "matagorda": {
+      "title": "Matagorda",
+      "tagline": "Unspoiled Texas Gulf Coast Fishing Village",
+      "region": "gulf-coast",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 200
+      },
+      "gettingThere": "Drive from Houston (2 hours via TX-35 S and TX-60). Very remote \u00e2\u20ac\u201d no commercial airport nearby. HOU (Houston Hobby) is the nearest at 85 miles. The drive down TX-35 and TX-60 along Matagorda Bay is worth it for the scenery.",
+      "highlights": [
+        "Matagorda Beach \u00e2\u20ac\u201d 35 miles of pristine undeveloped Gulf shoreline with no crowds",
+        "Matagorda Bay Nature Park \u00e2\u20ac\u201d excellent birding and wildlife viewing (free)",
+        "Colorado River Lighthouse historic site",
+        "Fishing for redfish, flounder, and speckled trout in the bay",
+        "Matagorda Island State Park \u00e2\u20ac\u201d only accessible by boat, truly undeveloped barrier island",
+        "Birding along the Great Texas Coastal Birding Trail",
+        "Shrimping boats and fresh catch at the local docks",
+        "Dark sky beach camping"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential and required. Very limited services in Matagorda \u00e2\u20ac\u201d fill up gas in Bay City (30 min north). No rideshare or public transit.",
+        "airport": "HOU \u00e2\u20ac\u201d William P. Hobby Airport, Houston (85 miles north)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "surfside-beach": {
+      "title": "Surfside Beach",
+      "tagline": "Houston's Closest Gulf Coast Beach",
+      "region": "gulf-coast",
+      "bestMonths": [
+        "Apr",
+        "May",
+        "Sep",
+        "Oct"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 200
+      },
+      "gettingThere": "Drive from Houston (1 hour 20 minutes via TX-288 S to TX-332). No commercial airport. HOU (Houston Hobby) is the nearest at 55 miles. The Freeport Brazosport area connects to Surfside Beach on the western end of the Brazosport beaches.",
+      "highlights": [
+        "Surfside Beach \u00e2\u20ac\u201d casual Gulf beach popular with Houston day-trippers",
+        "Bryan Beach State Park adjacent to the town (free)",
+        "Fishing from the Surfside Jetties on the Freeport Ship Channel",
+        "Brazosport Museum of Natural Science in Lake Jackson ($5)",
+        "Quintana Beach County Park bird sanctuary and beach camping ($20/night)",
+        "Sea Center Texas in Lake Jackson \u00e2\u20ac\u201d fish hatchery and aquarium (free)",
+        "Fresh shrimp off the boat at Freeport docks",
+        "Birding the Brazoria National Wildlife Refuge (free)"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Surfside Beach itself is a narrow barrier island \u00e2\u20ac\u201d bikeable along the shore road. No public transit or rideshare.",
+        "airport": "HOU \u00e2\u20ac\u201d William P. Hobby Airport, Houston (55 miles north)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "terlingua": {
+      "title": "Terlingua",
+      "tagline": "Ghost Town at the Edge of Big Bend",
+      "region": "west-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 200
+      },
+      "gettingThere": "Drive from Alpine (80 miles south via TX-118) or from Big Bend National Park's western entrance (8 miles). Midland (MAF) is the nearest commercial airport, 3.5 hours north. Terlingua serves as the basecamp for Big Bend visitors \u00e2\u20ac\u201d book lodging months in advance for prime dates.",
+      "highlights": [
+        "Terlingua Ghost Town cemetery and ruins \u00e2\u20ac\u201d remnants of the quicksilver mining boomtown",
+        "Starlight Theatre restaurant and bar \u00e2\u20ac\u201d legendary outdoor live music venue in the ruins",
+        "World Championship Chili Cook-Off \u00e2\u20ac\u201d held first Saturday of November since 1967",
+        "Big Bend Ranch State Park (immediately adjacent) \u00e2\u20ac\u201d more remote than the national park",
+        "Santa Elena Canyon raft trip launching from Terlingua ($100-200/day with guide)",
+        "Rio Grande Village and Boquillas hot springs day hike from Terlingua",
+        "Chili Pepper Cafe and La Kiva underground bar",
+        "Dark sky viewing \u00e2\u20ac\u201d some of the darkest skies in the contiguous US"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential and mandatory. Terlingua has one road in and one road out. Stock up on supplies in Alpine before driving down. Gas available but limited and expensive in Terlingua.",
+        "airport": "MAF \u00e2\u20ac\u201d Midland International Air and Space Port (3.5 hours north)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "alpine": {
+      "title": "Alpine",
+      "tagline": "Cultural Heart of the Big Bend Country",
+      "region": "west-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 100,
+        "luxury": 220
+      },
+      "gettingThere": "Drive from Midland (120 miles via US-385 S and TX-118) or El Paso (3 hours via I-10 E and US-90). The Sunset Limited Amtrak train stops in Alpine three times a week \u00e2\u20ac\u201d the most scenic train ride in Texas. Sul Ross State University is the cultural anchor of this small city of 6,000.",
+      "highlights": [
+        "Museum of the Big Bend at Sul Ross University \u00e2\u20ac\u201d definitive regional history collection (free)",
+        "Marfa (30 minutes west) and its art scene",
+        "Big Bend National Park (80 miles south) as basecamp",
+        "Railroad Blues bar \u00e2\u20ac\u201d live music in a converted depot",
+        "Reata Restaurant \u00e2\u20ac\u201d upscale cowboy cuisine in a 100-year-old ranch building",
+        "Texas Brewhouse and Spirits local craft beer",
+        "Sul Ross State University rodeo arena events",
+        "Amtrak Sunset Limited sunset arrival \u00e2\u20ac\u201d dramatic desert scenery"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential for regional exploration. Alpine itself is walkable downtown. Amtrak for arrival from El Paso or San Antonio. No rideshare.",
+        "airport": "MAF \u00e2\u20ac\u201d Midland International Air and Space Port (2 hours northeast)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "del-rio": {
+      "title": "Del Rio",
+      "tagline": "Lake Amistad and the US-Mexico Border",
+      "region": "west-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 190
+      },
+      "gettingThere": "Drive from San Antonio (2.5 hours west via US-90) or Eagle Pass (60 miles south via US-277). Del Rio International Airport (DRT) has limited service via American Eagle to Dallas. The city sits on the Rio Grande across from Ciudad Acu\u00c3\u00b1a, Mexico.",
+      "highlights": [
+        "Lake Amistad National Recreation Area \u00e2\u20ac\u201d 67,000-acre reservoir for boating, fishing, and diving on the Rio Grande ($4/boat)",
+        "Seminole Canyon State Park \u00e2\u20ac\u201d 4,000-year-old Native American pictographs ($5)",
+        "Devils River State Natural Area \u00e2\u20ac\u201d one of the clearest rivers in Texas (permit required, limited access)",
+        "Whitehead Memorial Museum \u00e2\u20ac\u201d Judge Roy Bean and frontier justice history ($5)",
+        "Ciudad Acu\u00c3\u00b1a day trip across the border for authentic Mexican dining and shopping",
+        "Val Verde Winery \u00e2\u20ac\u201d Texas's oldest winery, founded 1883, free tastings",
+        "Lake Amistad largemouth bass fishing \u00e2\u20ac\u201d consistently excellent",
+        "Pecos River and High Bridge overlook"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Downtown Del Rio walkable near the plaza. No meaningful public transit. Bring US passport for Acu\u00c3\u00b1a crossing.",
+        "airport": "DRT \u00e2\u20ac\u201d Del Rio International Airport (limited) / SAT \u00e2\u20ac\u201d San Antonio International (2.5 hours east)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "eagle-pass": {
+      "title": "Eagle Pass",
+      "tagline": "Gateway to Mexico on the Rio Grande",
+      "region": "west-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 30,
+        "midRange": 80,
+        "luxury": 170
+      },
+      "gettingThere": "Drive from San Antonio (2.5 hours southwest via US-57 or US-90). Eagle Pass-Piedras Negras International Airport (ELP) has no commercial service \u00e2\u20ac\u201d use SAT. Eagle Pass is a major port of entry to Piedras Negras, Coahuila, Mexico.",
+      "highlights": [
+        "Fort Duncan Museum and Park \u00e2\u20ac\u201d 1849 US Army post on the Rio Grande",
+        "Lake Casa Blanca International State Park for bass fishing, camping, and birding ($7)",
+        "Piedras Negras, Mexico day trip \u00e2\u20ac\u201d birthplace of the nacho (1943)",
+        "Eagle Pass International Golf Club on the border",
+        "Historic downtown plaza and Rio Grande waterfront",
+        "Maverick County Historical Museum",
+        "Border commerce and authentic Coahuila cuisine in Piedras Negras",
+        "Rio Grande birding along the river corridor"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Downtown walkable. International bridge to Piedras Negras on foot. Bring US passport for border crossing.",
+        "airport": "SAT \u00e2\u20ac\u201d San Antonio International Airport (2.5 hours northeast)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "laredo": {
+      "title": "Laredo",
+      "tagline": "Two Cities on the Rio Grande",
+      "region": "south-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 200
+      },
+      "gettingThere": "Fly into Laredo International Airport (LRD) \u00e2\u20ac\u201d American serves LRD with connections through Dallas. Or drive from San Antonio (2.5 hours south via I-35). Laredo is the largest US-Mexico border crossing point by trade volume, across from Nuevo Laredo, Tamaulipas.",
+      "highlights": [
+        "Republic of the Rio Grande Museum \u00e2\u20ac\u201d 1830s capital building of the short-lived republic ($4)",
+        "San Agustin de Laredo Cathedral \u00e2\u20ac\u201d 1872 Spanish Colonial church on the historic plaza",
+        "Lake Casa Blanca International State Park (shared with Eagle Pass area)",
+        "Laredo Center for the Arts",
+        "Nuevo Laredo, Mexico shopping and dining (bring passport)",
+        "Washington's Birthday Celebration \u00e2\u20ac\u201d month-long festival including an international bridge parade in February",
+        "Webb County Heritage Foundation historic downtown tours",
+        "World Trade International Bridge \u00e2\u20ac\u201d busiest port of entry on the US-Mexico border"
+      ],
+      "essentials": {
+        "gettingAround": "Car recommended. Historic downtown El Portal district walkable. El Mercado de San Agustin area for dining. Nuevo Laredo accessible by foot across the international bridge.",
+        "airport": "LRD \u00e2\u20ac\u201d Laredo International Airport",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "brownsville": {
+      "title": "Brownsville",
+      "tagline": "Southernmost Texas City and Rio Grande Delta",
+      "region": "south-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 190
+      },
+      "gettingThere": "Fly into Brownsville/South Padre Island International Airport (BRO) \u00e2\u20ac\u201d American serves BRO via Dallas. Or fly into Valley International (HRL) in Harlingen (30 min north). Drive from San Antonio (4 hours via US-281 S). Brownsville sits at the southernmost tip of Texas, across from Matamoros, Mexico.",
+      "highlights": [
+        "Gladys Porter Zoo \u00e2\u20ac\u201d one of the nation's top small zoos with 1,600 animals in open naturalistic habitats ($17)",
+        "Palo Alto Battlefield National Historical Park \u00e2\u20ac\u201d 1846 Mexican-American War site (free)",
+        "Historic Brownsville Museum of Fine Art",
+        "Matamoros, Mexico day trip across the Gateway International Bridge (passport required)",
+        "SpaceX Boca Chica Launch Site \u00e2\u20ac\u201d Starship test launches visible from public beaches",
+        "Boca Chica State Park beach \u00e2\u20ac\u201d at the mouth of the Rio Grande",
+        "Sabal Palm Sanctuary \u00e2\u20ac\u201d last remnant of the original Rio Grande delta forest",
+        "Lower Rio Grande Valley National Wildlife Refuge \u00e2\u20ac\u201d exceptional tropical birding"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Brownsville Metro bus covers the city ($1). Downtown historic district walkable. International bridge to Matamoros on foot with passport.",
+        "airport": "BRO \u00e2\u20ac\u201d Brownsville/South Padre Island International / HRL \u00e2\u20ac\u201d Valley International, Harlingen",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "mcallen": {
+      "title": "McAllen",
+      "tagline": "Rio Grande Valley Shopping and Butterfly Capital",
+      "region": "south-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 100,
+        "luxury": 220
+      },
+      "gettingThere": "Fly into McAllen Miller International Airport (MFE) \u00e2\u20ac\u201d United and American serve MFE with connections to Houston and Dallas. MFE is 5 miles north of downtown. The Rio Grande Valley's largest city, 4 miles from the Mexican border at Reynosa.",
+      "highlights": [
+        "Quinta Mazatlan \u00e2\u20ac\u201d urban birding center in a 1930s Spanish Colonial manor ($5)",
+        "McAllen Nature Center wildlife reserve (free)",
+        "National Butterfly Center \u00e2\u20ac\u201d 100-acre butterfly and native plant sanctuary ($15)",
+        "La Plaza Mall \u00e2\u20ac\u201d the largest mall in South Texas",
+        "Anzalduas County Park on the Rio Grande with excellent birding (free)",
+        "Historic McAllen and the La Lomita Chapel in Mission (20 min west)",
+        "Reynosa, Mexico shopping and dining day trip via the International Bridge",
+        "Hidalgo Pumpkin Festival in October"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. McAllen bus system covers the city. Downtown walkable. Reynosa accessible by international bridge \u00e2\u20ac\u201d bring passport.",
+        "airport": "MFE \u00e2\u20ac\u201d McAllen Miller International Airport",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "kingsville": {
+      "title": "Kingsville",
+      "tagline": "Home of the King Ranch \u00e2\u20ac\u201d World's Largest Ranch",
+      "region": "south-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 85,
+        "luxury": 180
+      },
+      "gettingThere": "Drive from Corpus Christi (40 miles southwest via US-77) or San Antonio (2.5 hours via US-281 and US-77). No commercial airport \u00e2\u20ac\u201d use CRP. Kingsville is the gateway to the legendary King Ranch.",
+      "highlights": [
+        "King Ranch \u00e2\u20ac\u201d 825,000-acre working cattle ranch offering tours ($15-45)",
+        "King Ranch Museum \u00e2\u20ac\u201d saddles, carriages, and the history of the world's largest ranch ($5)",
+        "King Ranch Saddle Shop \u00e2\u20ac\u201d authentic hand-tooled leather goods",
+        "Texas A&M Kingsville campus \u00e2\u20ac\u201d the university town feel",
+        "Conner Museum of Natural History at TAMUK (free)",
+        "Celanese and USS Lexington displays at the South Texas Museum ($6)",
+        "Los Laureles Division of King Ranch for wildlife management and hunting",
+        "Sarita and Falfurrias small towns on the ranching corridor south"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Downtown Kingsville walkable around the plaza. King Ranch tours depart from the visitor center at the ranch entrance. No public transit.",
+        "airport": "CRP \u00e2\u20ac\u201d Corpus Christi International Airport (40 min northeast)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "port-isabel": {
+      "title": "Port Isabel",
+      "tagline": "Gateway to South Padre Island \u00e2\u20ac\u201d Shrimping Fleet and Lighthouse",
+      "region": "gulf-coast",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "May",
+        "Oct"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 200
+      },
+      "gettingThere": "Drive from Harlingen (25 miles via US-77 S and TX-100) or Brownsville (30 miles via TX-48). Fly into Valley International (HRL) or BRO, then drive. Port Isabel sits at the foot of the Queen Isabella Causeway leading to South Padre Island.",
+      "highlights": [
+        "Port Isabel Lighthouse State Historic Site \u00e2\u20ac\u201d climb for views over the Laguna Madre and South Padre ($4)",
+        "Historic downtown Port Isabel seafood restaurants and shrimp fleet",
+        "Laguna Madre water sports \u00e2\u20ac\u201d kayaking, paddleboarding, and windsurfing",
+        "Dolphin watching from the causeway banks (free)",
+        "South Padre Island accessible across the causeway (free bridge)",
+        "Port Isabel Museum ($3)",
+        "Fresh shrimp straight off the trawlers at the docks",
+        "Fishing in Laguna Madre \u00e2\u20ac\u201d redfish and trout"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Port Isabel downtown walkable. Free causeway bridge to South Padre Island. No public transit.",
+        "airport": "HRL \u00e2\u20ac\u201d Valley International Airport, Harlingen (25 min northwest)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "caddo-lake": {
+      "title": "Caddo Lake",
+      "tagline": "Mysterious Cypress Swamp on the Texas-Louisiana Border",
+      "region": "east-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 100,
+        "luxury": 220
+      },
+      "gettingThere": "Drive from Marshall (15 miles east via TX-43) or Shreveport, Louisiana (55 miles via US-59 and TX-43). No commercial airport \u00e2\u20ac\u201d use Shreveport Regional (SHV) or Dallas/Fort Worth (DFW, 3 hours west). Caddo Lake is the only natural lake in Texas.",
+      "highlights": [
+        "Caddo Lake State Park boat tours through the ancient cypress swamp (from $20)",
+        "Giant bald cypress trees draped in Spanish moss \u00e2\u20ac\u201d oldest trees in Texas",
+        "Caddo Lake National Wildlife Refuge canoeing and kayaking",
+        "Uncertain, Texas \u00e2\u20ac\u201d the tiny community of 100 people on the lake's shore",
+        "Bass and crappie fishing in the bayou channels",
+        "Swamp Thing and Ghost Road legends \u00e2\u20ac\u201d mysterious lights on the lonely county roads",
+        "Caddo people cultural history at the local museum",
+        "Springtime swamp blooms \u00e2\u20ac\u201d lotus flowers and iris in the water"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Boat essential for the full Caddo Lake experience \u00e2\u20ac\u201d rentals available at the state park marina. No public transit.",
+        "airport": "SHV \u00e2\u20ac\u201d Shreveport Regional Airport, Louisiana (55 min east)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "jefferson": {
+      "title": "Jefferson",
+      "tagline": "Antebellum River Port Frozen in Time",
+      "region": "east-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 250
+      },
+      "gettingThere": "Drive from Dallas (2.5 hours east via I-20 E and TX-59 N) or Shreveport, Louisiana (60 miles west via US-59). No commercial airport nearby \u00e2\u20ac\u201d use DFW or SHV. Jefferson was the most important city in antebellum Texas, once accessible by steamboat from New Orleans.",
+      "highlights": [
+        "Historic Jefferson downtown \u00e2\u20ac\u201d entire National Register district of 19th-century commercial buildings",
+        "Excelsior House Hotel \u00e2\u20ac\u201d 1858 hotel that hosted Ulysses Grant and Oscar Wilde",
+        "Jefferson General Store and antique shops along Austin Street",
+        "Bayou cruises through the cypress swamps by paddleboat ($10)",
+        "Jefferson Museum of Telegraphy ($3)",
+        "The Grove \u00e2\u20ac\u201d Jefferson's most famous haunted mansion (tours from $20)",
+        "Mardi Gras Jefferson \u00e2\u20ac\u201d massive February festival with elaborate balls and parade",
+        "Caddo Lake (20 miles south) for swamp exploration"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Jefferson's historic district is completely walkable \u00e2\u20ac\u201d less than 10 blocks. No public transit or rideshare.",
+        "airport": "SHV \u00e2\u20ac\u201d Shreveport Regional Airport, Louisiana (60 min east) / DFW (2.5 hours west)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "nacogdoches": {
+      "title": "Nacogdoches",
+      "tagline": "Oldest Town in Texas",
+      "region": "east-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 85,
+        "loyalty": 180
+      },
+      "gettingThere": "Drive from Houston (2.5 hours north via US-59) or Dallas (3 hours southeast via US-175). No commercial airport \u00e2\u20ac\u201d use Houston Bush (IAH) or Dallas/Fort Worth (DFW). Nacogdoches claims to be the oldest continuous human settlement in Texas, with roots to 1716.",
+      "highlights": [
+        "Historic downtown Nacogdoches \u00e2\u20ac\u201d nine flags have flown over this city",
+        "Stephen F. Austin State University campus arboretum (free)",
+        "Sterne-Hoya House Museum \u00e2\u20ac\u201d 1830 home of Nicolas Sterne who baptized Sam Houston ($5)",
+        "Old Stone Fort Museum replica \u00e2\u20ac\u201d original 1779 trading post rebuilt on the SFA campus (free)",
+        "Azalea Trails in spring (March-April) through Nacogdoches neighborhoods",
+        "The Cookie Bar and Tyler Street antique shops",
+        "Lake Nacogdoches fishing and boating",
+        "Millard's Crossing Historic Village \u00e2\u20ac\u201d relocated pioneer cabins ($5)"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Downtown walkable. SFA campus walkable. No public transit or rideshare.",
+        "airport": "IAH \u00e2\u20ac\u201d George Bush Intercontinental, Houston (2.5 hours south)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "lufkin": {
+      "title": "Lufkin",
+      "tagline": "Texas Forestry and Angelina National Forest",
+      "region": "east-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 85,
+        "luxury": 180
+      },
+      "gettingThere": "Drive from Houston (2 hours north via US-59) or Dallas (3 hours southeast via US-175 and TX-103). No commercial airport \u00e2\u20ac\u201d use IAH or DFW. Lufkin is the hub of East Texas Piney Woods and gateway to Angelina National Forest and Sam Rayburn Reservoir.",
+      "highlights": [
+        "Texas Forestry Museum \u00e2\u20ac\u201d comprehensive history of East Texas timber industry (free)",
+        "Museum of East Texas \u00e2\u20ac\u201d fine art in a converted church ($5)",
+        "Angelina National Forest hiking and camping (free with America the Beautiful pass)",
+        "Sam Rayburn Reservoir \u00e2\u20ac\u201d 114,000 acres of bass fishing and lake recreation",
+        "Ellen Trout Zoo \u00e2\u20ac\u201d free municipal zoo with 700 animals",
+        "Diboll History Center covering the Long-Bell Lumber Company legacy",
+        "SH-94 Scenic Drive through the Piney Woods",
+        "Boykin Springs Recreation Area swimming hole in the national forest"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. No public transit. Lufkin is a spread-out East Texas town \u00e2\u20ac\u201d most attractions require driving between them.",
+        "airport": "IAH \u00e2\u20ac\u201d George Bush Intercontinental, Houston (2 hours south)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "tyler": {
+      "title": "Tyler",
+      "tagline": "Rose Capital of America",
+      "region": "east-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 100,
+        "luxury": 230
+      },
+      "gettingThere": "Drive from Dallas (1.5 hours east via I-20) or Shreveport (1.5 hours west via I-20). Tyler Pounds Regional Airport (TYR) has limited American Eagle service to Dallas. Car rental at TYR for regional exploration.",
+      "highlights": [
+        "Tyler Rose Garden \u00e2\u20ac\u201d America's largest municipal rose garden with 38,000 plants of 600+ varieties (free)",
+        "Texas Rose Festival in October \u00e2\u20ac\u201d rose parade, queen's coronation, and garden tours",
+        "Caldwell Zoo \u00e2\u20ac\u201d 85-acre zoo with 4,000 animals ($13)",
+        "Tyler Museum of Art ($5)",
+        "UT Health East Texas facilities and medical tourism infrastructure",
+        "Brookshire's World of Wildlife Museum (free)",
+        "Tyler State Park piney woods swimming lake and cabins ($7/person)",
+        "The Oil Palace live events venue"
+      ],
+      "essentials": {
+        "gettingAround": "Car recommended. Downtown Tyler and the rose garden are walkable to each other. No meaningful public transit. Uber/Lyft available.",
+        "airport": "TYR \u00e2\u20ac\u201d Tyler Pounds Regional Airport / DFW \u00e2\u20ac\u201d Dallas/Fort Worth (1.5 hours west)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "denton": {
+      "title": "Denton",
+      "tagline": "Live Music College Town North of Dallas",
+      "region": "north-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 200
+      },
+      "gettingThere": "Drive from Dallas (35 miles north via I-35 E) or Fort Worth (35 miles north via I-35 W). DCTA A-train commuter rail connects Denton to DART light rail in Carrollton \u00e2\u20ac\u201d access Dallas in 75 minutes ($5). DFW Airport is 30 miles south.",
+      "highlights": [
+        "Denton Square historic courthouse and surrounding bars and restaurants",
+        "Rubber Gloves Rehearsal Studios \u00e2\u20ac\u201d legendary DIY music venue launching Texas bands since 1994",
+        "Denton Arts and Jazz Festival in April (free)",
+        "UNT and TWU campuses \u00e2\u20ac\u201d two major universities giving the city its youthful energy",
+        "LSA Burger Company for creative Texas burgers",
+        "Dan's Silverleaf \u00e2\u20ac\u201d intimate listening room with eclectic national and local acts",
+        "Denton Community Market on Saturday mornings (April-November)",
+        "Barrington Square antique mall for vintage Texas finds"
+      ],
+      "essentials": {
+        "gettingAround": "DCTA A-train to Dallas. Downtown Denton walkable. Uber/Lyft available. Car for wider Denton exploration.",
+        "airport": "DFW \u00e2\u20ac\u201d Dallas/Fort Worth International Airport (30 min south)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "mckinney": {
+      "title": "McKinney",
+      "tagline": "Unique. Livable. Historic.",
+      "region": "north-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 260
+      },
+      "gettingThere": "Drive from Dallas (30 miles north via US-75) or DFW Airport (45 miles southwest). No commercial airport at McKinney \u00e2\u20ac\u201d use DFW or DAL. McKinney National Airport handles private aviation. The historic square is 40 minutes from downtown Dallas on US-75.",
+      "highlights": [
+        "McKinney historic downtown square \u00e2\u20ac\u201d 100+ locally-owned shops, restaurants, and galleries in 19th-century buildings",
+        "Heard Natural Science Museum and Wildlife Sanctuary ($12)",
+        "Chestnut Square Historic Village \u00e2\u20ac\u201d 1850s pioneer structures ($5)",
+        "Towne Lake Recreation Area trails and water sports",
+        "McKinney Performing Arts Center in the 1875 Collin County Courthouse",
+        "Lavender Festival in May at Donahue Farm",
+        "The Celt Irish Pub and local craft breweries on the square",
+        "Adrian's restaurant for Hill Country-inspired Texas cuisine"
+      ],
+      "essentials": {
+        "gettingAround": "Car recommended. Historic square walkable. No commuter rail \u00e2\u20ac\u201d DART does not reach McKinney. Uber/Lyft from Dallas.",
+        "airport": "DFW \u00e2\u20ac\u201d Dallas/Fort Worth International Airport (45 min southwest)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "grapevine": {
+      "title": "Grapevine",
+      "tagline": "Christmas Capital of Texas and Gateway to DFW",
+      "region": "north-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "budgetPerDay": {
+        "backpacker": 45,
+        "midRange": 120,
+        "luxury": 280
+      },
+      "gettingThere": "TRE commuter rail from DFW Airport Terminal A to Grapevine Main Station (free on the TRE). Or drive from Dallas (30 miles northwest via TX-114) or Fort Worth (20 miles east via TX-114). Grapevine is literally adjacent to DFW Airport \u00e2\u20ac\u201d many travellers stop for a night.",
+      "highlights": [
+        "Historic Grapevine Main Street \u00e2\u20ac\u201d boutiques, wineries, and restaurants in turn-of-century buildings",
+        "Garvey Vineyard and Delaney Vineyards in Texas's first AVA",
+        "Grapevine Vintage Railroad \u00e2\u20ac\u201d historic steam train excursions ($20-40)",
+        "SEA LIFE Grapevine Aquarium at Grapevine Mills ($25)",
+        "Legoland Discovery Center at Grapevine Mills ($29)",
+        "Grapevine Mills \u00e2\u20ac\u201d large discount outlet and entertainment mall",
+        "GaylordTexas Resort Christmas Wonderland (November-January) \u00e2\u20ac\u201d 4 million lights and indoor ice skating",
+        "Nash Farm Living History Museum ($8)"
+      ],
+      "essentials": {
+        "gettingAround": "TRE train from DFW. Grapevine Main Street walkable. Car for wider exploration. Uber/Lyft active. Dallas Cowboys Shuttle on game days.",
+        "airport": "DFW \u00e2\u20ac\u201d Dallas/Fort Worth International Airport (adjacent \u00e2\u20ac\u201d free TRE train)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "granbury": {
+      "title": "Granbury",
+      "tagline": "Best Small Town Square in Texas",
+      "region": "north-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 250
+      },
+      "gettingThere": "Drive from Fort Worth (35 miles southwest via US-377 or TX-4) or Dallas (60 miles via US-377 S). No commercial airport \u00e2\u20ac\u201d use DFW or DAL. Granbury sits on Lake Granbury on the Brazos River, 40 miles southwest of Fort Worth.",
+      "highlights": [
+        "Granbury historic town square \u00e2\u20ac\u201d Texas's first designated Texas Main Street city",
+        "Granbury Opera House \u00e2\u20ac\u201d professional theater since 1886 on the square",
+        "Lake Granbury water sports, fishing, and sunset cruises",
+        "Acton State Historic Site \u00e2\u20ac\u201d smallest Texas state park with Elizabeth Crockett's grave ($3)",
+        "Granbury Dungeon and Escape Rooms on the square",
+        "Harvest Moon Caf\u00c3\u00a9 and Local Yocal Farm to Market dining",
+        "Fort Worth and Wild West history at Granbury museums",
+        "Peach Festival in June at local orchards"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Historic square entirely walkable. No public transit. Lake boat rentals for water access.",
+        "airport": "DFW \u00e2\u20ac\u201d Dallas/Fort Worth International Airport (60 min northeast)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "glen-rose": {
+      "title": "Glen Rose",
+      "tagline": "Dinosaur Valley and Fossil Rim Wildlife",
+      "region": "north-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 110,
+        "luxury": 250
+      },
+      "gettingThere": "Drive from Fort Worth (60 miles southwest via US-67 or Chalk Mountain Road) or Dallas (70 miles via US-67). No commercial airport \u00e2\u20ac\u201d use DFW or DAL. Glen Rose is famous for having the best-preserved dinosaur trackways in the world, embedded in the Paluxy River.",
+      "highlights": [
+        "Dinosaur Valley State Park \u00e2\u20ac\u201d walk among 113-million-year-old sauropod and theropod tracks in the riverbed ($7)",
+        "Fossil Rim Wildlife Center \u00e2\u20ac\u201d drive-through African wildlife safari with cheetahs and rhinos on 1,800 Texas acres ($30-75)",
+        "Somervell County Museum in historic courthouse ($5)",
+        "Creation Evidence Museum for young-Earth interpretation of the fossil site (free)",
+        "Paluxy River swimming holes (free, within Dinosaur Valley)",
+        "The Promise outdoor drama \u00e2\u20ac\u201d Christian passion play in a 3,000-seat amphitheater",
+        "Comanche Peak Nuclear Power Plant visitor center (tours)",
+        "Wildlife feeding stations at Fossil Rim giraffe platform"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Glen Rose itself is tiny and walkable. No public transit. Fossil Rim requires your own vehicle for the drive-through.",
+        "airport": "DFW \u00e2\u20ac\u201d Dallas/Fort Worth International Airport (70 min northeast)",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "abilene": {
+      "title": "Abilene",
+      "tagline": "Frontier Texas Between Dallas and the Big Country",
+      "region": "west-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 200
+      },
+      "gettingThere": "Fly into Abilene Regional Airport (ABI) \u00e2\u20ac\u201d American Eagle serves ABI with connections to Dallas. Or drive from Dallas (2.5 hours west via I-20). Abilene is home to three universities (Abilene Christian, Hardin-Simmons, McMurry) giving it an outsized cultural scene for its size.",
+      "highlights": [
+        "National Center for Children's Illustrated Literature (free)",
+        "Abilene Zoological Gardens ($10)",
+        "Frontier Texas! museum \u00e2\u20ac\u201d immersive multimedia frontier history experience ($10)",
+        "Buffalo Gap Historic Village \u00e2\u20ac\u201d 30 restored 19th-century buildings ($10)",
+        "Lake Abilene State Park hiking and camping ($4)",
+        "12th Armored Division Memorial Museum at Dyess AFB (free)",
+        "Paramount Theatre \u00e2\u20ac\u201d 1930 art deco movie palace",
+        "Taylor County Exposition Center rodeo and livestock events"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Downtown Abilene walkable around Cypress Street corridor. CityLink bus ($1). Uber/Lyft limited.",
+        "airport": "ABI \u00e2\u20ac\u201d Abilene Regional Airport",
+        "language": "English",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "canyon": {
+      "title": "Canyon",
+      "tagline": "Gateway to Palo Duro Canyon",
+      "region": "panhandle",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 85,
+        "luxury": 180
+      },
+      "gettingThere": "Drive from Amarillo (15 miles south via US-87). Canyon is the county seat of Randall County and home to West Texas A&M University. Palo Duro Canyon entrance is 12 miles east via TX-217. Fly into Amarillo (AMA), then drive 15 minutes.",
+      "highlights": [
+        "Palo Duro Canyon State Park \u00e2\u20ac\u201d Grand Canyon of Texas (12 miles east, $8/person)",
+        "TEXAS Outdoor Musical amphitheatre in Palo Duro Canyon (June-August, $20-45)",
+        "Panhandle-Plains Historical Museum \u00e2\u20ac\u201d Texas's largest history museum on the WTAMU campus ($15)",
+        "West Texas A&M University campus and the Cornette Library",
+        "Pioneer Town replica frontier village in the museum",
+        "Canyon's historic downtown square",
+        "Palo Duro Creek Brewing Company",
+        "Caprock Canyons State Park (40 miles east) for bison viewing"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Canyon's small downtown is walkable. No public transit. Drive to Palo Duro Canyon independently.",
+        "airport": "AMA \u00e2\u20ac\u201d Rick Husband Amarillo International Airport (15 min north)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "bryan-college-station": {
+      "title": "Bryan-College Station",
+      "tagline": "Home of the Aggies \u00e2\u20ac\u201d Gig 'Em!",
+      "region": "central-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 40,
+        "midRange": 100,
+        "luxury": 220
+      },
+      "gettingThere": "Drive from Houston (1.5 hours via TX-6 N) or Austin (1.5 hours via TX-21 and TX-6). Easterwood Airport (CLL) in College Station has American Eagle service to Dallas. The twin cities sit in the Brazos Valley, 90 miles north of Houston.",
+      "highlights": [
+        "Texas A&M University campus \u00e2\u20ac\u201d 5,200-acre campus including Kyle Field (102,000-seat stadium)",
+        "George H.W. Bush Presidential Library and Museum ($10)",
+        "Aggieland on game days \u00e2\u20ac\u201d legendary 12th Man crowd energy",
+        "Messina Hof Winery and Resort in Bryan (free tour with tasting)",
+        "Research Valley Innovation Corridor \u00e2\u20ac\u201d NASA research facilities nearby",
+        "Traditions at Texas A&M \u00e2\u20ac\u201d Midnight Yell Practice and Muster ceremony",
+        "Downtown Bryan Arts District revitalization",
+        "Brazos Valley Museum of Natural History ($5)"
+      ],
+      "essentials": {
+        "gettingAround": "Brazos Transit bus covers both cities ($1.50). Texas A&M campus walkable. Car recommended for wider exploration. Uber/Lyft available.",
+        "airport": "CLL \u00e2\u20ac\u201d Easterwood Airport, College Station",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "temple-belton": {
+      "title": "Temple-Belton",
+      "tagline": "Central Texas Lakes and the I-35 Corridor",
+      "region": "central-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 90,
+        "luxury": 200
+      },
+      "gettingThere": "Drive from Austin (1 hour north via I-35) or Dallas (2 hours south via I-35). The twin cities sit at the crossroads of I-35 and I-14 (the Central Texas Expressway). Fort Hood (now Fort Cavazos) is adjacent \u00e2\u20ac\u201d one of the world's largest military installations.",
+      "highlights": [
+        "Lake Belton \u00e2\u20ac\u201d 12,300-acre reservoir for boating, bass fishing, and waterfront camping",
+        "Lake Stillhouse Hollow \u00e2\u20ac\u201d adjacent reservoir with canoeing and hiking",
+        "Bell County Museum in Belton \u00e2\u20ac\u201d Central Texas history ($5)",
+        "Temple Railroad and Heritage Museum (free)",
+        "Sammons Golf Course on Lake Belton",
+        "Topsey Exotic Ranch wildlife encounters near Copperas Cove",
+        "Main Street Temple arts district and local restaurants",
+        "Fort Cavazos (formerly Fort Hood) 1st Cavalry Division Museum (free, base access required)"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. No meaningful public transit. I-35 connects to Austin and Dallas. Uber/Lyft limited outside the city core.",
+        "airport": "AUS \u00e2\u20ac\u201d Austin-Bergstrom International Airport (60 min south)",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
+      }
+    },
+    "killeen": {
+      "title": "Killeen",
+      "tagline": "Home of Fort Cavazos and Central Texas Military Community",
+      "region": "central-texas",
+      "bestMonths": [
+        "Mar",
+        "Apr",
+        "Oct",
+        "Nov"
+      ],
+      "budgetPerDay": {
+        "backpacker": 35,
+        "midRange": 85,
+        "luxury": 190
+      },
+      "gettingThere": "Drive from Austin (1 hour north via I-35 and TX-195) or Waco (1 hour south via I-35 to TX-195). Killeen-Fort Hood Regional Airport (GRK) has American Eagle service to Dallas. Adjacent to Fort Cavazos (formerly Fort Hood) \u00e2\u20ac\u201d one of the largest US Army bases.",
+      "highlights": [
+        "1st Cavalry Division Museum on Fort Cavazos (free with base access)",
+        "Killeen Civic and Conference Center events",
+        "Stillhouse Hollow Lake recreation area for fishing and camping",
+        "Lion's Junction Family Water Park (summer, $15)",
+        "Central Texas State Veterans Cemetery (free)",
+        "Texas Ranger Outpost Museum ($5)",
+        "Chain restaurant corridor on Fort Hood Boulevard",
+        "Copperas Cove Market Days (monthly, free)"
+      ],
+      "essentials": {
+        "gettingAround": "Car essential. Military community \u00e2\u20ac\u201d ID may be required for some base facilities. Killeen Transit bus ($1.25). Uber/Lyft available.",
+        "airport": "GRK \u00e2\u20ac\u201d Killeen-Fort Hood Regional Airport",
+        "language": "English, Spanish",
+        "currency": "USD \u00e2\u20ac\u201d $"
       }
     }
   },
-  "connections": {
-    "siquijor-dumaguete": { "mode": "ferry", "duration": "45 min", "operator": "GL Shipping / Montenegro", "cost": "₱200 (~$3.50)" },
-    "siquijor-bohol": { "mode": "ferry", "duration": "2 hours", "operator": "OceanJet", "cost": "₱800 (~$14)" },
-    "cebu-bohol": { "mode": "ferry", "duration": "2 hours", "operator": "OceanJet", "cost": "₱800 (~$14)" },
-    "cebu-dumaguete": { "mode": "ferry/flight", "duration": "5 hr ferry or 45 min flight", "operator": "Various", "cost": "₱1,500 (~$27)" },
-    "dumaguete-siquijor": { "mode": "ferry", "duration": "45 min", "operator": "GL Shipping / Montenegro", "cost": "₱200 (~$3.50)" },
-    "clark-cebu": { "mode": "flight", "duration": "1 hour", "operator": "Cebu Pacific / AirAsia", "cost": "₱1,700 (~$30)" },
-    "clark-boracay": { "mode": "flight", "duration": "1 hour to Caticlan", "operator": "Cebu Pacific", "cost": "₱2,500 (~$44)" },
-    "manila-cebu": { "mode": "flight", "duration": "1.5 hours", "operator": "Cebu Pacific / PAL", "cost": "₱2,000 (~$35)" },
-    "manila-boracay": { "mode": "flight", "duration": "1 hour to Caticlan", "operator": "Cebu Pacific / PAL", "cost": "₱2,500 (~$44)" },
-    "manila-clark": { "mode": "bus/drive", "duration": "2-3 hours", "operator": "Victory Liner / Grab", "cost": "₱500-2,000 (~$9-35)" },
-    "el-nido-coron": { "mode": "ferry", "duration": "3-4 hours", "operator": "Montenegro / Bunso", "cost": "₱1,800 (~$32)" },
-    "puerto-princesa-el-nido": { "mode": "van", "duration": "5-6 hours", "operator": "Lexus / Eulen Joy", "cost": "₱600-800 (~$11-14)" },
-    "manila-puerto-princesa": { "mode": "flight", "duration": "1.5 hours", "operator": "Cebu Pacific / PAL", "cost": "₱2,500 (~$44)" },
-    "manila-el-nido": { "mode": "flight", "duration": "1.5 hours", "operator": "AirSWIFT", "cost": "₱5,000-8,000 (~$89-142)" },
-    "manila-coron": { "mode": "flight", "duration": "1 hour", "operator": "Cebu Pacific / PAL", "cost": "₱2,500 (~$44)" },
-    "cebu-siargao": { "mode": "flight", "duration": "1 hour", "operator": "Cebu Pacific", "cost": "₱2,000 (~$35)" },
-    "manila-siargao": { "mode": "flight", "duration": "2 hours", "operator": "Cebu Pacific / PAL", "cost": "₱3,000 (~$53)" }
-  },
-  "travelTips": {
-    "currency": "Philippine Peso (PHP/₱). $1 USD ≈ ₱56.50.",
-    "visaFree": "Most nationalities get 30 days visa-free, extendable to 36 months.",
-    "bestOverallMonths": "November to May (dry season). Peak: December-April.",
-    "typhoonSeason": "June to November. Visayas and Mindanao less affected than Luzon.",
-    "simCard": "Globe or Smart SIM at any airport. ₱300-500 for 30 days unlimited data.",
-    "grab": "Grab (ride-hailing) works in Cebu, Clark, Manila, and major cities."
+  "country": {
+    "name": "Texas, USA",
+    "currency": "USD \u00e2\u20ac\u201d $ (US Dollar)",
+    "mainAirport": "Dallas/Fort Worth International (DFW) \u00e2\u20ac\u201d primary hub. Austin-Bergstrom (AUS), Houston Bush (IAH), and San Antonio (SAT) also major gateways.",
+    "language": "English (primary), Spanish (widely spoken throughout the state)",
+    "timezone": "Central Time (CT) \u00e2\u20ac\u201d UTC-6 standard, UTC-5 daylight. El Paso and far West Texas: Mountain Time (MT).",
+    "visaInfo": "Texas is part of the United States. Visitors from Visa Waiver Program countries use ESTA (apply online, $21, valid 2 years). Canadian citizens do not need a visa. Others require a US tourist visa (B-2).",
+    "emergencyNumber": "911",
+    "electricalPlug": "Type A and B (US standard flat two/three-pin)",
+    "voltage": "120V / 60Hz",
+    "bestOverallMonths": "March-April (spring wildflowers and mild weather) and October-November (comfortable temperatures, fall foliage in East Texas). Avoid June-August in most of Texas \u00e2\u20ac\u201d extreme heat with temperatures regularly exceeding 100\u00c2\u00b0F (38\u00c2\u00b0C).",
+    "gettingAround": "Car is essential for virtually all Texas travel. The state is larger than France. Rideshare (Uber/Lyft) covers major cities. Limited Amtrak service (Sunset Limited, Texas Eagle). No intercity bus network comparable to other states.",
+    "tipping": "15-20% at restaurants is standard and expected. $1-2/drink at bars. $2-5/bag for hotel bellhops.",
+    "foodBudget": "Food trucks and taquerias $5-12. BBQ joints $15-25/plate. Mid-range restaurants $20-50/person. Fine dining $80-150+ per person.",
+    "drinkingAge": "21 (strictly enforced \u00e2\u20ac\u201d ID required everywhere)",
+    "stateParks": "Texas State Parks entry is $2-8/person. Annual pass ($70) covers 90+ parks. Reserve campsites and day passes at texasstateparks.reserveamerica.com \u00e2\u20ac\u201d popular parks sell out weeks in advance."
   }
 }
