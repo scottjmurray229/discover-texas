@@ -64,7 +64,7 @@ affiliatePicks:
     priceRange: "$$"
   - name: "Texas Travel Guide"
     type: activity
-    url: "https://www.amazon.com/s?k=texas+travel&tag=discovermore-20&k=texas+travel+guide"
+    url: "https://www.amazon.com/s?k=texas+travel&tag=discoverphili-20&k=texas+travel+guide"
     description: "Comprehensive Texas travel guide for planning your trip."
     priceRange: "$"
 scottTips:
