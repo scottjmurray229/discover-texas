@@ -2,6 +2,7 @@
 title: "The Texas Hill Country Road Trip We Didn't Expect to Love"
 description: "We added the Hill Country as an afterthought to an Austin trip. It became the highlight. Rolling hills, German heritage towns, wildflowers, and wine — here's the route."
 pubDate: 2026-03-01
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"

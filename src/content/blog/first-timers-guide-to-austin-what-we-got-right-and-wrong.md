@@ -2,6 +2,7 @@
 title: "First Timer's Guide to Austin: What We Got Right and Wrong"
 description: "Our first Austin trip had high expectations, mixed results, and a few genuine surprises. Here's the honest debrief, including the mistakes worth avoiding."
 pubDate: 2026-03-01
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"

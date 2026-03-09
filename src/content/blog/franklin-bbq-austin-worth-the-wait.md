@@ -2,6 +2,7 @@
 title: "Franklin Barbecue Austin: Is It Worth the Wait?"
 description: "Honest guide to Franklin Barbecue — the wait, the strategy, what to order, how to get a reservation, and whether the world's most hyped BBQ joint lives up to it."
 pubDate: 2026-03-08
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"

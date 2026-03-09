@@ -2,6 +2,7 @@
 title: "Texas Road Trip: San Antonio to Big Bend National Park"
 description: "The ultimate Southwest Texas road trip — 7 days from San Antonio through the Hill Country, Fredericksburg, Marfa, and Big Bend, with logistics, best stops, and what not to miss."
 pubDate: 2026-03-08
+dateModified: 2026-03-08
 heroImage: ""
 heroVideo: ""
 author: "Scott"
