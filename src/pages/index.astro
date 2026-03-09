@@ -29,6 +29,7 @@ for (const region of regions) {
 const totalDestinations = allDestinations.length;
 const totalRegions = regions.length;
 ---
+import NetworkCrossLinks from '../components/NetworkCrossLinks.astro';
 
 <BaseLayout
   title="Discover Texas — Your Guide to the Lone Star State"
@@ -253,4 +254,5 @@ const totalRegions = regions.length;
     </div>
   </section>
 
+<NetworkCrossLinks currentSite="Texas" cluster="north-america" />
 </BaseLayout>
