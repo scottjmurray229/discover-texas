@@ -3,6 +3,7 @@ title: "Palo Duro Canyon"
 description: "Palo Duro Canyon is the second-largest canyon in the US at 120 miles long with stunning red rock formations."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Palo Duro Canyon State Park red hoodoos and amphitheatre, Texas Panhandle"
 tagline: "The Grand Canyon of Texas — 120 miles long, 800 feet deep, completely unexpected in the Panhandle plains, and home to the Texas outdoor musical every summer"
 region: panhandle
 bestMonths:

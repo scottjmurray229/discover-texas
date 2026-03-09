@@ -3,6 +3,7 @@ title: "Rockport-Fulton"
 description: "Rockport-Fulton is a charming coastal arts colony with world-class birding at Aransas National Wildlife Refuge."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Great Blue Heron at Rockport Beach and shrimp trawler docks, Texas"
 tagline: "Artists and Birders Paradise"
 region: gulf-coast
 bestMonths:

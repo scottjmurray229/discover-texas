@@ -3,6 +3,7 @@ title: "Surfside Beach"
 description: "Surfside Beach is Houstons closest beach escape with uncrowded sand and affordable beachfront rentals."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Surfside Beach uncrowded Texas Gulf Coast shoreline and jetties, Texas"
 tagline: "Relaxed Beach Vibes Near Houston"
 region: gulf-coast
 bestMonths:

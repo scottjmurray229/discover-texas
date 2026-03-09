@@ -3,6 +3,7 @@ title: "Waco"
 description: "Waco sits at the crossroads of Texas with Magnolia Market, Dr Pepper, and a growing food scene along the Brazos River."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Magnolia Market at the Silos and Waco Mammoth National Monument, Texas"
 tagline: "Heart of Texas Heritage"
 region: central-texas
 bestMonths:

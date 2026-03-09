@@ -3,6 +3,7 @@ title: "Nacogdoches"
 description: "Nacogdoches claims the title of Texas oldest town with deep Piney Woods charm and brick streets."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Old Stone Fort and oldest-town-in-Texas piney-woods campus, Nacogdoches"
 tagline: "Oldest Town in Texas"
 region: piney-woods
 bestMonths:

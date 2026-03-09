@@ -3,6 +3,7 @@ title: "Eagle Pass"
 description: "Eagle Pass is a historic border crossing with Fort Duncan and the Kickapoo Lucky Eagle Casino."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Maverick County courthouse and Rio Grande border bridge, Eagle Pass, Texas"
 tagline: "Fort Duncan and Border Heritage"
 region: south-texas
 bestMonths:

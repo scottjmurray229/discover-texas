@@ -3,6 +3,7 @@ title: "Brownsville"
 description: "Brownsville is the southernmost city in Texas with Palo Alto Battlefield, resaca waterways, and binational culture."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Gladys Porter Zoo tropical garden and Gateway International Bridge, Brownsville, Texas"
 tagline: "Southernmost City in Texas"
 region: south-texas
 bestMonths:

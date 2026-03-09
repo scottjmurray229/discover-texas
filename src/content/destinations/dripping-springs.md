@@ -3,6 +3,7 @@ title: "Dripping Springs"
 description: "Dripping Springs is Austins craft beverage neighbor with distilleries, breweries, wineries, and Hamilton Pool nearby."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Pedernales Falls State Park limestone drop and Hill Country vineyard, Dripping Springs, Texas"
 tagline: "Gateway to the Hill Country"
 region: hill-country
 bestMonths:

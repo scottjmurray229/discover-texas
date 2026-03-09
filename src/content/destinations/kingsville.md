@@ -3,6 +3,7 @@ title: "Kingsville"
 description: "Kingsville is home to the legendary King Ranch covering 825,000 acres of South Texas brush country."
 heroVideo: ""
 heroImage: ""
+heroAlt: "King Ranch longhorn cattle and mesquite chaparral, Kingsville, Texas"
 tagline: "Home of King Ranch"
 region: south-texas
 bestMonths:

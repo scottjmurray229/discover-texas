@@ -3,6 +3,7 @@ title: "Glen Rose"
 description: "Glen Rose is where you walk in actual dinosaur tracks at Dinosaur Valley State Park plus Fossil Rim Wildlife Center."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Dinosaur Valley State Park sauropod tracks in the Paluxy River, Glen Rose, Texas"
 tagline: "Dinosaur Valley and Safari Country"
 region: north-texas
 bestMonths:

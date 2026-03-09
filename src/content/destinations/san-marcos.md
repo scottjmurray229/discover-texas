@@ -3,6 +3,7 @@ title: "San Marcos"
 description: "San Marcos is a college town paradise with the crystal-clear San Marcos River, outlet malls, and vibrant nightlife."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Clear springs of the San Marcos River and Texas State University, Texas"
 tagline: "Float the Crystal-Clear River"
 region: central-texas
 bestMonths:

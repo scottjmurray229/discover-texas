@@ -3,6 +3,7 @@ title: "Alpine"
 description: "Alpine is the hub of the Big Bend region with a friendly college town, great food, and easy access to far west Texas."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Chisos Mountains sunset above the art town of Alpine, Big Bend Region, Texas"
 tagline: "Gateway to West Texas"
 region: west-texas
 bestMonths:

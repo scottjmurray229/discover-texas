@@ -3,6 +3,7 @@ title: "Georgetown"
 description: "Georgetown has a Victorian town square, Blue Hole swimming spot, and Inner Space Cavern as a central Texas gem."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Georgetown's Blue Hole spring and red-poppy wildflower fields, Texas"
 tagline: "Most Beautiful Town Square in Texas"
 region: central-texas
 bestMonths:

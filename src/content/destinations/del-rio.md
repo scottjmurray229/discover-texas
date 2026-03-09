@@ -3,6 +3,7 @@ title: "Del Rio"
 description: "Del Rio sits on the US-Mexico border at Lake Amistad with stunning turquoise waters and ancient rock art."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Amistad Reservoir blue water and Seminole Canyon pictograph cave, Del Rio, Texas"
 tagline: "Lake Amistad and Border Culture"
 region: south-texas
 bestMonths:

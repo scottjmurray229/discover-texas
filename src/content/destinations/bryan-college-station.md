@@ -3,6 +3,7 @@ title: "Bryan-College Station"
 description: "Home to Texas A&M, Bryan-College Station buzzes with Aggie spirit, great restaurants, and the Bush Presidential Library."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Kyle Field stadium and Brazos Valley Farmers Market, Bryan-College Station, Texas"
 tagline: "Aggieland Spirit"
 region: central-texas
 bestMonths:

@@ -3,6 +3,7 @@ title: "Laredo"
 description: "Laredo is a border city with deep Mexican heritage, authentic cuisine, vibrant shopping, and cultural celebrations."
 heroVideo: ""
 heroImage: ""
+heroAlt: "San Agustin Cathedral and International Bridge above the Rio Grande, Laredo, Texas"
 tagline: "Gateway to Mexico"
 region: south-texas
 bestMonths:

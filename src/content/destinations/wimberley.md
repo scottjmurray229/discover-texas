@@ -3,6 +3,7 @@ title: "Wimberley"
 description: "Wimberley is an artsy Hill Country escape with crystal-clear Jacobs Well, charming shops, and Blue Hole Regional Park."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Blue Hole Regional Park swimming hole and Wimberley Market Days, Texas"
 tagline: "Jewel of the Hill Country"
 region: hill-country
 bestMonths:

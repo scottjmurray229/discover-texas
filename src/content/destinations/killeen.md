@@ -3,6 +3,7 @@ title: "Killeen"
 description: "Killeen sits next to Fort Cavazos military base and offers access to Belton Lake and Stillhouse Hollow."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Fort Cavazos armor display and Museum of the American GI, Killeen, Texas"
 tagline: "Gateway to Fort Cavazos"
 region: central-texas
 bestMonths:

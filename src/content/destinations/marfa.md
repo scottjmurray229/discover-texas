@@ -3,6 +3,7 @@ title: "Marfa"
 description: "Marfa is the improbable desert art town with the Chinati Foundation, mysterious lights, and a thriving creative culture."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Prada Marfa art installation and Marfa Lights viewing area, West Texas"
 tagline: "A West Texas high desert town of 2,000 people with more art per capita than most cities — Donald Judd's permanent installations are alone worth the 5-hour drive from Austin"
 region: west-texas
 bestMonths:

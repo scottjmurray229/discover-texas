@@ -11,6 +11,7 @@ const destinations = defineCollection({
     description: z.string().default(''),
     heroVideo: z.string().default(''),
     heroImage: z.string().default(''),
+    heroAlt: z.string().optional(),
     tagline: z.string().default(''),
     region: z.enum(['central-texas', 'gulf-coast', 'hill-country', 'west-texas', 'north-texas', 'east-texas', 'south-texas', 'panhandle', 'piney-woods']),
     bestMonths: z.array(z.string()).default([]),

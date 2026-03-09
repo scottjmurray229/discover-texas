@@ -3,6 +3,7 @@ title: "Luckenbach"
 description: "Luckenbach is a three-building legend with a general store, dance hall, and post office where Willie Nelson made country music history."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Luckenbach Texas dance hall and live Texas country music, Hill Country"
 tagline: "Legendary Tiny Texas Town"
 region: hill-country
 bestMonths:

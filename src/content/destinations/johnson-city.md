@@ -3,6 +3,7 @@ title: "Johnson City"
 description: "Johnson City is LBJs hometown with the presidential ranch, local wineries, and small-town Texas at its finest."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Lyndon B. Johnson Ranch and Pedernales River, Johnson City, Texas Hill Country"
 tagline: "LBJ Country"
 region: hill-country
 bestMonths:

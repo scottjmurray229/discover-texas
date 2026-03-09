@@ -3,6 +3,7 @@ title: "Granbury"
 description: "Granburys preserved courthouse square overlooks a beautiful lake with great restaurants and real Texas charm."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Granbury Courthouse on the Square and Lake Granbury, Texas"
 tagline: "Historic Square on the Lake"
 region: north-texas
 bestMonths:

@@ -3,6 +3,7 @@ title: "Temple-Belton"
 description: "Temple and Belton offer the best of small-town Texas with easy access to Belton Lake and Stillhouse Hollow Reservoir."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Temple Railroad & Heritage Museum and Belton Lake shoreline, Texas"
 tagline: "Lakes and Small-Town Charm"
 region: central-texas
 bestMonths:

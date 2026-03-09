@@ -3,6 +3,7 @@ title: "Grapevine"
 description: "Grapevine is a charming Main Street town near DFW with wineries, the vintage railroad, and festive Christmas celebrations."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Grapevine Main Street boutiques and Christmas lights festival, North Texas"
 tagline: "Christmas Capital of Texas"
 region: north-texas
 bestMonths:

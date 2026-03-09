@@ -3,6 +3,7 @@ title: "McKinney"
 description: "McKinneys historic downtown is one of the best in Texas with boutique shopping and craft breweries."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Historic McKinney downtown brick buildings and Chestnut Square, Texas"
 tagline: "Historic Charm North of Dallas"
 region: north-texas
 bestMonths:

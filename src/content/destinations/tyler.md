@@ -3,6 +3,7 @@ title: "Tyler"
 description: "Tyler is the Rose Capital with the sprawling Rose Garden, fall festivals, and charming downtown in East Texas."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Texas Rose Festival queen and Tyler Municipal Rose Garden in full bloom, Texas"
 tagline: "Rose Capital of America"
 region: piney-woods
 bestMonths:

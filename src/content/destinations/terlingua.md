@@ -3,6 +3,7 @@ title: "Terlingua"
 description: "Terlingua is a former mercury mining ghost town reborn as the gateway to Big Bend with legendary chili cook-offs."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Terlingua ghost town ruins and Big Bend sunset sky, West Texas"
 tagline: "Ghost Town Revival"
 region: west-texas
 bestMonths:

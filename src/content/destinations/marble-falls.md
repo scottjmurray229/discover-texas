@@ -3,6 +3,7 @@ title: "Marble Falls"
 description: "Marble Falls is the gateway to the Highland Lakes with water sports, wildflower drives, and charming downtown dining."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Lake LBJ dam and Main Street Fall Creek Vineyards, Marble Falls, Texas"
 tagline: "Highland Lakes Gateway"
 region: hill-country
 bestMonths:

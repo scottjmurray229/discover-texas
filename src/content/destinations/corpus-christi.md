@@ -3,6 +3,7 @@ title: "Corpus Christi"
 description: "Corpus Christi is a coastal gem with the USS Lexington, Padre Island National Seashore, and the Texas State Aquarium."
 heroVideo: ""
 heroImage: ""
+heroAlt: "USS Lexington aircraft carrier museum and Padre Island National Seashore, Corpus Christi, Texas"
 tagline: "Gateway to Padre Island National Seashore — 70 miles of undeveloped barrier island, an aircraft carrier museum, and some of the best windsurfing in the country"
 region: gulf-coast
 bestMonths:

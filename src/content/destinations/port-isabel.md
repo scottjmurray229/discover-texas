@@ -3,6 +3,7 @@ title: "Port Isabel"
 description: "Port Isabel is the charming mainland gateway to South Padre Island with the historic lighthouse and fresh seafood."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Port Isabel Lighthouse and Queen Isabella Causeway to South Padre, Texas"
 tagline: "Gateway to South Padre"
 region: gulf-coast
 bestMonths:

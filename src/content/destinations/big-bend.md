@@ -3,6 +3,7 @@ title: "Big Bend"
 description: "Big Bend National Park is Texas most remote and spectacular landscape with desert canyons, the Rio Grande, and the darkest skies."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Santa Elena Canyon limestone walls and the Rio Grande, Big Bend, Texas"
 tagline: "A million-acre national park where the Chihuahuan Desert meets the Rio Grande, the Milky Way is so bright it casts shadows, and the nearest cell signal is an hour away"
 region: west-texas
 bestMonths:

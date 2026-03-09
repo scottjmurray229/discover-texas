@@ -3,6 +3,7 @@ title: "McAllen"
 description: "McAllen is the heart of the Rio Grande Valley with world-class birding, authentic Mexican cuisine, and warm winters."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Bentsen-Rio Grande Valley State Park butterfly garden, McAllen, Texas"
 tagline: "Heart of the Rio Grande Valley"
 region: south-texas
 bestMonths:

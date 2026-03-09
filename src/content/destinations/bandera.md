@@ -3,6 +3,7 @@ title: "Bandera"
 description: "Bandera is the real-deal cowboy town with dude ranches, honky-tonks, horseback riding, and the Medina River."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Cowboy Capital of the World dude ranch rodeo and Medina River, Bandera, Texas"
 tagline: "Cowboy Capital of the World"
 region: hill-country
 bestMonths:

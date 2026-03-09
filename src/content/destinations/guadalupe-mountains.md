@@ -3,6 +3,7 @@ title: "Guadalupe Mountains"
 description: "Guadalupe Mountains National Park holds the highest point in Texas at 8,751 feet with ancient reef fossils."
 heroVideo: ""
 heroImage: ""
+heroAlt: "El Capitan limestone reef escarpment at Guadalupe Mountains National Park, Texas"
 tagline: "Highest Point in Texas"
 region: west-texas
 bestMonths:

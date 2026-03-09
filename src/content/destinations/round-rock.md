@@ -3,6 +3,7 @@ title: "Round Rock"
 description: "Round Rock is Austins thriving neighbor with Dell Diamond, outlet shopping, and family-friendly attractions."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Round Rock Premium Outlets and Frontier Steakhouse district, Texas"
 tagline: "Sports and Family Fun Hub"
 region: central-texas
 bestMonths:

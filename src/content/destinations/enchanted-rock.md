@@ -3,6 +3,7 @@ title: "Enchanted Rock"
 description: "Enchanted Rock is a massive pink granite dome rising from the Hill Country, sacred to Native Americans and a must-hike."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Enchanted Rock pink granite dome above the Hill Country, Texas"
 tagline: "Sacred Pink Granite Dome"
 region: hill-country
 bestMonths:

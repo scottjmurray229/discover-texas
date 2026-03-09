@@ -3,6 +3,7 @@ title: "Caddo Lake"
 description: "Caddo Lake is Texas only natural lake with ancient bald cypress trees draped in Spanish moss."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Cypress trees draped in Spanish moss on Caddo Lake, East Texas"
 tagline: "Mysterious Cypress Bayou"
 region: east-texas
 bestMonths:

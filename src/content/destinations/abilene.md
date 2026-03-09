@@ -3,6 +3,7 @@ title: "Abilene"
 description: "Abilene is the Storybook Capital of America with Frontier Texas, the Abilene Zoo, and deep frontier heritage."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Frontier Texas museum sculpture and downtown Abilene skyline, Texas"
 tagline: "Storybook Capital of America"
 region: west-texas
 bestMonths:

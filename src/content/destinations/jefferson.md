@@ -3,6 +3,7 @@ title: "Jefferson"
 description: "Jefferson is the most haunted small town in Texas with antebellum mansions, bayou tours, and ghost walks."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Jefferson historic antebellum homes and Caddo Lake boat tours, Texas"
 tagline: "Haunted Bayou Town"
 region: east-texas
 bestMonths:

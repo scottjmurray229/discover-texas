@@ -3,6 +3,7 @@ title: "Amarillo"
 description: "Amarillo is the gateway to the Panhandle with Palo Duro Canyon, Route 66 nostalgia, and the Big Texan steak challenge."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Cadillac Ranch graffiti-covered buried cars in the Texas Panhandle plains"
 tagline: "Gateway to Palo Duro Canyon"
 region: panhandle
 bestMonths:

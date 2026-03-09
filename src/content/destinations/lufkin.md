@@ -3,6 +3,7 @@ title: "Lufkin"
 description: "Lufkin is the gateway to the Angelina National Forest with tall pines, quiet lakes, and East Texas hospitality."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Ellen Trout Zoo and East Texas piney woods, Lufkin, Texas"
 tagline: "Deep Piney Woods Country"
 region: piney-woods
 bestMonths:

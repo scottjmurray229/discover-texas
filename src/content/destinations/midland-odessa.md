@@ -3,6 +3,7 @@ title: "Midland-Odessa"
 description: "Midland-Odessa is the heart of the Permian Basin oil patch with the Petroleum Museum and Bush Childhood Home."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Permian Basin Petroleum Museum oil pumpjack and West Texas flatlands"
 tagline: "Oil Patch Heritage"
 region: west-texas
 bestMonths:

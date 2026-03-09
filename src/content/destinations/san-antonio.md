@@ -3,6 +3,7 @@ title: "San Antonio"
 description: "San Antonio blends rich Texas history with vibrant Mexican-American culture at the Alamo, River Walk, and world-class Tex-Mex."
 heroVideo: ""
 heroImage: ""
+heroAlt: "San Antonio River Walk neon reflections and the Alamo mission facade, Texas"
 tagline: "The River Walk, the Alamo, the best puffy tacos in the state, and a Mexican-American cultural heritage that runs deeper here than anywhere else in Texas"
 region: central-texas
 bestMonths:

@@ -3,6 +3,7 @@ title: "Boerne"
 description: "Boerne blends Hill Country charm with upscale dining plus Cave Without a Name and Guadalupe River State Park."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Main Plaza limestone buildings and Cibolo Creek, Boerne, Texas Hill Country"
 tagline: "Small-Town Sophistication"
 region: hill-country
 bestMonths:

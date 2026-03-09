@@ -3,6 +3,7 @@ title: "Galveston"
 description: "Galveston Island offers beaches, Victorian architecture, a lively Strand District, and fresh Gulf seafood an hour from Houston."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Pleasure Pier Ferris wheel over the Gulf of Mexico, Galveston, Texas"
 tagline: "Texas's Victorian beach town on a barrier island — Pleasure Pier, the Strand's historic district, fresh Gulf seafood, and the most accessible beach from Houston"
 region: gulf-coast
 bestMonths:

@@ -3,6 +3,7 @@ title: "Dallas"
 description: "Dallas is big, bold, and unapologetically Texan with world-class arts, legendary BBQ, and the iconic Reunion Tower skyline."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Reunion Tower glowing globe and Dallas Arboretum autumn colors, Texas"
 tagline: "The arts district is legitimately world-class, the food scene has finally caught up with the ambition, and the Cowboys still play like they own the whole state"
 region: north-texas
 bestMonths:

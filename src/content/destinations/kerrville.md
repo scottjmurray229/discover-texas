@@ -3,6 +3,7 @@ title: "Kerrville"
 description: "Kerrville sits along the Guadalupe River and is a haven for artists, kayakers, and Hill Country lovers."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Guadalupe River cypress-lined swimming hole, Kerrville, Texas Hill Country"
 tagline: "Heart of the Hills"
 region: hill-country
 bestMonths:

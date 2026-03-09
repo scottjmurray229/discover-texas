@@ -3,6 +3,7 @@ title: "New Braunfels"
 description: "New Braunfels is a Texas town with deep German roots featuring the Comal River, Schlitterbahn, and historic Gruene Hall."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Schlitterbahn Waterpark tube chutes and Gruene Hall dance hall, New Braunfels, Texas"
 tagline: "German Heritage and River Fun"
 region: central-texas
 bestMonths:

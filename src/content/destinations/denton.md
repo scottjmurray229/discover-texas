@@ -3,6 +3,7 @@ title: "Denton"
 description: "Denton is a creative college town with a thriving music scene, great coffee shops, and UNT campus culture."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Denton County Courthouse-on-the-Square and vibrant UNT campus, Denton, Texas"
 tagline: "College Town Cool"
 region: north-texas
 bestMonths:

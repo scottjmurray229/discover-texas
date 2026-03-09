@@ -3,6 +3,7 @@ title: "Matagorda"
 description: "Matagorda is the Texas coast untouched with miles of empty beaches, world-class fishing, and the Colorado River delta."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Matagorda Beach sea oats and Mad Island Marsh wildlife, Texas Gulf Coast"
 tagline: "Wild and Unspoiled Coast"
 region: gulf-coast
 bestMonths:

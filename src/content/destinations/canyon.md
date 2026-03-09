@@ -3,6 +3,7 @@ title: "Canyon"
 description: "Canyon is home to the Panhandle-Plains Historical Museum, the largest history museum in Texas."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Palo Duro Canyon sunrise and Goodnight Trading Post, Canyon, Texas"
 tagline: "Panhandle Plains History"
 region: panhandle
 bestMonths:
