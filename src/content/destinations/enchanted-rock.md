@@ -40,8 +40,6 @@ highlights:
   - "Explore the base trail and secondary domes"
 gradientColors: "from-amber-900 via-orange-800 to-red-900"
 relatedDestinations: []
-faqItems: []
-affiliatePicks: []
 lastVerified: 2026-02-27
 faqItems:
   - question: "How difficult is the Enchanted Rock summit hike?"

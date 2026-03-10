@@ -40,8 +40,6 @@ highlights:
   - "Cross to Reynosa for authentic Mexican dining"
 gradientColors: "from-amber-900 via-orange-800 to-red-900"
 relatedDestinations: []
-faqItems: []
-affiliatePicks: []
 lastVerified: 2026-02-27
 faqItems:
   - question: "What makes McAllen a world-class birding destination?"

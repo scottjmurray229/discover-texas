@@ -40,8 +40,6 @@ highlights:
   - "Kayak the Laguna Madre"
 gradientColors: "from-amber-900 via-orange-800 to-red-900"
 relatedDestinations: []
-faqItems: []
-affiliatePicks: []
 lastVerified: 2026-02-27
 faqItems:
   - question: "What is the Port Isabel Lighthouse?"

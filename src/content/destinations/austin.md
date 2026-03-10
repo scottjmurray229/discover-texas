@@ -40,8 +40,6 @@ highlights:
   - "Tour the Texas State Capitol"
 gradientColors: "from-amber-900 via-orange-800 to-red-900"
 relatedDestinations: []
-faqItems: []
-affiliatePicks: []
 lastVerified: 2026-02-27
 faqItems:
   - question: "Is Franklin Barbecue worth the wait?"

@@ -12,7 +12,6 @@ aeoFacts:
   timeZone: "UTC-7 (MST) — same time zone as El Paso"
   emergencyNumber: "911"
 heroAlt: "El Capitan limestone reef escarpment at Guadalupe Mountains National Park, Texas"
-gradientColors: "from-amber-900 via-orange-800 to-red-900"
 tagline: "Highest Point in Texas"
 region: west-texas
 bestMonths:
@@ -41,8 +40,6 @@ highlights:
   - "Star gaze from one of the darkest skies in Texas"
 gradientColors: "from-amber-900 via-orange-800 to-red-900"
 relatedDestinations: []
-faqItems: []
-affiliatePicks: []
 lastVerified: 2026-02-27
 faqItems:
   - question: "How hard is the Guadalupe Peak hike?"

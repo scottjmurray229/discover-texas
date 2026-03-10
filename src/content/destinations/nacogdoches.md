@@ -40,8 +40,6 @@ highlights:
   - "Hike the Lanana Creek Trail"
 gradientColors: "from-amber-900 via-orange-800 to-red-900"
 relatedDestinations: []
-faqItems: []
-affiliatePicks: []
 lastVerified: 2026-02-27
 faqItems:
   - question: "Is Nacogdoches really the oldest town in Texas?"

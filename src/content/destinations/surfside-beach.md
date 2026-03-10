@@ -40,8 +40,6 @@ highlights:
   - "Eat at beachfront restaurants"
 gradientColors: "from-amber-900 via-orange-800 to-red-900"
 relatedDestinations: []
-faqItems: []
-affiliatePicks: []
 lastVerified: 2026-02-27
 faqItems:
   - question: "How is Surfside Beach different from Galveston?"
