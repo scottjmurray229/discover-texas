@@ -13,7 +13,7 @@ const destinations = defineCollection({
     heroImage: z.string().default(''),
     heroAlt: z.string().optional(),
     tagline: z.string().default(''),
-    region: z.enum(['central-texas', 'gulf-coast', 'hill-country', 'west-texas', 'north-texas', 'east-texas', 'south-texas', 'panhandle', 'piney-woods']),
+    region: z.string(),
     bestMonths: z.array(z.string()).default([]),
     budgetPerDay: z.object({
       backpacker: z.number().default(0),
@@ -59,7 +59,7 @@ const destinations = defineCollection({
     emergencyNumber: z.string().optional(),
   }).optional(),
     lastVerified: z.coerce.date().optional(),
-    contentStatus: z.enum(['draft', 'review', 'published', 'needs-update']).default('draft'),
+    contentStatus: z.string().optional(),
     draft: z.boolean().default(true),
     fmContentType: z.string().optional(),
   }).passthrough(),
